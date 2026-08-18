@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:M_WMS.Controls.Card"
+             xmlns:select="clr-namespace:M_WMS.Controls.Selects"
+             xmlns:border="clr-namespace:M_WMS.Controls.Borders"
+             xmlns:lang="clr-namespace:M_WMS.Helpers"
+             xmlns:buttons="clr-namespace:M_WMS.Controls.Buttons"
+             xmlns:entrys="clr-namespace:M_WMS.Controls.Entries"
+             x:Class="M_WMS.Pages.SettingView"
+             x:Name="ThisPage">
+
+    <Grid HorizontalOptions="Fill" 
+          VerticalOptions="Fill"
+          x:Name="MainLayout" 
+          Padding="0,0,0,5"
+          RowDefinitions="100,*"
+          RowSpacing="5"
+          BackgroundColor="#aaa">
+        <Border HorizontalOptions="Fill" 
+                VerticalOptions="Fill"
+                BackgroundColor="White"
+                StrokeThickness="0"
+                StrokeShape="RoundRectangle 0,0,15,15"
+                Padding="6">
+            <VerticalStackLayout VerticalOptions="Center">
+                <!--<Image Source="user.png" HeightRequest="60"/>-->
+                <Label HorizontalTextAlignment="Center"
+                       FontSize="50"
+                       Text="&#xf4fe;"
+                       TextColor="#2196F3"
+                       FontFamily="FA-Solid"/>
+                <Label Text="{lang:Translate UserSetting}"
+                       TextColor="Black"
+                       HorizontalTextAlignment="Center"
+                       FontAttributes="Bold"
+                       FontSize="16"/>
+            </VerticalStackLayout>
+
+        </Border>
+        
+        <Border Grid.Row="1" 
+                HorizontalOptions="Fill" 
+                VerticalOptions="Fill"
+                BackgroundColor="White"
+                StrokeThickness="0"
+                StrokeShape="10"
+                Margin="5,0,5,0">
+            <Grid RowDefinitions="*, Auto">
+                <Grid Grid.Row="0">
+                    
+                </Grid>
+                
+                <StackLayout Grid.Row="0" HorizontalOptions="Fill"  VerticalOptions="Fill">
+                    <Grid RowDefinitions="Auto,*,55">
+                        <Grid Margin="10" 
+                          RowSpacing="5" 
+                          ColumnSpacing="5" 
+                          Grid.Row="0">
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="110" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="34" />
+                                <RowDefinition Height="34" />
+                                <RowDefinition Height="34" />
+                                <RowDefinition Height="34" />
+                                <RowDefinition Height="34" />
+                                <RowDefinition Height="34" />
+                                <RowDefinition Height="34" />
+                                <RowDefinition Height="34" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+
+                            <Label Grid.Column="0"
+                               Grid.Row="0"
+                               VerticalTextAlignment="Center"
+                               Text="{lang:Translate StockLocation}"
+                               TextColor="Black"/>
+
+                            <border:WmsBorder
+                                Grid.Row="0"
+                                Grid.Column="1"
+                                Background="White"
+                                Padding="0"
+                                BorderBottomThickness="1"
+                                BorderBottomBrush="#DADADA">
+                                <border:WmsBorder.Child>
+                                    <select:WmsSelect
+                                        Margin="5,0,0,0"
+                                        ShowLeadingIcon="True"
+                                        LeadingFontAwesomeIcon="&#xf3c5;"
+                                        LeadingFontAwesomeIconColor="#2196F3"
+                                        SelectedValue="{Binding StockLocation}"
+                                        Placeholder="{lang:Translate StockLocation}"
+                                        IsReadOnly="False"
+                                        IsEnabled="True"
+                                        DisplayMemberPath="Name"
+                                        SelectedValuePath="Value"
+                                        BackgroundBrush="White"
+                                        PressedBackgroundBrush="#EEEEEE"
+                                        DisplayMargin="10,0,10,0"
+                                        ArrowMargin="10"
+                                        ItemsSource="{Binding StockLocationLists}"
+                                        />
+                                </border:WmsBorder.Child>
+                            </border:WmsBorder>
+
+                            <Label Grid.Column="0" 
+                                   VerticalTextAlignment="Center"
+                                   Grid.Row="1"
+                                   Text="{lang:Translate Languages}"
+                                   TextColor="Black"/>
+                            <border:WmsBorder
+                                Grid.Row="1"
+                                Grid.Column="1"
+                                Background="White"
+                                Padding="0"
+                                BorderBottomThickness="1"
+                                BorderBottomBrush="#DADADA">
+                                <border:WmsBorder.Child>
+                                    <select:WmsSelect
+                                        Margin="5,0,0,0"
+                                        ShowLeadingIcon="True"
+                                        LeadingFontAwesomeIcon="&#xf57d;"
+                                        LeadingFontAwesomeIconColor="#2196F3"
+                                        SelectedValue="{Binding Language}"
+                                        Placeholder="{lang:Translate Languages}"
+                                        IsReadOnly="False"
+                                        IsEnabled="True"
+                                        DisplayMemberPath="Name"
+                                        SelectedValuePath="Value"
+                                        BackgroundBrush="White"
+                                        PressedBackgroundBrush="#EEEEEE"
+                                        DisplayMargin="10,0,10,0"
+                                        ArrowMargin="10"
+                                        ItemsSource="{Binding LanguageLists}"/>
+                                </border:WmsBorder.Child>
+                            </border:WmsBorder>
+
+                            <Label Grid.Row="2"
+                                   Grid.Column="0"
+                                   VerticalTextAlignment="Center"
+                                   TextColor="Black"
+                                   Text="{lang:Translate UserCdLabel}"/>
+                            <entrys:WmsEntry 
+                                   IsLeftIconVisible="True"
+                                   LeftIconGlyph="&#xf007;"
+                                   IconColor="#aaa"
+                                   IconSize="18"
+                                   Grid.Row="2" 
+                                   Grid.Column="1"
+                                   BorderThickness="0"
+                                   CornerRadius="0"
+                                   Text="{Binding UserCode}"
+                                   IsEnabled="False"/>
+
+                            <Label Grid.Row="3"
+                                   Grid.Column="0"
+                                   VerticalTextAlignment="Center"
+                                   TextColor="Black"
+                                   Text="{lang:Translate KyotenCdLabel}"/>
+                            <entrys:WmsEntry 
+                                IsLeftIconVisible="True"
+                                LeftIconGlyph="&#xf124;"
+                                IconColor="#aaa"
+                                IconSize="18"
+                                Grid.Row="3" 
+                                Grid.Column="1"
+                                BorderThickness="0"
+                                CornerRadius="0"
+                                Text="{Binding KyotenCd}"
+                                IsEnabled="False"/>
+                            
+                            <Label Grid.Row="4"
+                                   Grid.Column="0"
+                                   VerticalTextAlignment="Center"
+                                   TextColor="Black"
+                                   Text="{lang:Translate UserNameLabel}"/>
+                            <entrys:WmsEntry 
+                                IsLeftIconVisible="True"
+                                LeftIconGlyph="&#xf007;"
+                                IconColor="#aaa"
+                                IconSize="18"
+                                Grid.Row="4" 
+                                Grid.Column="1"
+                                BorderThickness="0"
+                                CornerRadius="0"
+                                Text="{Binding UserName}"
+                                IsEnabled="False"/>
+                            
+                            <Label Grid.Row="5"
+                                   Grid.Column="0"
+                                   VerticalTextAlignment="Center"
+                                   TextColor="Black"
+                                   Text="{lang:Translate UserNameAliasLabel}"/>
+                            <entrys:WmsEntry 
+                                IsLeftIconVisible="True"
+                                LeftIconGlyph="&#xf007;"
+                                IconColor="#aaa"
+                                IconSize="18"
+                                Grid.Row="5" 
+                                Grid.Column="1"
+                                BorderThickness="0"
+                                CornerRadius="0"
+                                Text="{Binding UserNameAlias}"
+                                IsEnabled="False"/>
+                            
+                            <Label Grid.Row="6"
+                                   Grid.Column="0"
+                                   VerticalTextAlignment="Center"
+                                   TextColor="Black"
+                                   Text="{lang:Translate SalesTanCdLabel}"/>
+                            <entrys:WmsEntry 
+                                IsLeftIconVisible="True"
+                                LeftIconGlyph="&#xf02a;"
+                                IconColor="#aaa"
+                                IconSize="18"
+                                Grid.Row="6" 
+                                Grid.Column="1"
+                                BorderThickness="0"
+                                CornerRadius="0"
+                                Text="{Binding SalesTanCd}"
+                                IsEnabled="False"/>
+                            
+                            <Label Grid.Row="7"
+                                   Grid.Column="0"
+                                   VerticalTextAlignment="Center"
+                                   TextColor="Black"
+                                   Text="{lang:Translate Email}"/>
+                            <entrys:WmsEntry 
+                                   IsLeftIconVisible="True"
+                                   LeftIconGlyph="&#xf0e0;"
+                                   IconSize="18"
+                                   Grid.Row="7" 
+                                   Grid.Column="1"
+                                   BorderThickness="0"
+                                   CornerRadius="0"
+                                   Text="{Binding Email}"
+                                   IsEnabled="False"/>
+                            
+                            <Label Grid.Row="8"
+                                   Grid.Column="0"
+                                   VerticalTextAlignment="Start"
+                                   TextColor="Black"
+                                   Text="{lang:Translate GrpCdLabel}"/>
+                            <ScrollView Grid.Row="8"
+                                        Grid.Column="1"
+                                        MinimumHeightRequest="100">
+                                <CollectionView BackgroundColor="#F5F5F5" 
+                                    IsVisible="{Binding IsNotLoading}"
+                                    ItemsSource="{Binding GrpList}" 
+                                    SelectionMode="None" 
+                                    ItemSizingStrategy="MeasureFirstItem">
+
+                                    <CollectionView.ItemTemplate>
+                                        <DataTemplate>
+                                            <Label Text="{Binding Grp}"
+                                                   TextColor="Black"
+                                                   Padding="5"/>
+                                        </DataTemplate>
+                                    </CollectionView.ItemTemplate>
+                                </CollectionView>
+                            </ScrollView>
+                            
+                        </Grid>
+                    </Grid>
+                </StackLayout>
+
+                <Grid Grid.Row="1" Padding="15">
+                    <HorizontalStackLayout HorizontalOptions="End" Spacing="20">
+                        <buttons:IconButton 
+                            Command="{Binding OkCommand}"
+                            IconSource="check.png"
+                            Grid.Column="2" 
+                            Text="{lang:Translate Ok}"/>
+                    </HorizontalStackLayout>
+                </Grid>
+            </Grid>
+        </Border>
+
+    </Grid>
+</ContentView>

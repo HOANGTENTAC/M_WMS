@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="M_WMS.Controls.Borders.WmsBorder">
+    <Grid x:Name="PART_Root">
+
+        <!-- Border nền -->
+        <Border
+            x:Name="PART_BackgroundBorder"
+            StrokeThickness="0">
+
+            <ContentView
+                x:Name="PART_ContentHost"/>
+
+        </Border>
+
+        <!-- Top -->
+        <BoxView
+            x:Name="PART_Top"
+            VerticalOptions="Start"
+            HeightRequest="0"
+            InputTransparent="True"/>
+
+        <!-- Bottom -->
+        <BoxView
+            x:Name="PART_Bottom"
+            VerticalOptions="End"
+            HeightRequest="0"
+            InputTransparent="True"/>
+
+        <!-- Left -->
+        <BoxView
+            x:Name="PART_Left"
+            HorizontalOptions="Start"
+            WidthRequest="0"
+            InputTransparent="True"/>
+
+        <!-- Right -->
+        <BoxView
+            x:Name="PART_Right"
+            HorizontalOptions="End"
+            WidthRequest="0"
+            InputTransparent="True"/>
+
+    </Grid>
+
+</ContentView>

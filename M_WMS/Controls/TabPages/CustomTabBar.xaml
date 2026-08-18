@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="M_WMS.Controls.TabPages.CustomTabBar">
+    <Border BackgroundColor="White" 
+            StrokeShape="RoundRectangle 10,10,0,0"
+            Padding="10,10" Margin="0"
+            Shadow="{Shadow Brush=Black, Offset='0,-2', Opacity=0.1}">
+
+        <!-- Render danh sách Tab linh hoạt theo độ rộng màn hình -->
+        <FlexLayout x:Name="TabFlexLayout" 
+                    BindableLayout.ItemsSource="{Binding Tabs}" 
+                    JustifyContent="SpaceAround">
+            <BindableLayout.ItemTemplate>
+                <DataTemplate>
+                    <VerticalStackLayout HorizontalOptions="Center" WidthRequest="80">
+                        <VerticalStackLayout.GestureRecognizers>
+                            <TapGestureRecognizer 
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type ContentView}}, Path=BindingContext.SelectTabCommand}"
+                                CommandParameter="{Binding .}"
+                                Tapped="OnTabTapped" />
+                        </VerticalStackLayout.GestureRecognizers>
+
+                        <!-- Icon -->
+                        <Image Source="{Binding Icon}" HeightRequest="24" WidthRequest="24">
+                            <Image.Triggers>
+                                <DataTrigger TargetType="Image" Binding="{Binding IsSelected}" Value="True">
+                                    <DataTrigger.EnterActions>
+                                        <!-- Animated scale up khi chọn -->
+                                    </DataTrigger.EnterActions>
+                                </DataTrigger>
+                            </Image.Triggers>
+                        </Image>
+
+                        <!-- Label -->
+                        <Label Text="{Binding Title}" FontSize="12" HorizontalOptions="Center">
+                            <Label.Triggers>
+                                <DataTrigger TargetType="Label" Binding="{Binding IsSelected}" Value="True">
+                                    <Setter Property="TextColor" Value="#2196F3" />
+                                    <Setter Property="FontAttributes" Value="Bold" />
+                                </DataTrigger>
+                                <DataTrigger TargetType="Label" Binding="{Binding IsSelected}" Value="False">
+                                    <Setter Property="TextColor" Value="#888888" />
+                                </DataTrigger>
+                            </Label.Triggers>
+                        </Label>
+                    </VerticalStackLayout>
+                </DataTemplate>
+            </BindableLayout.ItemTemplate>
+        </FlexLayout>
+    </Border>
+</ContentView>

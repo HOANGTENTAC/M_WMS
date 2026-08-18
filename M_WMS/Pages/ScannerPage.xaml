@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="M_WMS.Pages.ScannerPage"
+             xmlns:zxing="clr-namespace:ZXing.Net.Maui.Controls;assembly=ZXing.Net.MAUI.Controls"
+             Title="ScannerPage">
+    <!--<Grid>
+
+        <zxing:CameraBarcodeReaderView
+            x:Name="cameraView"
+            HorizontalOptions="Fill"
+            VerticalOptions="Fill"/>
+
+    </Grid>-->
+
+    <Grid>
+        <zxing:CameraBarcodeReaderView 
+            x:Name="barcodeReader"
+            BarcodesDetected="OnBarcodesDetected"
+            IsDetecting="True"/>
+
+        <Button Text="Đóng" 
+                TextColor="White"
+                BackgroundColor="#1976D2"
+                VerticalOptions="End" 
+                Margin="20" 
+                Clicked="OnCloseClicked"/>
+    </Grid>
+
+</ContentPage>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="M_WMS.MainPage"
+             xmlns:controls="clr-namespace:M_WMS.Controls.TabPages"
+             xmlns:views="clr-namespace:M_WMS.Pages"
+             Shell.NavBarIsVisible="False">
+
+    <Grid RowDefinitions="*, Auto" BackgroundColor="#aaa">
+        <!-- Vùng hiển thị View tự thay đổi theo ViewModel -->
+        <ContentView Grid.Row="0" Content="{Binding CurrentView}" />
+
+        <!-- TabBar động bên dưới -->
+        <controls:CustomTabBar Grid.Row="1" />
+    </Grid>
+</ContentPage>

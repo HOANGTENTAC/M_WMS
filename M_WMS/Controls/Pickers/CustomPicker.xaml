@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="M_WMS.Controls.Pickers.CustomPicker">
+    <Grid RowDefinitions="30,Auto">
+
+        <!-- Header -->
+        <Border
+            ZIndex="999"
+            x:Name="HeaderBorder"
+            Stroke="#C8C8C8"
+            StrokeThickness="1"
+            BackgroundColor="White"
+            StrokeShape="RoundRectangle 5">
+            <Grid
+                Padding="6,0"
+                ColumnDefinitions="*,18">
+                <Label
+                    TextColor="Black"
+                    x:Name="lblText"
+                    VerticalOptions="Center"
+                    Text="Select..."
+                    FontSize="14"/>
+                <Image
+                    x:Name="imgArrow"
+                    Grid.Column="1"
+                    Source="arrow_down.png"
+                    WidthRequest="16"
+                    HeightRequest="16"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"/>
+            </Grid>
+
+            <Border.GestureRecognizers>
+                <TapGestureRecognizer
+                    Tapped="Header_Tapped"/>
+            </Border.GestureRecognizers>
+        </Border>
+
+        <!-- Dropdown -->
+        <Border
+            x:Name="DropDownBorder"
+            Grid.Row="1"
+            IsVisible="False"
+            Stroke="#C8C8C8"
+            BackgroundColor="White"
+            StrokeThickness="1"
+            StrokeShape="RoundRectangle 5"
+            Margin="0,2,0,0"
+            MaximumHeightRequest="250">
+            <CollectionView
+                x:Name="cvItems"
+                SelectionMode="Single">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid
+                            Padding="6,2"
+                            HeightRequest="30">
+                            <Label
+                                TextColor="Black"
+                                Text="{Binding}"
+                                VerticalOptions="Center"/>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Border>
+    </Grid>
+</ContentView>

@@ -1,0 +1,2118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="All" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="Arrival" xml:space="preserve">
+    <value>Arrival</value>
+  </data>
+  <data name="ArrivalProcess" xml:space="preserve">
+    <value>Arrival Process</value>
+  </data>
+  <data name="ArrivalQty" xml:space="preserve">
+    <value>Arrival Qty</value>
+  </data>
+  <data name="ArrivalShipmentStockSummary" xml:space="preserve">
+    <value>StockSummary</value>
+  </data>
+  <data name="ArrivalShipmentTemplate" xml:space="preserve">
+    <value>Multi Input/Output</value>
+  </data>
+  <data name="ArrivalShipmentTemplateSub" xml:space="preserve">
+    <value>(Template)</value>
+  </data>
+  <data name="ArrivalSlip" xml:space="preserve">
+    <value>Arrival Slip</value>
+  </data>
+  <data name="AskYourManagerPermission" xml:space="preserve">
+    <value>Only download and install this app, if you have permission from your manager. Ask your manager if you are allowed to use it?</value>
+  </data>
+  <data name="AutoSelectFailed" xml:space="preserve">
+    <value>Auto selection failed. Item code %GoodsCd% has multiple %StorageType% values. Please select one</value>
+  </data>
+  <data name="AvailableQty" xml:space="preserve">
+    <value>Available Quantity</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="BackToSearchPage" xml:space="preserve">
+    <value>Back to Search Page</value>
+  </data>
+  <data name="BadConnection" xml:space="preserve">
+    <value>Your network connection is unstable, please check and try again!</value>
+  </data>
+  <data name="BadConnectionSetting" xml:space="preserve">
+    <value>Your Connection is very Bad, please check and try again</value>
+  </data>
+  <data name="BarcodeQRUnknowScan" xml:space="preserve">
+    <value>The system cannot recognize the barcode correctly, please try again and try to scan the image as clearly as possible!</value>
+  </data>
+  <data name="BarcodeUnknow2Scan" xml:space="preserve">
+    <value>The system cannot recognize this barcode, please try again, if the error persists please contact Admin!</value>
+  </data>
+  <data name="BarcodeUnknowScan" xml:space="preserve">
+    <value>The system cannot recognize the barcode correctly, please try again and try to scan the image as clearly as possible!</value>
+  </data>
+  <data name="BasePoint" xml:space="preserve">
+    <value>Branch:</value>
+  </data>
+  <data name="Branch" xml:space="preserve">
+    <value>Branch</value>
+  </data>
+  <data name="BuildingTest" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="Support" xml:space="preserve">
+    <value>Support</value>
+  </data>
+  <data name="ButtonTextLogin" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="PrivacyPolicy" xml:space="preserve">
+    <value>Privacy Policy</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CancelAlert" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CancelButtonText" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Cancelled" xml:space="preserve">
+    <value>Cancelled</value>
+  </data>
+  <data name="CancelSlip" xml:space="preserve">
+    <value>Cancel Slip</value>
+  </data>
+  <data name="CanEmpty" xml:space="preserve">
+    <value>can be blank</value>
+  </data>
+  <data name="CannotBeEmptyContentScan" xml:space="preserve">
+    <value>cannot be empty</value>
+  </data>
+  <data name="CannotConnect" xml:space="preserve">
+    <value>Cannot connect</value>
+  </data>
+  <data name="CannotConnectSMBServer" xml:space="preserve">
+    <value>Unable to connect to the internal SMB server to check for a new version. Please ignore this message if you do not need to update to the latest APK version</value>
+  </data>
+  <data name="CannotConnectUpdateServerAPK" xml:space="preserve">
+    <value>Unable to connect to update server</value>
+  </data>
+  <data name="CannotGetData" xml:space="preserve">
+    <value>Cannot get data</value>
+  </data>
+  <data name="CannotGetNewIndexNo" xml:space="preserve">
+    <value>Cannot retrieve a new IndexNo for SQL</value>
+  </data>
+  <data name="CannotGetNewStockSlip" xml:space="preserve">
+    <value>Cannot get new Stock Slip No!</value>
+  </data>
+  <data name="CannotReadWrite" xml:space="preserve">
+    <value>Cannot read &amp; Write Data. You need to grant the app permission</value>
+  </data>
+  <data name="CannotRefreshData" xml:space="preserve">
+    <value>Something went wrong, the data being viewed could not be refreshed, please try searching again!</value>
+  </data>
+  <data name="CannotRetrieveHHID" xml:space="preserve">
+    <value>Cannot retrieve HHId from HistoryH after insertion</value>
+  </data>
+  <data name="CannotSave" xml:space="preserve">
+    <value>Cannot Save</value>
+  </data>
+  <data name="CannotScanContentAlertScan" xml:space="preserve">
+    <value>An error occurred, please try again.
+Try to keep the Camera still, the scanned image must be clear.. If it still does not work, please contact Admin!</value>
+  </data>
+  <data name="CannotUseCamera" xml:space="preserve">
+    <value>Cannot use camera. You need to grant the app permission to use Camera!</value>
+  </data>
+  <data name="CannotValidateDownloadedFileAPK" xml:space="preserve">
+    <value>Cannot validate downloaded file. Try again</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Goods Type</value>
+  </data>
+  <data name="cb_stock_type_10" xml:space="preserve">
+    <value>GOODS</value>
+  </data>
+  <data name="cb_stock_type_11" xml:space="preserve">
+    <value>FP</value>
+  </data>
+  <data name="cb_stock_type_21" xml:space="preserve">
+    <value>HALF FP</value>
+  </data>
+  <data name="cb_stock_type_30" xml:space="preserve">
+    <value>MATERIAL</value>
+  </data>
+  <data name="cb_stock_type_31" xml:space="preserve">
+    <value>D-MATERIAL</value>
+  </data>
+  <data name="cb_stock_type_32" xml:space="preserve">
+    <value>ID-MATERIAL</value>
+  </data>
+  <data name="cb_stock_type_33" xml:space="preserve">
+    <value>PRESS-DM</value>
+  </data>
+  <data name="cb_stock_type_34" xml:space="preserve">
+    <value>PRESS-IDM</value>
+  </data>
+  <data name="cb_stock_type_41" xml:space="preserve">
+    <value>CONSUMABLES</value>
+  </data>
+  <data name="cb_stock_type_42" xml:space="preserve">
+    <value>PRESS-CONSUM</value>
+  </data>
+  <data name="cb_stock_type_51" xml:space="preserve">
+    <value>DEPOSITED FP</value>
+  </data>
+  <data name="cb_stock_type_52" xml:space="preserve">
+    <value>DEPOSITED HALF FP</value>
+  </data>
+  <data name="cb_stock_type_53" xml:space="preserve">
+    <value>DEPOSITED MATERIAL</value>
+  </data>
+  <data name="cb_stock_type_61" xml:space="preserve">
+    <value>KEEPING</value>
+  </data>
+  <data name="cb_stock_type_62" xml:space="preserve">
+    <value>KEEPING FP</value>
+  </data>
+  <data name="cb_stock_type_80" xml:space="preserve">
+    <value>R&amp;D FEES</value>
+  </data>
+  <data name="cb_stock_type_91" xml:space="preserve">
+    <value>DISPOSED</value>
+  </data>
+  <data name="ChangeAccount" xml:space="preserve">
+    <value>Change Account</value>
+  </data>
+  <data name="ChangeAvatar" xml:space="preserve">
+    <value>Change Avatar</value>
+  </data>
+  <data name="Changelog" xml:space="preserve">
+    <value>Changelog</value>
+  </data>
+  <data name="ChangelogContent" xml:space="preserve">
+    <value>Tap Version x.x.x.x or developer name to see what's new in this version, as shown below</value>
+  </data>
+  <data name="CheckConnectionButtonSetting" xml:space="preserve">
+    <value>Check connection</value>
+  </data>
+  <data name="CheckFinishedProcessContentPage" xml:space="preserve">
+    <value>Do you want to check Finish Process now?</value>
+  </data>
+  <data name="CheckMissingProcessCheckPage" xml:space="preserve">
+    <value>Check Missing Process</value>
+  </data>
+  <data name="CheckProcessTitleCheckPage" xml:space="preserve">
+    <value>Check Process</value>
+  </data>
+  <data name="CheckProcStep" xml:space="preserve">
+    <value>Check Missing Process</value>
+  </data>
+  <data name="CheckStopped" xml:space="preserve">
+    <value>The check has stopped!</value>
+  </data>
+  <data name="CheckTabItem" xml:space="preserve">
+    <value>Check</value>
+  </data>
+  <data name="ChooseYourBestPhoto" xml:space="preserve">
+    <value>Choose your best photo</value>
+  </data>
+  <data name="ClearScan" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="CloseAlert" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="CloudSyncFailed" xml:space="preserve">
+    <value>Cloud data sync failed</value>
+  </data>
+  <data name="ComingSoon" xml:space="preserve">
+    <value>Coming soon...</value>
+  </data>
+  <data name="ComingSoonDevelopment" xml:space="preserve">
+    <value>Coming soon. This feature is currently under development</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>Completed</value>
+  </data>
+  <data name="ConfirmAllSelected" xml:space="preserve">
+    <value>Please verify all selected goods codes</value>
+  </data>
+  <data name="ConnectingStatus" xml:space="preserve">
+    <value>Connecting...</value>
+  </data>
+  <data name="ConnectionErrorContentLogin" xml:space="preserve">
+    <value>Please check your connection and try again, or contact Liem-sama</value>
+  </data>
+  <data name="ConnectionErrorLogin" xml:space="preserve">
+    <value>Connection Error!</value>
+  </data>
+  <data name="ConnectionOKSetting" xml:space="preserve">
+    <value>Connection OK!</value>
+  </data>
+  <data name="ContactSupportAccount" xml:space="preserve">
+    <value>Please contact your department manager to get the login information. If that does not work, please contact Liem-Sama.</value>
+  </data>
+  <data name="ContactSupportUse" xml:space="preserve">
+    <value>Please contact your department manager. If that does not work, please contact Liem-Sama.</value>
+  </data>
+  <data name="ContentChangeLanguageAlertLogin" xml:space="preserve">
+    <value>The application may need to be restarted to complete the language change</value>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>Continue</value>
+  </data>
+  <data name="Copied" xml:space="preserve">
+    <value>Copied</value>
+  </data>
+  <data name="CreateDate" xml:space="preserve">
+    <value>Create date</value>
+  </data>
+  <data name="CSV" xml:space="preserve">
+    <value>CSV</value>
+  </data>
+  <data name="CsvFile" xml:space="preserve">
+    <value>CSV File</value>
+  </data>
+  <data name="CultureLabel" xml:space="preserve">
+    <value>Culture</value>
+  </data>
+  <data name="CurrentStock" xml:space="preserve">
+    <value>Source</value>
+  </data>
+  <data name="CurrentStockData" xml:space="preserve">
+    <value>Current stock data</value>
+  </data>
+  <data name="DatabaseConnectionSetting" xml:space="preserve">
+    <value>Database Connection</value>
+  </data>
+  <data name="DatabaseNameSettingPlaceHolder" xml:space="preserve">
+    <value>Database Name</value>
+  </data>
+  <data name="DataSaved" xml:space="preserve">
+    <value>Saved successfully</value>
+  </data>
+  <data name="Day" xml:space="preserve">
+    <value>Day</value>
+  </data>
+  <data name="DelayErrorGetMametan" xml:space="preserve">
+    <value>Unable to retrieve Mametan, there was some delay error. Please delete and try scanning again.</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="DeleteAlert" xml:space="preserve">
+    <value>Deleting...?</value>
+  </data>
+  <data name="DeleteAllExcludeProcesses" xml:space="preserve">
+    <value>Are you sure you want to delete all excluded processes?</value>
+  </data>
+  <data name="DeleteDataPermanently" xml:space="preserve">
+    <value>Delete data permanently, are you sure you want to delete</value>
+  </data>
+  <data name="DeletedSuccessfully" xml:space="preserve">
+    <value>Deleted successfully</value>
+  </data>
+  <data name="DeleteErrorAlert" xml:space="preserve">
+    <value>Cannot Delete</value>
+  </data>
+  <data name="DeliveredQty" xml:space="preserve">
+    <value>DeliveredQty</value>
+  </data>
+  <data name="DescriptionFolderPath" xml:space="preserve">
+    <value>Description Folder Path</value>
+  </data>
+  <data name="Deselect" xml:space="preserve">
+    <value>Deselect</value>
+  </data>
+  <data name="DeveloperLogin" xml:space="preserve">
+    <value>Developed by TENTAC (HO CHI MINH)</value>
+  </data>
+  <data name="DisplayConnectionInfo" xml:space="preserve">
+    <value>Display server connection information</value>
+  </data>
+  <data name="Disposal" xml:space="preserve">
+    <value>Disposal Inst.</value>
+  </data>
+  <data name="DisposalProcess" xml:space="preserve">
+    <value>Disposal Completed</value>
+  </data>
+  <data name="DisposalSkipped" xml:space="preserve">
+    <value>This disposal instruction has already been processed and will be ignored</value>
+  </data>
+  <data name="DoesNotExist" xml:space="preserve">
+    <value>Does Not Exist</value>
+  </data>
+  <data name="Dosmetic" xml:space="preserve">
+    <value>Dosmetic</value>
+  </data>
+  <data name="DownloadCompleted" xml:space="preserve">
+    <value>Download complete. Install now</value>
+  </data>
+  <data name="Downloading" xml:space="preserve">
+    <value>Downloading..</value>
+  </data>
+  <data name="DownloadSuccess" xml:space="preserve">
+    <value>Downloaded successfully</value>
+  </data>
+  <data name="DownloadTemplate" xml:space="preserve">
+    <value>Template</value>
+  </data>
+  <data name="DownloadVersionError" xml:space="preserve">
+    <value>Download error. Please restart and try again. Contact Admin if the issue persists.</value>
+  </data>
+  <data name="DoYouWantCameraAccess" xml:space="preserve">
+    <value>Do you want to grant Camera Access?</value>
+  </data>
+  <data name="DoYouWantInstall" xml:space="preserve">
+    <value>Install now</value>
+  </data>
+  <data name="DoYouWantReadWriteData" xml:space="preserve">
+    <value>App needs read &amp; write permission. Grant now</value>
+  </data>
+  <data name="DoYouWantToChangeAvatar" xml:space="preserve">
+    <value>Do you want to change your Avatar?</value>
+  </data>
+  <data name="DoYouWantToChangeStorageType" xml:space="preserve">
+    <value>Do you want to register this storage type</value>
+  </data>
+  <data name="DoYouWantToContinueShipment" xml:space="preserve">
+    <value>Do you want to continue the shipment</value>
+  </data>
+  <data name="DoYouWantToFinishScan" xml:space="preserve">
+    <value>Do you want to Finish?</value>
+  </data>
+  <data name="DoYouWantToSaveConnectionSetting" xml:space="preserve">
+    <value>Do you want to save connection</value>
+  </data>
+  <data name="DoYouWantToUpdate" xml:space="preserve">
+    <value>Do you want to update</value>
+  </data>
+  <data name="DraftProcurementList" xml:space="preserve">
+    <value>Draft Procurement List</value>
+  </data>
+  <data name="DuplicateNotAllow" xml:space="preserve">
+    <value>Duplicates are not allowed. Please check again.</value>
+  </data>
+  <data name="EasyToUseSlideShow" xml:space="preserve">
+    <value>Easy to use</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="EditedBy" xml:space="preserve">
+    <value>Edited by</value>
+  </data>
+  <data name="EditedFlagResult" xml:space="preserve">
+    <value>Edited Flag</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="EMailLabel" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="EmptyMametan" xml:space="preserve">
+    <value>指示を空白のままにすることはできません。</value>
+  </data>
+  <data name="EndDateValidContentSearch" xml:space="preserve">
+    <value>End Date Must Greather Start Date!</value>
+  </data>
+  <data name="EnglishLanguage" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="EntryDate" xml:space="preserve">
+    <value>Entry Date</value>
+  </data>
+  <data name="EntryTime" xml:space="preserve">
+    <value>Entry Time</value>
+  </data>
+  <data name="ErrorAlert" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="ErrorCode" xml:space="preserve">
+    <value>Error code</value>
+  </data>
+  <data name="ErrorConnection" xml:space="preserve">
+    <value>Connection Error</value>
+  </data>
+  <data name="ErrorEditContentSave" xml:space="preserve">
+    <value>An error occurred while saving, please try again, if the error persists please take a screenshot and send it to Liem-sama.</value>
+  </data>
+  <data name="ErrorGetListGoodsCD" xml:space="preserve">
+    <value>Error when get ListGoodsCD, Please try again!</value>
+  </data>
+  <data name="ErrorInsertEditDelete" xml:space="preserve">
+    <value>Error Insert/Edit/Delete</value>
+  </data>
+  <data name="ErrorNumberAlert" xml:space="preserve">
+    <value>Error Code</value>
+  </data>
+  <data name="ErrorSelectImage" xml:space="preserve">
+    <value>There was an error while selecting the photo, please contact Admin Liem-sama!</value>
+  </data>
+  <data name="ErrorUpdateTable" xml:space="preserve">
+    <value>Cannot update data</value>
+  </data>
+  <data name="EXCEL" xml:space="preserve">
+    <value>EXCEL</value>
+  </data>
+  <data name="ExcelFile" xml:space="preserve">
+    <value>Excel File</value>
+  </data>
+  <data name="ExcelOutput" xml:space="preserve">
+    <value>Excel Output</value>
+  </data>
+  <data name="ExcelOutputPath" xml:space="preserve">
+    <value>Excel Output Path</value>
+  </data>
+  <data name="ExcelOutputSuccess" xml:space="preserve">
+    <value>Excel Output Success</value>
+  </data>
+  <data name="ExcelSaveError" xml:space="preserve">
+    <value>Something went wrong. Unable to save the Excel file</value>
+  </data>
+  <data name="Exist" xml:space="preserve">
+    <value>Exist</value>
+  </data>
+  <data name="ExitLabel" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="ExpectedArrivalDate" xml:space="preserve">
+    <value>ExpectedArrivalDate</value>
+  </data>
+  <data name="ExpirationDate" xml:space="preserve">
+    <value>Exp. Date</value>
+  </data>
+  <data name="ExportExcel" xml:space="preserve">
+    <value>Output</value>
+  </data>
+  <data name="ExportFile" xml:space="preserve">
+    <value>Output File</value>
+  </data>
+  <data name="ExportFirstCSV" xml:space="preserve">
+    <value>CSV export required first, then can be shared.</value>
+  </data>
+  <data name="ExportSuccessfully" xml:space="preserve">
+    <value>Export Successfully</value>
+  </data>
+  <data name="FactoryNote" xml:space="preserve">
+    <value>Factory Note</value>
+  </data>
+  <data name="FailedContentLogin" xml:space="preserve">
+    <value>Failed, Please check your fingerprint and try again</value>
+  </data>
+  <data name="FailedLogin" xml:space="preserve">
+    <value>Login Failed</value>
+  </data>
+  <data name="FAQ" xml:space="preserve">
+    <value>FAQ</value>
+  </data>
+  <data name="FAQFull" xml:space="preserve">
+    <value>Frequently Asked Questions</value>
+  </data>
+  <data name="FileLabel" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="FileSaved" xml:space="preserve">
+    <value>File already saved in memory</value>
+  </data>
+  <data name="FilterStockType" xml:space="preserve">
+    <value>Filter Stock Type</value>
+  </data>
+  <data name="Find" xml:space="preserve">
+    <value>Find</value>
+  </data>
+  <data name="FingerprintLogin" xml:space="preserve">
+    <value>Login Fingerprint</value>
+  </data>
+  <data name="Finish" xml:space="preserve">
+    <value>Finish</value>
+  </data>
+  <data name="FinishDate" xml:space="preserve">
+    <value>Finish Date</value>
+  </data>
+  <data name="FinishDateValidContentSearch" xml:space="preserve">
+    <value>Please check Finish Date and try again!</value>
+  </data>
+  <data name="FinishedTitleProcessPage" xml:space="preserve">
+    <value>Finished</value>
+  </data>
+  <data name="FinishSuccessfully" xml:space="preserve">
+    <value>Finish was successful, you can use the Back button to return to the search page.</value>
+  </data>
+  <data name="FinishWithoutMachineIDScan" xml:space="preserve">
+    <value>Are you sure to "Finish" without the MachineID?</value>
+  </data>
+  <data name="FontPathNotFound" xml:space="preserve">
+    <value>Font Path Not Found</value>
+  </data>
+  <data name="FRDate" xml:space="preserve">
+    <value>FirstRevDate</value>
+  </data>
+  <data name="FreeSpace" xml:space="preserve">
+    <value>Free Space</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="FSDate" xml:space="preserve">
+    <value>FirstShipDate</value>
+  </data>
+  <data name="GetWMSAPI" xml:space="preserve">
+    <value>Get WMS API</value>
+  </data>
+  <data name="GoodsCD" xml:space="preserve">
+    <value>GoodsCD</value>
+  </data>
+  <data name="GoodsCDChange" xml:space="preserve">
+    <value>Goods CD Change</value>
+  </data>
+  <data name="GoodsCdStockTypeAlreadyConfirmed" xml:space="preserve">
+    <value>This item has already been verified</value>
+  </data>
+  <data name="GoodsDetails" xml:space="preserve">
+    <value>GoodsDetails</value>
+  </data>
+  <data name="GoodsName" xml:space="preserve">
+    <value>Goods Name</value>
+  </data>
+  <data name="GoodsType" xml:space="preserve">
+    <value>Goods type</value>
+  </data>
+  <data name="GroupCD" xml:space="preserve">
+    <value>GroupCD</value>
+  </data>
+  <data name="GroupGoods" xml:space="preserve">
+    <value>Group</value>
+  </data>
+  <data name="GroupName" xml:space="preserve">
+    <value>Group Name</value>
+  </data>
+  <data name="GrpCdLabel" xml:space="preserve">
+    <value>Group Code</value>
+  </data>
+  <data name="GrpStockType" xml:space="preserve">
+    <value>GrpStockType</value>
+  </data>
+  <data name="HasBeenOutput" xml:space="preserve">
+    <value>has been output</value>
+  </data>
+  <data name="HasNotBeenRegister" xml:space="preserve">
+    <value>This CD product number has not been registered, please notify the sales staff to register</value>
+  </data>
+  <data name="HasNotBeenRegisterVal" xml:space="preserve">
+    <value>This CD product number has not been registered, please notify the sales staff to register. GoodsCd: %GoodsCdVal%, Line: %LineVal%</value>
+  </data>
+  <data name="Hide" xml:space="preserve">
+    <value>Hide</value>
+  </data>
+  <data name="HideAll" xml:space="preserve">
+    <value>2: Hidden</value>
+  </data>
+  <data name="Hinmei" xml:space="preserve">
+    <value>Hinmei</value>
+  </data>
+  <data name="HintDownloadOffice" xml:space="preserve">
+    <value>You can to download Microsoft Office 365 or Excel in GooglePlay or AppStore to open this file.</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>History</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="HourValidContentSearch" xml:space="preserve">
+    <value>Please check Hours from 00 to 23, Minute from 00 to 59 and try again!</value>
+  </data>
+  <data name="HowUse" xml:space="preserve">
+    <value>How to use?</value>
+  </data>
+  <data name="ImageLimited" xml:space="preserve">
+    <value>Only images with a maximum size of 5MB are allowed to be stored. Please edit the image or choose a different one</value>
+  </data>
+  <data name="ImportantNotes" xml:space="preserve">
+    <value>Important Notes</value>
+  </data>
+  <data name="ImportExcel" xml:space="preserve">
+    <value>Import Excel</value>
+  </data>
+  <data name="In-Out" xml:space="preserve">
+    <value>In-Out</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="InformationAlert" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="InformationSecurity" xml:space="preserve">
+    <value>Information Security</value>
+  </data>
+  <data name="InOutDate" xml:space="preserve">
+    <value>In Out</value>
+  </data>
+  <data name="InOutReason" xml:space="preserve">
+    <value>Inout Reason</value>
+  </data>
+  <data name="InOutStockType" xml:space="preserve">
+    <value>In Out Stock Type</value>
+  </data>
+  <data name="InOut_Ku_2_1_1" xml:space="preserve">
+    <value>Input from outside bought items</value>
+  </data>
+  <data name="InOut_Ku_2_1_2" xml:space="preserve">
+    <value>Input goods made from production</value>
+  </data>
+  <data name="InOut_Ku_2_1_3" xml:space="preserve">
+    <value>Input for moving stock purpose</value>
+  </data>
+  <data name="InOut_Ku_2_1_4" xml:space="preserve">
+    <value>Inventory adjustments</value>
+  </data>
+  <data name="InOut_Ku_2_2_1" xml:space="preserve">
+    <value>Output goods from the stock for sale</value>
+  </data>
+  <data name="InOut_Ku_2_2_2" xml:space="preserve">
+    <value>Output goods made from production</value>
+  </data>
+  <data name="InOut_Ku_2_2_3" xml:space="preserve">
+    <value>Output for moving stock purpose</value>
+  </data>
+  <data name="InOut_Ku_2_2_4" xml:space="preserve">
+    <value>Sample shipment or inventory adjustments</value>
+  </data>
+  <data name="Input" xml:space="preserve">
+    <value>Input</value>
+  </data>
+  <data name="inputArea" xml:space="preserve">
+    <value>&gt;</value>
+  </data>
+  <data name="InputGoodsCDPlaceHolder" xml:space="preserve">
+    <value>Input Goods CD</value>
+  </data>
+  <data name="InputGoodsNamePlaceHolder" xml:space="preserve">
+    <value>Input Goods Name</value>
+  </data>
+  <data name="InputInformationScan" xml:space="preserve">
+    <value>Input Information</value>
+  </data>
+  <data name="InputLineNumberAt" xml:space="preserve">
+    <value>Input line number</value>
+  </data>
+  <data name="InputLineNumberAtVal" xml:space="preserve">
+    <value>Input line number for %LineVal%</value>
+  </data>
+  <data name="InputMachineIDPlaceHolder" xml:space="preserve">
+    <value>Input Machine ID</value>
+  </data>
+  <data name="InputMametanPlaceHolder" xml:space="preserve">
+    <value>Input Mametan No.</value>
+  </data>
+  <data name="InputPoNoPlaceHolder" xml:space="preserve">
+    <value>Input PO No</value>
+  </data>
+  <data name="InputQTYZeroScan" xml:space="preserve">
+    <value>You entered QTY = 0, correct?</value>
+  </data>
+  <data name="InputYourUserIDPlaceHolderLogin" xml:space="preserve">
+    <value>Input your user ID</value>
+  </data>
+  <data name="InputYourUserPasswordHolderLogin" xml:space="preserve">
+    <value>Input your Password</value>
+  </data>
+  <data name="Insert" xml:space="preserve">
+    <value>Insert</value>
+  </data>
+  <data name="InStock" xml:space="preserve">
+    <value>In stock only</value>
+  </data>
+  <data name="InStockType" xml:space="preserve">
+    <value>In Stock Type</value>
+  </data>
+  <data name="InstrIssueVal" xml:space="preserve">
+    <value>InstrNo: %InstrNo%, GoodsCd: %GoodsCd%, Line: %Line%. This instruction does not exist. Please contact the Planning Department to issue</value>
+  </data>
+  <data name="InstrNo" xml:space="preserve">
+    <value>Inst No</value>
+  </data>
+  <data name="InstrNoPoNoStatus" xml:space="preserve">
+    <value>InstructionNo and PONo Status</value>
+  </data>
+  <data name="InstrNoPoNoStatusContent" xml:space="preserve">
+    <value>If the background is orange, shipped; otherwise, not shipped</value>
+  </data>
+  <data name="InstructionNo" xml:space="preserve">
+    <value>Instruction No</value>
+  </data>
+  <data name="InstructionShipped" xml:space="preserve">
+    <value>This Instruction has been output. Do you want to continue?</value>
+  </data>
+  <data name="International" xml:space="preserve">
+    <value>International</value>
+  </data>
+  <data name="InvalidContentScan" xml:space="preserve">
+    <value>invalid</value>
+  </data>
+  <data name="InvalidDataScan" xml:space="preserve">
+    <value>Invalid Data</value>
+  </data>
+  <data name="InvalidDate" xml:space="preserve">
+    <value>Invalid date</value>
+  </data>
+  <data name="InvalidSelectStockType" xml:space="preserve">
+    <value>Did you forget to select something? Please check!</value>
+  </data>
+  <data name="InventoryAdj" xml:space="preserve">
+    <value>Inventory Adj</value>
+  </data>
+  <data name="InventoryAlert" xml:space="preserve">
+    <value>Inventory Alert</value>
+  </data>
+  <data name="IppanLabel" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="IsEmpty" xml:space="preserve">
+    <value>is empty</value>
+  </data>
+  <data name="IsRequired" xml:space="preserve">
+    <value>is required</value>
+  </data>
+  <data name="IssueDate" xml:space="preserve">
+    <value>Issue Date</value>
+  </data>
+  <data name="Issuer" xml:space="preserve">
+    <value>Issuer</value>
+  </data>
+  <data name="JapaneseLanguage" xml:space="preserve">
+    <value>Japanese</value>
+  </data>
+  <data name="KeepLocation" xml:space="preserve">
+    <value>KeepLocation</value>
+  </data>
+  <data name="Key_A100_1" xml:space="preserve">
+    <value>First release</value>
+  </data>
+  <data name="Key_A103_1" xml:space="preserve">
+    <value>Added Outbox Sync Logic on Stock Inbound/Outbound</value>
+  </data>
+  <data name="Key_A104_1" xml:space="preserve">
+    <value>Added Outbox Sync Logic for StockTransfer and fixed an issue where Mametan search results lost rows due to GroupBy processing in NoFilterMode.</value>
+  </data>
+  <data name="Key_A108_1" xml:space="preserve">
+    <value>Added the Arrival &amp; Shipment import feature, improved RadioButton state display, and made various other mobile UI enhancements.</value>
+  </data>
+  <data name="Key_A108_2" xml:space="preserve">
+    <value>Added Seuic and Urovo SDK libraries to support hardware scan keys for QR codes and barcodes. Also added a slider setting to adjust scan sound volume.</value>
+  </data>
+  <data name="Key_A108_3" xml:space="preserve">
+    <value>Added automatic version checking and support for updating to the latest version.</value>
+  </data>
+  <data name="Key_A108_4" xml:space="preserve">
+    <value>Enhanced the ImportTemplate feature by removing the requirement for LineNo input. Instead, PO, InstrNo, GoodsCd, and Total Quantity are now required to retrieve the key.</value>
+  </data>
+  <data name="Key_Added" xml:space="preserve">
+    <value>Added</value>
+  </data>
+  <data name="Key_C108_1" xml:space="preserve">
+    <value>Migrated from NPOI to the latest Microsoft OpenXML library to avoid licensing issues associated with NPOI 2.8.0.</value>
+  </data>
+  <data name="Key_Changed" xml:space="preserve">
+    <value>Changed</value>
+  </data>
+  <data name="Key_U101_1" xml:space="preserve">
+    <value>Submit to Headquarters (Multiple Inventory Inbound/Outbound Processing Available)</value>
+  </data>
+  <data name="Key_U102_1" xml:space="preserve">
+    <value>Expiration Date Correction (Inbound Screen Only)</value>
+  </data>
+  <data name="Key_U105_1" xml:space="preserve">
+    <value>Fixed the Outbox Sync logic, corrected the inventory inbound/outbound processing logic in NoFilterMode, and resolved an issue where stock was not deducted for the second and subsequent outbound documents during multiple outbound transactions.</value>
+  </data>
+  <data name="Key_U106_1" xml:space="preserve">
+    <value>Improved the QR Scan screen by consolidating records with the same InstrNo, PoNo, GoodsCd, and StockType into a single row.</value>
+  </data>
+  <data name="Key_U107_1" xml:space="preserve">
+    <value>Improved the mobile UI, fixed several inventory inbound/outbound processing issues, and resolved an issue when viewing item history.</value>
+  </data>
+  <data name="Key_U108_1" xml:space="preserve">
+    <value>Fixed an issue preventing file read/write operations on Android 13, 14, 15, and 16, and added support for the MANAGE_EXTERNAL_STORAGE permission.</value>
+  </data>
+  <data name="Key_Updated" xml:space="preserve">
+    <value>Updated</value>
+  </data>
+  <data name="KyotenCd" xml:space="preserve">
+    <value>KyotenCd</value>
+  </data>
+  <data name="KyotenCdLabel" xml:space="preserve">
+    <value>Branch Code</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="Languages" xml:space="preserve">
+    <value>Languages</value>
+  </data>
+  <data name="LanguagesContent" xml:space="preserve">
+    <value>On the login screen, tap the language name or icon in the top right to choose another language. Default is English</value>
+  </data>
+  <data name="LastestVersion" xml:space="preserve">
+    <value>You are already using the latest version</value>
+  </data>
+  <data name="LeavingAppContent" xml:space="preserve">
+    <value>Are you sure you want to exit?</value>
+  </data>
+  <data name="LeavingAppTitle" xml:space="preserve">
+    <value>You are leaving the application!</value>
+  </data>
+  <data name="LessThan" xml:space="preserve">
+    <value>less than</value>
+  </data>
+  <data name="LessthanOneMonth" xml:space="preserve">
+    <value>Please adjust the date to be less than one month apart</value>
+  </data>
+  <data name="LessThanOrEqual" xml:space="preserve">
+    <value>must be less than or equal to</value>
+  </data>
+  <data name="LimitBigData" xml:space="preserve">
+    <value>Your search results have no data or the data is too large, please check your search time range again..</value>
+  </data>
+  <data name="LimitDateTimeSearch" xml:space="preserve">
+    <value>Only allow search within 1 month period, due to performance issues please redefine the period within the allowed limit!</value>
+  </data>
+  <data name="LimitStaffScan" xml:space="preserve">
+    <value>Only 9 employee codes can be entered, please check again!</value>
+  </data>
+  <data name="LineNo" xml:space="preserve">
+    <value>Line Number</value>
+  </data>
+  <data name="Loading" xml:space="preserve">
+    <value>Loading..</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="LoggedOutContentLogin" xml:space="preserve">
+    <value>You are logged out</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="LoginAgain" xml:space="preserve">
+    <value>Please log in again to apply the changes</value>
+  </data>
+  <data name="LoginLeft" xml:space="preserve">
+    <value>login left</value>
+  </data>
+  <data name="LoginsLeft" xml:space="preserve">
+    <value>logins left</value>
+  </data>
+  <data name="LogoutLabel" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="LowStock" xml:space="preserve">
+    <value>Low stock</value>
+  </data>
+  <data name="LRDate" xml:space="preserve">
+    <value>LastRevDate</value>
+  </data>
+  <data name="LSDate" xml:space="preserve">
+    <value>LastShipDate</value>
+  </data>
+  <data name="MachineID" xml:space="preserve">
+    <value>MachineID</value>
+  </data>
+  <data name="MachineIDScan" xml:space="preserve">
+    <value>MachineID not found, please enter MachineID!</value>
+  </data>
+  <data name="MachineName" xml:space="preserve">
+    <value>Machine</value>
+  </data>
+  <data name="Mametan" xml:space="preserve">
+    <value>Mametan</value>
+  </data>
+  <data name="MametanHasChanged" xml:space="preserve">
+    <value>Instruction No. has changed, data no longer matches searched Mametan!</value>
+  </data>
+  <data name="MametanNothingToCheck" xml:space="preserve">
+    <value>This Mametan is not lacking in progress!</value>
+  </data>
+  <data name="Memo" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="MessageDialogTextError" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="MessageDialogTextInfo" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="MessageDialogTextWarn" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="MessageMicrosoftTeamsContentLogin" xml:space="preserve">
+    <value>Hi! Liem-sama, I need your help! M_T-WMS (Mobile) Application Error!</value>
+  </data>
+  <data name="MetaDataCorrupted" xml:space="preserve">
+    <value>File metadata corrupted. Download again</value>
+  </data>
+  <data name="MinimumStock" xml:space="preserve">
+    <value>Safety Stock</value>
+  </data>
+  <data name="MinStockSuu" xml:space="preserve">
+    <value>Min QTY</value>
+  </data>
+  <data name="MissCameraPermission" xml:space="preserve">
+    <value>The app does not have Camera access, you cannot scan QR!</value>
+  </data>
+  <data name="MissingProcessTitleTable" xml:space="preserve">
+    <value>TableMissingProcess</value>
+  </data>
+  <data name="MissReadWritePermission" xml:space="preserve">
+    <value>The application does not have permission to read and write data, cannot use the Download folder</value>
+  </data>
+  <data name="ModifiedTime" xml:space="preserve">
+    <value>Modified Time</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>Month</value>
+  </data>
+  <data name="MultilingualSlideShow" xml:space="preserve">
+    <value>Multilingual support</value>
+  </data>
+  <data name="MWMS" xml:space="preserve">
+    <value>M-WMS</value>
+  </data>
+  <data name="NeedCheckRememberFingerprintContentLogin" xml:space="preserve">
+    <value>You need to check 'Remember Password' and log in successfully, then you can log in with fingerprint</value>
+  </data>
+  <data name="NeedToChooseLanguage" xml:space="preserve">
+    <value>Need to Choose Language!</value>
+  </data>
+  <data name="NetInventoryQty" xml:space="preserve">
+    <value>Scheduled Outbound Stock</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="NewInterfaceSlideShow" xml:space="preserve">
+    <value>New interface</value>
+  </data>
+  <data name="NewLevelSlideShow" xml:space="preserve">
+    <value>New Level</value>
+  </data>
+  <data name="NewTENTACSlideShow" xml:space="preserve">
+    <value>New TENTAC</value>
+  </data>
+  <data name="NewVersionContent" xml:space="preserve">
+    <value>New version is available, download and install now</value>
+  </data>
+  <data name="NewVersionTitle" xml:space="preserve">
+    <value>New version available</value>
+  </data>
+  <data name="NextTimeAlert" xml:space="preserve">
+    <value>Next Time</value>
+  </data>
+  <data name="NoAlert" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="NoChangesSaved" xml:space="preserve">
+    <value>No changes saved</value>
+  </data>
+  <data name="NoDataFound" xml:space="preserve">
+    <value>Data not found</value>
+  </data>
+  <data name="NoGoodsCD" xml:space="preserve">
+    <value>No Goods CD. Check or report to Admin!</value>
+  </data>
+  <data name="NoGoodsCdSelected" xml:space="preserve">
+    <value>No goods codes selected. Please check again</value>
+  </data>
+  <data name="NoItemToExport" xml:space="preserve">
+    <value>No Item to export!</value>
+  </data>
+  <data name="NoItemToPrint" xml:space="preserve">
+    <value>No Item to print!</value>
+  </data>
+  <data name="NoMametanPrint" xml:space="preserve">
+    <value>No Instruction No, print data is not compatible!</value>
+  </data>
+  <data name="NoNeedMachineIDScan" xml:space="preserve">
+    <value>No need to scan "MachineID".</value>
+  </data>
+  <data name="NoScan" xml:space="preserve">
+    <value>No scan</value>
+  </data>
+  <data name="NoSearchCriteriaFound" xml:space="preserve">
+    <value>No search criteria found!</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="NoteCanEmpty" xml:space="preserve">
+    <value>Note can be blank</value>
+  </data>
+  <data name="NotEnoughStock" xml:space="preserve">
+    <value>Not enough stock available, please check again</value>
+  </data>
+  <data name="NotFound" xml:space="preserve">
+    <value>Not found</value>
+  </data>
+  <data name="NotFoundAccountContentLogin" xml:space="preserve">
+    <value>Not found this Account</value>
+  </data>
+  <data name="NotFullyShipment" xml:space="preserve">
+    <value>Not Fully Shipment</value>
+  </data>
+  <data name="NotHaveMicrosoftTeamsContentLogin" xml:space="preserve">
+    <value>Your device does not have the Microsoft Teams app. You need to install the Microsoft Teams application, please contact your system administrator for installation support</value>
+  </data>
+  <data name="NothingExport" xml:space="preserve">
+    <value>Nothing to export, please check again!</value>
+  </data>
+  <data name="NothingFound" xml:space="preserve">
+    <value>Nothing found, please check your search criteria again!</value>
+  </data>
+  <data name="NothingToChange" xml:space="preserve">
+    <value>There is nothing to change</value>
+  </data>
+  <data name="NothingToExclude" xml:space="preserve">
+    <value>Nothing to exclude</value>
+  </data>
+  <data name="NothingToSave" xml:space="preserve">
+    <value>No changes have been saved, do you still want to continue</value>
+  </data>
+  <data name="NothingToVerify" xml:space="preserve">
+    <value>Nothing to verify. Please check again</value>
+  </data>
+  <data name="NotInTheSelected" xml:space="preserve">
+    <value>Not in the selected list</value>
+  </data>
+  <data name="NotMatchGoodsCd" xml:space="preserve">
+    <value>Incorrect item code for verification</value>
+  </data>
+  <data name="NotSupported" xml:space="preserve">
+    <value>Not supported</value>
+  </data>
+  <data name="NotSupportedAlertContentLogin" xml:space="preserve">
+    <value>Your device does not have Fingerprint! Please upgrade your phone</value>
+  </data>
+  <data name="NotSupportedAlertLogin" xml:space="preserve">
+    <value>Not Supported</value>
+  </data>
+  <data name="NotSupportedAlertScan" xml:space="preserve">
+    <value>Not Supported</value>
+  </data>
+  <data name="NotSupportedWarehouseTransfer" xml:space="preserve">
+    <value>Warehouse transfer is not supported yet. Please use the PC version</value>
+  </data>
+  <data name="NoUpdateVersionFoundSMB" xml:space="preserve">
+    <value>No new version found on the server</value>
+  </data>
+  <data name="NowCurrentPage" xml:space="preserve">
+    <value>You are already on this page</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="OnlyAllow1GoodsCdStorageType" xml:space="preserve">
+    <value>Only %Quantity% %GoodsCd% can be selected for the same %StorageType%. Please check again</value>
+  </data>
+  <data name="OnlyPrint" xml:space="preserve">
+    <value>Only Print</value>
+  </data>
+  <data name="Operators" xml:space="preserve">
+    <value>Operators</value>
+  </data>
+  <data name="OptDivisionIn" xml:space="preserve">
+    <value>Supplier/Dept.</value>
+  </data>
+  <data name="OptDivisionOut" xml:space="preserve">
+    <value>Production Dept</value>
+  </data>
+  <data name="Option" xml:space="preserve">
+    <value>Option</value>
+  </data>
+  <data name="OptionSetting" xml:space="preserve">
+    <value>Option Setting</value>
+  </data>
+  <data name="OptionsText" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="OptTime" xml:space="preserve">
+    <value>Opt. Time</value>
+  </data>
+  <data name="OrderCompleted" xml:space="preserve">
+    <value>Order completed</value>
+  </data>
+  <data name="OrderInFull" xml:space="preserve">
+    <value>PO (Purchase Order) in full</value>
+  </data>
+  <data name="OrderNumber" xml:space="preserve">
+    <value>Number</value>
+  </data>
+  <data name="OrderSuu" xml:space="preserve">
+    <value>Order Quantity</value>
+  </data>
+  <data name="OutOfStock" xml:space="preserve">
+    <value>Out of stock</value>
+  </data>
+  <data name="OutputCompleted" xml:space="preserve">
+    <value>Output Completed</value>
+  </data>
+  <data name="OutputPrint" xml:space="preserve">
+    <value>Print and export Excel</value>
+  </data>
+  <data name="OutStockType" xml:space="preserve">
+    <value>Out Stock Type</value>
+  </data>
+  <data name="OverLimit" xml:space="preserve">
+    <value>The actual quantity is more than the planned quantity. Do you want to continue?</value>
+  </data>
+  <data name="OverLimitNoQuestion" xml:space="preserve">
+    <value>The total actual quantity is more than the planned quantity</value>
+  </data>
+  <data name="OverShipment" xml:space="preserve">
+    <value>Over Shipment</value>
+  </data>
+  <data name="PageNotFound" xml:space="preserve">
+    <value>Page "%name%" not found</value>
+  </data>
+  <data name="Path" xml:space="preserve">
+    <value>Path</value>
+  </data>
+  <data name="Pause" xml:space="preserve">
+    <value>Pause</value>
+  </data>
+  <data name="PGSyncError" xml:space="preserve">
+    <value>PG Sync Error</value>
+  </data>
+  <data name="PhotoSaved" xml:space="preserve">
+    <value>Successfully saved your best photo</value>
+  </data>
+  <data name="PlannedArrivalDate" xml:space="preserve">
+    <value>PlannedArrivalDate(Range)</value>
+  </data>
+  <data name="PlannedArrivalQty" xml:space="preserve">
+    <value>Planned Arrival Qty</value>
+  </data>
+  <data name="PlannedShipmentQty" xml:space="preserve">
+    <value>Planned Shipment Qty</value>
+  </data>
+  <data name="PlanQTY" xml:space="preserve">
+    <value>Plan QTY</value>
+  </data>
+  <data name="PlanQTY2" xml:space="preserve">
+    <value>Plan</value>
+  </data>
+  <data name="PleaseChoose" xml:space="preserve">
+    <value>Please choose</value>
+  </data>
+  <data name="PleaseConfirm" xml:space="preserve">
+    <value>Please confirm</value>
+  </data>
+  <data name="PleaseEnterQuantityVal" xml:space="preserve">
+    <value>Please enter the quantity for the line %LineVal%</value>
+  </data>
+  <data name="PleaseInput" xml:space="preserve">
+    <value>Please input</value>
+  </data>
+  <data name="PleaseInputIDContentLogin" xml:space="preserve">
+    <value>Please input your User ID</value>
+  </data>
+  <data name="PleaseInputInstrNoAndGoodsCd" xml:space="preserve">
+    <value>Please input %instr_no% or %goods_cd%</value>
+  </data>
+  <data name="PleaseInputPasswordContentLogin" xml:space="preserve">
+    <value>Please input your Password!</value>
+  </data>
+  <data name="PleaseSelect" xml:space="preserve">
+    <value>Please select</value>
+  </data>
+  <data name="PleaseSelectAnotherDay" xml:space="preserve">
+    <value>Current day does not exist in current month. Please select another day</value>
+  </data>
+  <data name="PleaseTryAgain" xml:space="preserve">
+    <value>Something went wrong, try again, if still not working please contact Admin!</value>
+  </data>
+  <data name="PoGyou" xml:space="preserve">
+    <value>PO Gyou</value>
+  </data>
+  <data name="PONo" xml:space="preserve">
+    <value>PO No</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="PrinterList" xml:space="preserve">
+    <value>Printer List</value>
+  </data>
+  <data name="PrivacyPolicyNotifi" xml:space="preserve">
+    <value>This application is protected by the Information Security Policy. Comply with the information security policy. Do not share images of the application or anything related to TENTAC unless you are authorized to do so. Any information leakage regarding the application images through any means will be held legally responsible.</value>
+  </data>
+  <data name="ProcessDataTitleEdit" xml:space="preserve">
+    <value>Process Data Edit</value>
+  </data>
+  <data name="Processing" xml:space="preserve">
+    <value>Processing</value>
+  </data>
+  <data name="ProcessingPerformanceTableTitleCSV" xml:space="preserve">
+    <value>ProcessingTable</value>
+  </data>
+  <data name="ProcessManagementSearch" xml:space="preserve">
+    <value>Process Management</value>
+  </data>
+  <data name="ProcessNo" xml:space="preserve">
+    <value>Process No.</value>
+  </data>
+  <data name="ProcInst" xml:space="preserve">
+    <value>Proc Inst.</value>
+  </data>
+  <data name="ProcsessingProcInst" xml:space="preserve">
+    <value>Procsessing Proc Inst</value>
+  </data>
+  <data name="ProcStatus" xml:space="preserve">
+    <value>Proc. Status</value>
+  </data>
+  <data name="ProcurementStaff" xml:space="preserve">
+    <value>Procurement staff</value>
+  </data>
+  <data name="QR" xml:space="preserve">
+    <value>QR</value>
+  </data>
+  <data name="QRScan" xml:space="preserve">
+    <value>Scan</value>
+  </data>
+  <data name="QtyDisposalGreatherThanStock" xml:space="preserve">
+    <value>The quantity to be disposed cannot be greater than the quantity in stock.</value>
+  </data>
+  <data name="QtyDisposalLessThanZero" xml:space="preserve">
+    <value>Disposed quantity must be greater than 0</value>
+  </data>
+  <data name="QTYINST" xml:space="preserve">
+    <value>Inst. Qty</value>
+  </data>
+  <data name="QTYNG" xml:space="preserve">
+    <value>NG Qty</value>
+  </data>
+  <data name="QTYOK" xml:space="preserve">
+    <value>OK Qty</value>
+  </data>
+  <data name="QTYOnlyInteger" xml:space="preserve">
+    <value>Quantity must not include decimal numbers and should contain only integers!</value>
+  </data>
+  <data name="QtyRequiredAt" xml:space="preserve">
+    <value>Please enter the quantity</value>
+  </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="QuestionLogout" xml:space="preserve">
+    <value>Do you want to logout</value>
+  </data>
+  <data name="QueueNo" xml:space="preserve">
+    <value>Queue No</value>
+  </data>
+  <data name="Reason" xml:space="preserve">
+    <value>Reason</value>
+  </data>
+  <data name="Received" xml:space="preserve">
+    <value>Received</value>
+  </data>
+  <data name="ReceivedBy" xml:space="preserve">
+    <value>Received by</value>
+  </data>
+  <data name="RedLabelNew" xml:space="preserve">
+    <value>Image with "New" label on a red background</value>
+  </data>
+  <data name="RedLabelNewContent" xml:space="preserve">
+    <value>If the "New" label appears in an InstructionNo or PoNo row, that row is a newly created InstructionNo today.
+If the "New" label appears in a GoodsCD row, that row represents a GoodsCD shipped today.
+See the example image below for the InstructionNo and PoNo screen.</value>
+  </data>
+  <data name="RefreshData" xml:space="preserve">
+    <value>Displayed data will refresh</value>
+  </data>
+  <data name="Regist" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="RegistButtonText" xml:space="preserve">
+    <value>Regist</value>
+  </data>
+  <data name="RegisterInventoryMaster" xml:space="preserve">
+    <value>Please register in the Product Inventory Master</value>
+  </data>
+  <data name="RegisterStockLocation" xml:space="preserve">
+    <value>Please register the Stock location first!</value>
+  </data>
+  <data name="RemainingShipped" xml:space="preserve">
+    <value>Remaining</value>
+  </data>
+  <data name="RemainingStockQtyIsLessThanInstructionQty" xml:space="preserve">
+    <value>Remaining stock quantity is less than Instruction quantity</value>
+  </data>
+  <data name="Remarks" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="RemarksLabel" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="Remember" xml:space="preserve">
+    <value>Remember</value>
+  </data>
+  <data name="RememberYourSelf" xml:space="preserve">
+    <value>Remember that protecting the company's secrets also means protecting yourself.</value>
+  </data>
+  <data name="Repeat" xml:space="preserve">
+    <value>Repeat</value>
+  </data>
+  <data name="RequestCompleted" xml:space="preserve">
+    <value>Request completed</value>
+  </data>
+  <data name="RequestedBy" xml:space="preserve">
+    <value>Requested by</value>
+  </data>
+  <data name="RequestedDate" xml:space="preserve">
+    <value>Requested Date(Range)</value>
+  </data>
+  <data name="RequestReadWritePermission" xml:space="preserve">
+    <value>Request Read/Write Permission</value>
+  </data>
+  <data name="RequestReadWritePermissionSub" xml:space="preserve">
+    <value>Full read/write access is required to read and write Excel files</value>
+  </data>
+  <data name="RequestSubmitted" xml:space="preserve">
+    <value>Request submitted</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="Resume" xml:space="preserve">
+    <value>Resume</value>
+  </data>
+  <data name="Row" xml:space="preserve">
+    <value>row(s)</value>
+  </data>
+  <data name="RuntimeException" xml:space="preserve">
+    <value>Runtime Exception!</value>
+  </data>
+  <data name="SafetyRollback" xml:space="preserve">
+    <value>All previous progress is safely rolled back</value>
+  </data>
+  <data name="SafetySecuritySlideShow" xml:space="preserve">
+    <value>Safety Security</value>
+  </data>
+  <data name="SalesDescription" xml:space="preserve">
+    <value>(Sales use only)</value>
+  </data>
+  <data name="SalesNote" xml:space="preserve">
+    <value>Sales Note</value>
+  </data>
+  <data name="SalesTanCdLabel" xml:space="preserve">
+    <value>Sales Code</value>
+  </data>
+  <data name="SameDayEdit" xml:space="preserve">
+    <value>Changes can only be made on the same day.</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="SaveAlert" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="SaveAt" xml:space="preserve">
+    <value>Save at</value>
+  </data>
+  <data name="SaveRegist" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Saving" xml:space="preserve">
+    <value>Saving</value>
+  </data>
+  <data name="Scan" xml:space="preserve">
+    <value>Scan</value>
+  </data>
+  <data name="ScanVolume" xml:space="preserve">
+    <value>Scan Volume</value>
+  </data>
+  <data name="Scheduled" xml:space="preserve">
+    <value>Scheduled</value>
+  </data>
+  <data name="ScheduledRegistered" xml:space="preserve">
+    <value>Scheduled arrival date registered</value>
+  </data>
+  <data name="ScheduledShipDate" xml:space="preserve">
+    <value>Scheduled Ship Date</value>
+  </data>
+  <data name="ScreenNameFrm0001" xml:space="preserve">
+    <value>Stock In-Out History</value>
+  </data>
+  <data name="ScreenNameFrm0002" xml:space="preserve">
+    <value>Stock Process</value>
+  </data>
+  <data name="ScreenNameFrm0003" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="ScreenNameFrm0005" xml:space="preserve">
+    <value>Shipment Process</value>
+  </data>
+  <data name="InventoryManagement" xml:space="preserve">
+    <value>Inventory Management</value>
+  </data>
+  <data name="ScreenNameFrm0007" xml:space="preserve">
+    <value>In Out Stock Type</value>
+  </data>
+  <data name="ScreenNameFrm0008" xml:space="preserve">
+    <value>Stock Diagram</value>
+  </data>
+  <data name="ScreenNameFrm0009" xml:space="preserve">
+    <value>Disposal Instruction List</value>
+  </data>
+  <data name="ScreenNameFrm0010" xml:space="preserve">
+    <value>Disposal Instruction</value>
+  </data>
+  <data name="ScreenNameFrmGrps" xml:space="preserve">
+    <value>Group</value>
+  </data>
+  <data name="ScreenNameOCS0104" xml:space="preserve">
+    <value>Menu</value>
+  </data>
+  <data name="ScreenNameOCS0205" xml:space="preserve">
+    <value>Charge Code</value>
+  </data>
+  <data name="ScreenNameOCS0216" xml:space="preserve">
+    <value>User Setting</value>
+  </data>
+  <data name="SearchFilters" xml:space="preserve">
+    <value>Search Filters</value>
+  </data>
+  <data name="SearchPeriod" xml:space="preserve">
+    <value>Search Period</value>
+  </data>
+  <data name="SearchPeriodContent" xml:space="preserve">
+    <value>Avoid searching like this. One year is too much data—search for up to one month only.</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="SelectFile" xml:space="preserve">
+    <value>Select file</value>
+  </data>
+  <data name="SelectFolder" xml:space="preserve">
+    <value>Select Folder</value>
+  </data>
+  <data name="SelectGrps" xml:space="preserve">
+    <value>Select Group</value>
+  </data>
+  <data name="SelectLanguage" xml:space="preserve">
+    <value>Select Language</value>
+  </data>
+  <data name="SelectLocation" xml:space="preserve">
+    <value>Select Location</value>
+  </data>
+  <data name="SelectMultipleFiles" xml:space="preserve">
+    <value>Select multiple files</value>
+  </data>
+  <data name="SelectMultipleFolders" xml:space="preserve">
+    <value>Select multiple folders</value>
+  </data>
+  <data name="SelectProcessesToExclude" xml:space="preserve">
+    <value>Select the processes to exclude</value>
+  </data>
+  <data name="SelectProcessPickerSearch" xml:space="preserve">
+    <value>Select Process</value>
+  </data>
+  <data name="SelectReason" xml:space="preserve">
+    <value>Select Reason</value>
+  </data>
+  <data name="SelectStockType" xml:space="preserve">
+    <value>Select stock type</value>
+  </data>
+  <data name="SelectTitleLanguages" xml:space="preserve">
+    <value>Select your language</value>
+  </data>
+  <data name="SelectYourBasepointPickerSetting" xml:space="preserve">
+    <value>Select your branch</value>
+  </data>
+  <data name="SendFileToAppChat" xml:space="preserve">
+    <value>Send file to your App Chat Messenger?</value>
+  </data>
+  <data name="SendZipOrCSV" xml:space="preserve">
+    <value>Do you want to send ZIP or CSV?</value>
+  </data>
+  <data name="ServerDatabaseSetting" xml:space="preserve">
+    <value>Database</value>
+  </data>
+  <data name="ServerNameSetting" xml:space="preserve">
+    <value>Server</value>
+  </data>
+  <data name="ServerPasswordSetting" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="ServerUserSetting" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="Setting" xml:space="preserve">
+    <value>Setting</value>
+  </data>
+  <data name="ShareFile" xml:space="preserve">
+    <value>Share file to</value>
+  </data>
+  <data name="ShelfNo" xml:space="preserve">
+    <value>Shelf No</value>
+  </data>
+  <data name="Shipment" xml:space="preserve">
+    <value>Shipment</value>
+  </data>
+  <data name="ShipmentDate" xml:space="preserve">
+    <value>Shipment Date</value>
+  </data>
+  <data name="ShipmentProcess" xml:space="preserve">
+    <value>Shipment Process</value>
+  </data>
+  <data name="ShipmentQty" xml:space="preserve">
+    <value>Shipment Qty</value>
+  </data>
+  <data name="ShipmentSlip" xml:space="preserve">
+    <value>Shipment Slip</value>
+  </data>
+  <data name="Shipped" xml:space="preserve">
+    <value>Shipped</value>
+  </data>
+  <data name="ShippedMoreThanPlanned" xml:space="preserve">
+    <value>Shipped more than Planned</value>
+  </data>
+  <data name="ShippedSuccessfully" xml:space="preserve">
+    <value>Shipped Successfully</value>
+  </data>
+  <data name="ShortShipment" xml:space="preserve">
+    <value>Short Shipment</value>
+  </data>
+  <data name="Show" xml:space="preserve">
+    <value>Show</value>
+  </data>
+  <data name="ShowAll" xml:space="preserve">
+    <value>1: All Displayed</value>
+  </data>
+  <data name="ShowScan" xml:space="preserve">
+    <value>Show</value>
+  </data>
+  <data name="SkipVerifyGoodsCd" xml:space="preserve">
+    <value>Do you want to skip the Goods CD confirmation</value>
+  </data>
+  <data name="SlipNo" xml:space="preserve">
+    <value>Slip No.</value>
+  </data>
+  <data name="SlowConnectionTryAgain" xml:space="preserve">
+    <value>Your internet connection is very slow or unstable. Would you like to try again</value>
+  </data>
+  <data name="SomeRowsNullData" xml:space="preserve">
+    <value>Some rows contain null data. Please report this to the administrator</value>
+  </data>
+  <data name="SomeThingWentWrong" xml:space="preserve">
+    <value>Something went wrong</value>
+  </data>
+  <data name="SomethingWentWrongSearch" xml:space="preserve">
+    <value>An error occurred while searching, please check your search data and try again, if the error persists please contact Liem-sama.</value>
+  </data>
+  <data name="SQLException" xml:space="preserve">
+    <value>SQL Exception!</value>
+  </data>
+  <data name="SQLServer" xml:space="preserve">
+    <value>Microsoft SQL Server</value>
+  </data>
+  <data name="SQLSyncError" xml:space="preserve">
+    <value>SQL Sync Error</value>
+  </data>
+  <data name="StaffExistScan" xml:space="preserve">
+    <value>This employee code already exists, please enter another employee code!</value>
+  </data>
+  <data name="StaffID" xml:space="preserve">
+    <value>Staff ID</value>
+  </data>
+  <data name="StaffIDNotFoundScan" xml:space="preserve">
+    <value>Please enter Employee ID, must have at least 1 employee code!</value>
+  </data>
+  <data name="StartDate" xml:space="preserve">
+    <value>Start Date</value>
+  </data>
+  <data name="StartDateValidContentSearch" xml:space="preserve">
+    <value>Please check Start Date and try again!</value>
+  </data>
+  <data name="StartScan" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="StartSuccessfully" xml:space="preserve">
+    <value>Start was successful, you can use the Back button to return to the search page.</value>
+  </data>
+  <data name="StartTime" xml:space="preserve">
+    <value>Start Time</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="StockBalance" xml:space="preserve">
+    <value>Stock balance</value>
+  </data>
+  <data name="StockDate" xml:space="preserve">
+    <value>Stock Date</value>
+  </data>
+  <data name="StockDiagram" xml:space="preserve">
+    <value>Stock Diagram</value>
+  </data>
+  <data name="StockGoodsList" xml:space="preserve">
+    <value>Stock Goods List</value>
+  </data>
+  <data name="StockIn-OutHistoryDetails" xml:space="preserve">
+    <value>In-Out History Details</value>
+  </data>
+  <data name="StockIn-OutProcess" xml:space="preserve">
+    <value>Stock In-Out Process</value>
+  </data>
+  <data name="StockInOutHistoryDetails" xml:space="preserve">
+    <value>In-Out History Details</value>
+  </data>
+  <data name="StockInput" xml:space="preserve">
+    <value>Stock Input</value>
+  </data>
+  <data name="StockList" xml:space="preserve">
+    <value>Stock List</value>
+  </data>
+  <data name="StockLocation" xml:space="preserve">
+    <value>Stock location</value>
+  </data>
+  <data name="StockOutput" xml:space="preserve">
+    <value>Stock Output</value>
+  </data>
+  <data name="StockPeriodCheck" xml:space="preserve">
+    <value>Stock Period Check</value>
+  </data>
+  <data name="StockShipped" xml:space="preserve">
+    <value>Shipped stock info</value>
+  </data>
+  <data name="StockShippedContent" xml:space="preserve">
+    <value>Click on InstructionNo &amp; PoNo with an orange background to check shipped info. Please verify carefully before proceeding. See the illustration below</value>
+  </data>
+  <data name="StockSlip" xml:space="preserve">
+    <value>Stock Slip</value>
+  </data>
+  <data name="StockSuu" xml:space="preserve">
+    <value>Stock QTY</value>
+  </data>
+  <data name="StockSuuNotEnough" xml:space="preserve">
+    <value>Insufficient stock quantity. Please verify again</value>
+  </data>
+  <data name="StockTransfer" xml:space="preserve">
+    <value>Stock Transfer</value>
+  </data>
+  <data name="StockType" xml:space="preserve">
+    <value>Stock Type</value>
+  </data>
+  <data name="StockTypeChange" xml:space="preserve">
+    <value>Stock Type Change</value>
+  </data>
+  <data name="StockTypeHasNotBeenRegister" xml:space="preserve">
+    <value>Stock type has not been registered</value>
+  </data>
+  <data name="StockTypeHasNotBeenRegisterVal" xml:space="preserve">
+    <value>Stock type has not been registered. GoodsCd: %GoodsCdVal%. StockType: %StockTypeVal%, Line: %LineVal%</value>
+  </data>
+  <data name="StockTypeRequired" xml:space="preserve">
+    <value>Storage Type selection required</value>
+  </data>
+  <data name="Stop" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="StoppedShipping" xml:space="preserve">
+    <value>You have stopped shipping</value>
+  </data>
+  <data name="StorageTypeSDCardDisplay" xml:space="preserve">
+    <value>Storage Name</value>
+  </data>
+  <data name="SUBIDResult" xml:space="preserve">
+    <value>Sub ID</value>
+  </data>
+  <data name="Success" xml:space="preserve">
+    <value>Success</value>
+  </data>
+  <data name="Successfully" xml:space="preserve">
+    <value>Successfully</value>
+  </data>
+  <data name="Suu" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="SystemAutoInput" xml:space="preserve">
+    <value>System auto input</value>
+  </data>
+  <data name="SystemDescriptionNameLogin" xml:space="preserve">
+    <value>Production Process Control</value>
+  </data>
+  <data name="TargetStock" xml:space="preserve">
+    <value>Target</value>
+  </data>
+  <data name="TemporarilySaved" xml:space="preserve">
+    <value>Temporarily Saved</value>
+  </data>
+  <data name="TentacBranchSetting" xml:space="preserve">
+    <value>Tentac Branch:</value>
+  </data>
+  <data name="ThisMametanIsMachineIDOn" xml:space="preserve">
+    <value>"MachineID mode", please scan "MachineID" first, then scan Mametan.</value>
+  </data>
+  <data name="ThisProcessed" xml:space="preserve">
+    <value>This Instruction had been processed. Do you want to continue</value>
+  </data>
+  <data name="ThisProcessedVal" xml:space="preserve">
+    <value>InstrNo: %InstrNo%, GoodsCd: %GoodsCd%, StockType: %StockType%. This Instruction had been processed. Do you want to continue</value>
+  </data>
+  <data name="TimeOccur" xml:space="preserve">
+    <value>Time Occur</value>
+  </data>
+  <data name="ting" xml:space="preserve">
+    <value>Are you sure want to delete selected process? : </value>
+  </data>
+  <data name="TitleProcessScan" xml:space="preserve">
+    <value>Scan Process</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="TokCdLabel" xml:space="preserve">
+    <value>Client Code</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="TotalInQty" xml:space="preserve">
+    <value>In Quantity Total</value>
+  </data>
+  <data name="TotalItems" xml:space="preserve">
+    <value>Items: </value>
+  </data>
+  <data name="TotalItemsFinish" xml:space="preserve">
+    <value>Items finish: </value>
+  </data>
+  <data name="TotalItemsStart" xml:space="preserve">
+    <value>Items start: </value>
+  </data>
+  <data name="TotalOutQty" xml:space="preserve">
+    <value>Out Quantity Total</value>
+  </data>
+  <data name="TotalPageCount" xml:space="preserve">
+    <value>Please select a page number less than or equal to the current total page count</value>
+  </data>
+  <data name="TotalPages" xml:space="preserve">
+    <value>Total Pages:</value>
+  </data>
+  <data name="TotalShipped" xml:space="preserve">
+    <value>Total Shipped</value>
+  </data>
+  <data name="TurnOffRememberTurnOffMachineID" xml:space="preserve">
+    <value>Turn off the 'Always turn off MachineID' feature?</value>
+  </data>
+  <data name="TurnOnSkipVerifyGoodsCd" xml:space="preserve">
+    <value>No QR Goods CD sticker check required</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="Undisposed" xml:space="preserve">
+    <value>Undisposed</value>
+  </data>
+  <data name="Unit" xml:space="preserve">
+    <value>Unit</value>
+  </data>
+  <data name="UnprocessedArrival" xml:space="preserve">
+    <value>Unprocessed Arrival</value>
+  </data>
+  <data name="UnprocessedShipment" xml:space="preserve">
+    <value>Unprocessed Shipment</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="UpdateButtonSetting" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="UpdateSuccessfullySetting" xml:space="preserve">
+    <value>Update Successfully</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="UserCdLabel" xml:space="preserve">
+    <value>User Code</value>
+  </data>
+  <data name="UserCdRequestLabel" xml:space="preserve">
+    <value>Input your User Code</value>
+  </data>
+  <data name="UserCode" xml:space="preserve">
+    <value>User Code</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="UserNameAliasLabel" xml:space="preserve">
+    <value>Alias User Name</value>
+  </data>
+  <data name="UserNameLabel" xml:space="preserve">
+    <value>User Name</value>
+  </data>
+  <data name="UserSetting" xml:space="preserve">
+    <value>User Setting</value>
+  </data>
+  <data name="v1000NotSupportedIOS" xml:space="preserve">
+    <value>iOS version (tablet, iphone, Mac) not supported due to Apple restrictions</value>
+  </data>
+  <data name="v1000SupportedAndroid15" xml:space="preserve">
+    <value>Works best with Android version 13. Android versions 7.1 to 15 are supported.</value>
+  </data>
+  <data name="v1000SupportedDownloadNewVersion" xml:space="preserve">
+    <value>Download alerts added for new versions</value>
+  </data>
+  <data name="v1000SupportedSyncSQLServer" xml:space="preserve">
+    <value>Data sync from Cloud to SQL Server supported</value>
+  </data>
+  <data name="ValidateActualQTY" xml:space="preserve">
+    <value>Actual quantity must not be zero or exceed the instructed amount</value>
+  </data>
+  <data name="ValidBranchContentSetting" xml:space="preserve">
+    <value>You need to choose Branch!</value>
+  </data>
+  <data name="ValidLimitMametan" xml:space="preserve">
+    <value>Only Mametan 6 or 3 is allowed. Please check Mametan again.</value>
+  </data>
+  <data name="ValidMachineID" xml:space="preserve">
+    <value>Please check your MachineID and try again!</value>
+  </data>
+  <data name="ValidOverDate" xml:space="preserve">
+    <value>This date does not exist in the current month and year, please select another date!</value>
+  </data>
+  <data name="ValidPleaseCheckMametan" xml:space="preserve">
+    <value>Please check Mametan and try again!</value>
+  </data>
+  <data name="ValidProcessOrFinishSearch" xml:space="preserve">
+    <value>Please check again, only check 1 of 2 Processing or Finish!</value>
+  </data>
+  <data name="ValidServerDatabaseNameContentSetting" xml:space="preserve">
+    <value>Please check Server Database Name and try again!</value>
+  </data>
+  <data name="ValidServerNameContentSetting" xml:space="preserve">
+    <value>Please check Server Name and try again!</value>
+  </data>
+  <data name="ValidServerPasswordContentSetting" xml:space="preserve">
+    <value>Please check Server Password and try again!</value>
+  </data>
+  <data name="ValidServerUserNameContentSetting" xml:space="preserve">
+    <value>Please check Server User Name and try again!</value>
+  </data>
+  <data name="Verify" xml:space="preserve">
+    <value>Verify</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="VietnameseLanguage" xml:space="preserve">
+    <value>Vietnamese</value>
+  </data>
+  <data name="WhatNew" xml:space="preserve">
+    <value>What's New</value>
+  </data>
+  <data name="WHBalance" xml:space="preserve">
+    <value>WH-PROD Balance</value>
+  </data>
+  <data name="WhereGetAccount" xml:space="preserve">
+    <value>Where can I get the login account?</value>
+  </data>
+  <data name="WhoUse" xml:space="preserve">
+    <value>Who uses this app?</value>
+  </data>
+  <data name="WorkPath" xml:space="preserve">
+    <value>Output file to SDCard</value>
+  </data>
+  <data name="WrongPasswordContentLogin" xml:space="preserve">
+    <value>Password is wrong, please check your password and try again</value>
+  </data>
+  <data name="Year" xml:space="preserve">
+    <value>Year</value>
+  </data>
+  <data name="YouHave" xml:space="preserve">
+    <value>You have</value>
+  </data>
+  <data name="YouMustSelectAtLeast1Item" xml:space="preserve">
+    <value>You must select at least 1 item</value>
+  </data>
+  <data name="YourConnectionNotCompany" xml:space="preserve">
+    <value>Your connection is not company network, the app only works when you are connected to Company network!</value>
+  </data>
+  <data name="ZaikoKu" xml:space="preserve">
+    <value>Stock Type</value>
+  </data>
+  <data name="ZIP" xml:space="preserve">
+    <value>ZIP</value>
+  </data>
+  <data name="LoggingIn" xml:space="preserve">
+    <value>Logging in...</value>
+  </data>
+  <data name="Searching" xml:space="preserve">
+    <value>Searching...</value>
+  </data>
+  <data name="SelectDate" xml:space="preserve">
+    <value>Select Date</value>
+  </data>
+  <data name="Notification" xml:space="preserve">
+    <value>Notification</value>
+  </data>
+  <data name="TheAppNeedsCameraPermissionToScan" xml:space="preserve">
+    <value>The App Needs Camera Permission To Scan</value>
+  </data>
+  <data name="AddRow" xml:space="preserve">
+    <value>Add Row</value>
+  </data>
+  <data name="DeliveryDate" xml:space="preserve">
+    <value>Delivery Date</value>
+  </data>
+  <data name="Items" xml:space="preserve">
+    <value>Items</value>
+  </data>
+  <data name="SelectItem" xml:space="preserve">
+    <value>SelectI tem</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="ShoCdIsNotRegistered" xml:space="preserve">
+    <value>This CD product number is not registered. Please notify the sales staff to register it.&amp;#13 CD: {0}</value>
+  </data>
+  <data name="WMS9999CW0057" xml:space="preserve">
+    <value>The quantity must be a positive integer and greater than zero.</value>
+  </data>
+  <data name="WMS9999CW0061" xml:space="preserve">
+    <value>Remaining stock quantity is less than Instruction quantity！</value>
+  </data>
+  <data name="WMS9999CW0058" xml:space="preserve">
+    <value>Please select storage type.</value>
+  </data>
+</root>

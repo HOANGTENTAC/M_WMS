@@ -1,0 +1,2118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="All" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="Arrival" xml:space="preserve">
+    <value>Nhập</value>
+  </data>
+  <data name="ArrivalProcess" xml:space="preserve">
+    <value>Quản lý nhập</value>
+  </data>
+  <data name="ArrivalQty" xml:space="preserve">
+    <value>Số lượng nhập</value>
+  </data>
+  <data name="ArrivalShipmentStockSummary" xml:space="preserve">
+    <value>Bao Cao Ton Kho</value>
+  </data>
+  <data name="ArrivalShipmentTemplate" xml:space="preserve">
+    <value>Nhập Xuất Nhiều</value>
+  </data>
+  <data name="ArrivalShipmentTemplateSub" xml:space="preserve">
+    <value>(Template)</value>
+  </data>
+  <data name="ArrivalSlip" xml:space="preserve">
+    <value>Phiếu nhập</value>
+  </data>
+  <data name="AskYourManagerPermission" xml:space="preserve">
+    <value>Chỉ tải xuống và cài đặt ứng dụng này nếu bạn được quản lý cho phép. Hỏi quản lý xem bạn có được phép sử dụng không?</value>
+  </data>
+  <data name="AutoSelectFailed" xml:space="preserve">
+    <value>Tự động chọn không được. Mã hàng %GoodsCd% có nhiều %StorageType%. Vui lòng chọn 1</value>
+  </data>
+  <data name="AvailableQty" xml:space="preserve">
+    <value>Hiện có</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Quay lại</value>
+  </data>
+  <data name="BackToSearchPage" xml:space="preserve">
+    <value>Quay lại trang Tìm kiếm</value>
+  </data>
+  <data name="BadConnection" xml:space="preserve">
+    <value>Kết nối mạng của bạn không ổn định, vui lòng kiểm tra và thử lại!</value>
+  </data>
+  <data name="BadConnectionSetting" xml:space="preserve">
+    <value>Kết nối của bạn rất kém, vui lòng kiểm tra và thử lại</value>
+  </data>
+  <data name="BarcodeQRUnknowScan" xml:space="preserve">
+    <value>Hệ thống không thể nhận dạng đúng mã vạch, vui lòng thử lại và cố gắng quét hình ảnh rõ ràng nhất có thể!</value>
+  </data>
+  <data name="BarcodeUnknow2Scan" xml:space="preserve">
+    <value>Hệ thống không nhận dạng được mã vạch này, vui lòng thử lại, nếu lỗi vẫn tiếp diễn, vui lòng liên hệ với Admin!</value>
+  </data>
+  <data name="BarcodeUnknowScan" xml:space="preserve">
+    <value>Hệ thống không thể nhận dạng đúng mã vạch, vui lòng thử lại và cố gắng quét hình ảnh rõ ràng nhất có thể!</value>
+  </data>
+  <data name="BasePoint" xml:space="preserve">
+    <value>Cứ điểm:</value>
+  </data>
+  <data name="Branch" xml:space="preserve">
+    <value>Cứ điểm</value>
+  </data>
+  <data name="BuildingTest" xml:space="preserve">
+    <value>Thử nghiệm</value>
+  </data>
+  <data name="Support" xml:space="preserve">
+    <value>Hỗ trợ</value>
+  </data>
+  <data name="ButtonTextLogin" xml:space="preserve">
+    <value>Đăng nhập</value>
+  </data>
+  <data name="PrivacyPolicy" xml:space="preserve">
+    <value>Bảo mật</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Hủy</value>
+  </data>
+  <data name="CancelAlert" xml:space="preserve">
+    <value>Hủy</value>
+  </data>
+  <data name="CancelButtonText" xml:space="preserve">
+    <value>Hủy</value>
+  </data>
+  <data name="Cancelled" xml:space="preserve">
+    <value>Đã hủy bỏ</value>
+  </data>
+  <data name="CancelSlip" xml:space="preserve">
+    <value>Phiếu hủy</value>
+  </data>
+  <data name="CanEmpty" xml:space="preserve">
+    <value>có thể bỏ trống</value>
+  </data>
+  <data name="CannotBeEmptyContentScan" xml:space="preserve">
+    <value>không thể rỗng</value>
+  </data>
+  <data name="CannotConnect" xml:space="preserve">
+    <value>Không thể kết nối</value>
+  </data>
+  <data name="CannotConnectSMBServer" xml:space="preserve">
+    <value>Không thể kết nối đến máy chủ SMB nội bộ để kiểm tra phiên bản mới. Bỏ qua tin nhắn này nếu không cần cập nhật phiên bản APK mới</value>
+  </data>
+  <data name="CannotConnectUpdateServerAPK" xml:space="preserve">
+    <value>Không thể kết nối đến máy chủ cập nhật. Vui lòng liên hệ quản trị viên hệ thống</value>
+  </data>
+  <data name="CannotGetData" xml:space="preserve">
+    <value>Không thể lấy dữ liệu</value>
+  </data>
+  <data name="CannotGetNewIndexNo" xml:space="preserve">
+    <value>Không thể lấy IndexNo mới cho SQL</value>
+  </data>
+  <data name="CannotGetNewStockSlip" xml:space="preserve">
+    <value>Không thể lấy số phiếu kho mới!</value>
+  </data>
+  <data name="CannotReadWrite" xml:space="preserve">
+    <value>Không thể đọc và ghi dữ liệu. Cần cấp quyền cho ứng dụng!</value>
+  </data>
+  <data name="CannotRefreshData" xml:space="preserve">
+    <value>Đã có lỗi gì đó, không thể làm mới dữ liệu đang xem, vui lòng thực hiện tìm kiếm lại!</value>
+  </data>
+  <data name="CannotRetrieveHHID" xml:space="preserve">
+    <value>Không thể truy xuất HHId từ HistoryH sau khi chèn</value>
+  </data>
+  <data name="CannotSave" xml:space="preserve">
+    <value>Không thể lưu</value>
+  </data>
+  <data name="CannotScanContentAlertScan" xml:space="preserve">
+    <value>Đã xảy ra lỗi, vui lòng thử lại.
+Cố gắng giữ Camera đứng yên, hình ảnh quét phải rõ nét.. Nếu vẫn không được, vui lòng liên hệ với Admin!</value>
+  </data>
+  <data name="CannotUseCamera" xml:space="preserve">
+    <value>Không thể dùng camera. Hãy cấp quyền cho ứng dụng!</value>
+  </data>
+  <data name="CannotValidateDownloadedFileAPK" xml:space="preserve">
+    <value>Không thể kiểm tra tính hợp lệ của tệp đã tải xuống. Thử lại không</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Loại hàng</value>
+  </data>
+  <data name="cb_stock_type_10" xml:space="preserve">
+    <value>GOODS</value>
+  </data>
+  <data name="cb_stock_type_11" xml:space="preserve">
+    <value>FP</value>
+  </data>
+  <data name="cb_stock_type_21" xml:space="preserve">
+    <value>HALF FP</value>
+  </data>
+  <data name="cb_stock_type_30" xml:space="preserve">
+    <value>MATERIAL</value>
+  </data>
+  <data name="cb_stock_type_31" xml:space="preserve">
+    <value>D-MATERIAL</value>
+  </data>
+  <data name="cb_stock_type_32" xml:space="preserve">
+    <value>ID-MATERIAL</value>
+  </data>
+  <data name="cb_stock_type_33" xml:space="preserve">
+    <value>PRESS-DM</value>
+  </data>
+  <data name="cb_stock_type_34" xml:space="preserve">
+    <value>PRESS-IDM</value>
+  </data>
+  <data name="cb_stock_type_41" xml:space="preserve">
+    <value>CONSUMABLES</value>
+  </data>
+  <data name="cb_stock_type_42" xml:space="preserve">
+    <value>PRESS-CONSUM</value>
+  </data>
+  <data name="cb_stock_type_51" xml:space="preserve">
+    <value>DEPOSITED FP</value>
+  </data>
+  <data name="cb_stock_type_52" xml:space="preserve">
+    <value>DEPOSITED HALF FP</value>
+  </data>
+  <data name="cb_stock_type_53" xml:space="preserve">
+    <value>DEPOSITED MATERIAL</value>
+  </data>
+  <data name="cb_stock_type_61" xml:space="preserve">
+    <value>KEEPING</value>
+  </data>
+  <data name="cb_stock_type_62" xml:space="preserve">
+    <value>KEEPING FP</value>
+  </data>
+  <data name="cb_stock_type_80" xml:space="preserve">
+    <value>R&amp;D FEES</value>
+  </data>
+  <data name="cb_stock_type_91" xml:space="preserve">
+    <value>DISPOSED</value>
+  </data>
+  <data name="ChangeAccount" xml:space="preserve">
+    <value>Đổi tài khoản</value>
+  </data>
+  <data name="ChangeAvatar" xml:space="preserve">
+    <value>Đổi ảnh</value>
+  </data>
+  <data name="Changelog" xml:space="preserve">
+    <value>Có gì mới</value>
+  </data>
+  <data name="ChangelogContent" xml:space="preserve">
+    <value>Nhấn vào Version x.x.x.x hoặc tên nhà phát triển để xem có gì mới ở phiên bản này như ảnh minh họa bên dưới</value>
+  </data>
+  <data name="CheckConnectionButtonSetting" xml:space="preserve">
+    <value>Kiểm tra kết nối</value>
+  </data>
+  <data name="CheckFinishedProcessContentPage" xml:space="preserve">
+    <value>Bạn có muốn kiểm tra các công đoạn Finish ngay bây giờ không?</value>
+  </data>
+  <data name="CheckMissingProcessCheckPage" xml:space="preserve">
+    <value>Kiểm tra thiếu công đoạn</value>
+  </data>
+  <data name="CheckProcessTitleCheckPage" xml:space="preserve">
+    <value>Kiểm tra công đoạn</value>
+  </data>
+  <data name="CheckProcStep" xml:space="preserve">
+    <value>Kiểm Tra Thiếu Công Đoạn</value>
+  </data>
+  <data name="CheckStopped" xml:space="preserve">
+    <value>Việc kiểm tra đã dừng lại!</value>
+  </data>
+  <data name="CheckTabItem" xml:space="preserve">
+    <value>Kiểm tra</value>
+  </data>
+  <data name="ChooseYourBestPhoto" xml:space="preserve">
+    <value>Chọn ảnh đẹp nhất của bạn</value>
+  </data>
+  <data name="ClearScan" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+  <data name="CloseAlert" xml:space="preserve">
+    <value>Đóng</value>
+  </data>
+  <data name="CloudSyncFailed" xml:space="preserve">
+    <value>Đồng bộ dữ liệu lên Cloud thất bại</value>
+  </data>
+  <data name="ComingSoon" xml:space="preserve">
+    <value>Sắp ra mắt...</value>
+  </data>
+  <data name="ComingSoonDevelopment" xml:space="preserve">
+    <value>Sắp ra mắt. Tính năng này hiện đang được phát triển</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>Đã xong</value>
+  </data>
+  <data name="ConfirmAllSelected" xml:space="preserve">
+    <value>Vui lòng xác thực các mã hàng đã chọn</value>
+  </data>
+  <data name="ConnectingStatus" xml:space="preserve">
+    <value>Đang kết nối...</value>
+  </data>
+  <data name="ConnectionErrorContentLogin" xml:space="preserve">
+    <value>Vui lòng kiểm tra kết nối của bạn và thử lại hoặc liên hệ với Liêm-sama</value>
+  </data>
+  <data name="ConnectionErrorLogin" xml:space="preserve">
+    <value>Lỗi kết nối!</value>
+  </data>
+  <data name="ConnectionOKSetting" xml:space="preserve">
+    <value>Kết nối OK!</value>
+  </data>
+  <data name="ContactSupportAccount" xml:space="preserve">
+    <value>Vui lòng liên hệ người quản lý bộ phận của bạn để lấy thông tin đăng nhập. Nếu vẫn không được liên hệ Liêm-Sama.</value>
+  </data>
+  <data name="ContactSupportUse" xml:space="preserve">
+    <value>Vui lòng liên hệ người quản lý bộ phận của bạn. Nếu không được vui lòng liên hệ Liêm-Sama</value>
+  </data>
+  <data name="ContentChangeLanguageAlertLogin" xml:space="preserve">
+    <value>Có thể phải khởi động lại ứng dụng để hoàn tất thay đổi ngôn ngữ</value>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>Tiếp</value>
+  </data>
+  <data name="Copied" xml:space="preserve">
+    <value>Đã copy</value>
+  </data>
+  <data name="CreateDate" xml:space="preserve">
+    <value>Ngày tạo</value>
+  </data>
+  <data name="CSV" xml:space="preserve">
+    <value>CSV</value>
+  </data>
+  <data name="CsvFile" xml:space="preserve">
+    <value>Tệp CSV</value>
+  </data>
+  <data name="CultureLabel" xml:space="preserve">
+    <value>Ngôn ngữ</value>
+  </data>
+  <data name="CurrentStock" xml:space="preserve">
+    <value>Kho hiện tại</value>
+  </data>
+  <data name="CurrentStockData" xml:space="preserve">
+    <value>Dữ liệu kho hiển thị hiện tại</value>
+  </data>
+  <data name="DatabaseConnectionSetting" xml:space="preserve">
+    <value>Kết nối cơ sở dữ liệu</value>
+  </data>
+  <data name="DatabaseNameSettingPlaceHolder" xml:space="preserve">
+    <value>Tên Database</value>
+  </data>
+  <data name="DataSaved" xml:space="preserve">
+    <value>Đã lưu thành công</value>
+  </data>
+  <data name="Day" xml:space="preserve">
+    <value>Ngày</value>
+  </data>
+  <data name="DelayErrorGetMametan" xml:space="preserve">
+    <value>Không thể lấy Mametan, đã có lỗi chậm trễ gì đó xảy ra, vui lòng xóa và thử Scan lại!</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+  <data name="DeleteAlert" xml:space="preserve">
+    <value>Đang xóa...?</value>
+  </data>
+  <data name="DeleteAllExcludeProcesses" xml:space="preserve">
+    <value>Bạn có chắc muốn xóa toàn bộ công đoạn đã loại trừ không?</value>
+  </data>
+  <data name="DeleteDataPermanently" xml:space="preserve">
+    <value>Xóa dữ liệu vĩnh viễn, bạn có chắc chắn muốn xóa không?</value>
+  </data>
+  <data name="DeletedSuccessfully" xml:space="preserve">
+    <value>Đã xóa thành công</value>
+  </data>
+  <data name="DeleteErrorAlert" xml:space="preserve">
+    <value>Lỗi không thể xóa</value>
+  </data>
+  <data name="DeliveredQty" xml:space="preserve">
+    <value>Đã xuất</value>
+  </data>
+  <data name="DescriptionFolderPath" xml:space="preserve">
+    <value>Chọn thư mục muốn xuất</value>
+  </data>
+  <data name="Deselect" xml:space="preserve">
+    <value>Bỏ chọn</value>
+  </data>
+  <data name="DeveloperLogin" xml:space="preserve">
+    <value>Phát triển bởi TENTAC (HO CHI MINH)</value>
+  </data>
+  <data name="DisplayConnectionInfo" xml:space="preserve">
+    <value>Hiện thông tin kết nối máy chủ</value>
+  </data>
+  <data name="Disposal" xml:space="preserve">
+    <value>Chỉ thị hủy</value>
+  </data>
+  <data name="DisposalProcess" xml:space="preserve">
+    <value>Chỉ thị hủy đã xong</value>
+  </data>
+  <data name="DisposalSkipped" xml:space="preserve">
+    <value>Chỉ thị này đã được xử lý và sẽ bị bỏ qua</value>
+  </data>
+  <data name="DoesNotExist" xml:space="preserve">
+    <value>Không tồn tại</value>
+  </data>
+  <data name="Dosmetic" xml:space="preserve">
+    <value>Nội địa</value>
+  </data>
+  <data name="DownloadCompleted" xml:space="preserve">
+    <value>Đã tải xuống hoàn tất, bạn có muốn cài đặt ngay không</value>
+  </data>
+  <data name="Downloading" xml:space="preserve">
+    <value>Đang tải..</value>
+  </data>
+  <data name="DownloadSuccess" xml:space="preserve">
+    <value>Tải xuống thành công</value>
+  </data>
+  <data name="DownloadTemplate" xml:space="preserve">
+    <value>Tải mẫu</value>
+  </data>
+  <data name="DownloadVersionError" xml:space="preserve">
+    <value>Đã xảy ra lỗi trong quá trình tải xuống, vui lòng thoát ứng dụng sau đó thử lại, nếu vẫn lỗi liên hệ Admin</value>
+  </data>
+  <data name="DoYouWantCameraAccess" xml:space="preserve">
+    <value>Bạn có muốn cấp quyền truy cập máy ảnh cho ứng dụng không?</value>
+  </data>
+  <data name="DoYouWantInstall" xml:space="preserve">
+    <value>Cài đặt ngay</value>
+  </data>
+  <data name="DoYouWantReadWriteData" xml:space="preserve">
+    <value>Ứng dụng cần quyền đọc ghi dữ liệu, bạn muốn cấp quyền không</value>
+  </data>
+  <data name="DoYouWantToChangeAvatar" xml:space="preserve">
+    <value>Bạn có muốn thay đổi ảnh đại diện không?</value>
+  </data>
+  <data name="DoYouWantToChangeStorageType" xml:space="preserve">
+    <value>Bạn muốn đăng ký loại kho không</value>
+  </data>
+  <data name="DoYouWantToContinueShipment" xml:space="preserve">
+    <value>Có tiếp tục xuất kho không</value>
+  </data>
+  <data name="DoYouWantToFinishScan" xml:space="preserve">
+    <value>Bạn có muốn Finish không?</value>
+  </data>
+  <data name="DoYouWantToSaveConnectionSetting" xml:space="preserve">
+    <value>Bạn có muốn lưu kết nối không</value>
+  </data>
+  <data name="DoYouWantToUpdate" xml:space="preserve">
+    <value>Bạn có muốn cập nhật không</value>
+  </data>
+  <data name="DraftProcurementList" xml:space="preserve">
+    <value>Danh sách mua nháp</value>
+  </data>
+  <data name="DuplicateNotAllow" xml:space="preserve">
+    <value>Không được trùng lặp, vui lòng kiểm tra lại</value>
+  </data>
+  <data name="EasyToUseSlideShow" xml:space="preserve">
+    <value>Dễ sử dụng</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Sửa</value>
+  </data>
+  <data name="EditedBy" xml:space="preserve">
+    <value>Người sửa</value>
+  </data>
+  <data name="EditedFlagResult" xml:space="preserve">
+    <value>Edited Flag</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="EMailLabel" xml:space="preserve">
+    <value>Thư</value>
+  </data>
+  <data name="EmptyMametan" xml:space="preserve">
+    <value>Mametan không được để trống!</value>
+  </data>
+  <data name="EndDateValidContentSearch" xml:space="preserve">
+    <value>Ngày kết thúc phải lớn hơn ngày bắt đầu!</value>
+  </data>
+  <data name="EnglishLanguage" xml:space="preserve">
+    <value>Tiếng Anh</value>
+  </data>
+  <data name="EntryDate" xml:space="preserve">
+    <value>Entry Date</value>
+  </data>
+  <data name="EntryTime" xml:space="preserve">
+    <value>Entry Time</value>
+  </data>
+  <data name="ErrorAlert" xml:space="preserve">
+    <value>Lỗi</value>
+  </data>
+  <data name="ErrorCode" xml:space="preserve">
+    <value>Mã lỗi</value>
+  </data>
+  <data name="ErrorConnection" xml:space="preserve">
+    <value>Lỗi kết nối</value>
+  </data>
+  <data name="ErrorEditContentSave" xml:space="preserve">
+    <value>Đã xảy ra lỗi khi lưu, vui lòng thử lại, nếu vẫn xảy ra lỗi vui lòng chụp ảnh màn hình và gửi đến ngài Liêm.</value>
+  </data>
+  <data name="ErrorGetListGoodsCD" xml:space="preserve">
+    <value>Lỗi khi lấy ListGoodsCD, vui lòng thử lại!</value>
+  </data>
+  <data name="ErrorInsertEditDelete" xml:space="preserve">
+    <value>Lỗi Thêm/Sửa/Xóa</value>
+  </data>
+  <data name="ErrorNumberAlert" xml:space="preserve">
+    <value>Mã lỗi</value>
+  </data>
+  <data name="ErrorSelectImage" xml:space="preserve">
+    <value>Đã xảy ra lỗi trong quá trình chọn ảnh, vui lòng liên hệ Admin!</value>
+  </data>
+  <data name="ErrorUpdateTable" xml:space="preserve">
+    <value>Không thể cập nhật dữ liệu</value>
+  </data>
+  <data name="EXCEL" xml:space="preserve">
+    <value>EXCEL</value>
+  </data>
+  <data name="ExcelFile" xml:space="preserve">
+    <value>Tệp Excel</value>
+  </data>
+  <data name="ExcelOutput" xml:space="preserve">
+    <value>Xuất Excel</value>
+  </data>
+  <data name="ExcelOutputPath" xml:space="preserve">
+    <value>Đường dẫn xuất Excel</value>
+  </data>
+  <data name="ExcelOutputSuccess" xml:space="preserve">
+    <value>Đã xuất Excel thành công</value>
+  </data>
+  <data name="ExcelSaveError" xml:space="preserve">
+    <value>Đã xảy ra lỗi, không thể lưu file Excel</value>
+  </data>
+  <data name="Exist" xml:space="preserve">
+    <value>Tồn tại</value>
+  </data>
+  <data name="ExitLabel" xml:space="preserve">
+    <value>Thoát</value>
+  </data>
+  <data name="ExpectedArrivalDate" xml:space="preserve">
+    <value>Đã đăng ký dự kiến</value>
+  </data>
+  <data name="ExpirationDate" xml:space="preserve">
+    <value>Ngày hết hạn</value>
+  </data>
+  <data name="ExportExcel" xml:space="preserve">
+    <value>Xuất</value>
+  </data>
+  <data name="ExportFile" xml:space="preserve">
+    <value>Xuất File</value>
+  </data>
+  <data name="ExportFirstCSV" xml:space="preserve">
+    <value>Cần xuất file CSV trước, sau đó mới có thể chia sẻ.</value>
+  </data>
+  <data name="ExportSuccessfully" xml:space="preserve">
+    <value>Xuất thành công</value>
+  </data>
+  <data name="FactoryNote" xml:space="preserve">
+    <value>Nhà máy ghi chú</value>
+  </data>
+  <data name="FailedContentLogin" xml:space="preserve">
+    <value>Không thành công, vui lòng kiểm tra dấu vân tay của bạn và thử lại</value>
+  </data>
+  <data name="FailedLogin" xml:space="preserve">
+    <value>Đăng nhập thất bại</value>
+  </data>
+  <data name="FAQ" xml:space="preserve">
+    <value>FAQ</value>
+  </data>
+  <data name="FAQFull" xml:space="preserve">
+    <value>Hỏi đáp</value>
+  </data>
+  <data name="FileLabel" xml:space="preserve">
+    <value>Tệp</value>
+  </data>
+  <data name="FileSaved" xml:space="preserve">
+    <value>File đã được lưu trong bộ nhớ</value>
+  </data>
+  <data name="FilterStockType" xml:space="preserve">
+    <value>Xem loại kho</value>
+  </data>
+  <data name="Find" xml:space="preserve">
+    <value>Tìm</value>
+  </data>
+  <data name="FingerprintLogin" xml:space="preserve">
+    <value>Đăng nhập vân tay</value>
+  </data>
+  <data name="Finish" xml:space="preserve">
+    <value>Đã hoàn thành</value>
+  </data>
+  <data name="FinishDate" xml:space="preserve">
+    <value>Đến ngày</value>
+  </data>
+  <data name="FinishDateValidContentSearch" xml:space="preserve">
+    <value>Vui lòng kiểm tra Ngày Hoàn thành và thử lại!</value>
+  </data>
+  <data name="FinishedTitleProcessPage" xml:space="preserve">
+    <value>Đã hoàn thành</value>
+  </data>
+  <data name="FinishSuccessfully" xml:space="preserve">
+    <value>Đã Finish thành công, bạn có thể sử dụng nút Back để trở về Trang tìm kiếm.</value>
+  </data>
+  <data name="FinishWithoutMachineIDScan" xml:space="preserve">
+    <value>Bạn có chắc "Finish" mà không có MachineID không?</value>
+  </data>
+  <data name="FontPathNotFound" xml:space="preserve">
+    <value>Lỗi không tìm thấy đường dẫn font: </value>
+  </data>
+  <data name="FRDate" xml:space="preserve">
+    <value>Ngày nhập đầu tiên</value>
+  </data>
+  <data name="FreeSpace" xml:space="preserve">
+    <value>Còn trống</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>Từ ngày</value>
+  </data>
+  <data name="FSDate" xml:space="preserve">
+    <value>Ngày xuất đầu tiên</value>
+  </data>
+  <data name="GetWMSAPI" xml:space="preserve">
+    <value>Điền WMS API</value>
+  </data>
+  <data name="GoodsCD" xml:space="preserve">
+    <value>Mã hàng</value>
+  </data>
+  <data name="GoodsCDChange" xml:space="preserve">
+    <value>Đổi mã hàng</value>
+  </data>
+  <data name="GoodsCdStockTypeAlreadyConfirmed" xml:space="preserve">
+    <value>Mã hàng này đã xác thực</value>
+  </data>
+  <data name="GoodsDetails" xml:space="preserve">
+    <value>Chi tiết hàng</value>
+  </data>
+  <data name="GoodsName" xml:space="preserve">
+    <value>Tên hàng</value>
+  </data>
+  <data name="GoodsType" xml:space="preserve">
+    <value>Loại hàng</value>
+  </data>
+  <data name="GroupCD" xml:space="preserve">
+    <value>Mã nhóm</value>
+  </data>
+  <data name="GroupGoods" xml:space="preserve">
+    <value>Nhóm</value>
+  </data>
+  <data name="GroupName" xml:space="preserve">
+    <value>Tên nhóm</value>
+  </data>
+  <data name="GrpCdLabel" xml:space="preserve">
+    <value>Mã nhóm</value>
+  </data>
+  <data name="GrpStockType" xml:space="preserve">
+    <value>Nhóm loại</value>
+  </data>
+  <data name="HasBeenOutput" xml:space="preserve">
+    <value>đã xuất fille</value>
+  </data>
+  <data name="HasNotBeenRegister" xml:space="preserve">
+    <value>Mã hàng này chưa được đăng ký, vui lòng thông báo cho nhân viên bán hàng để đăng ký</value>
+  </data>
+  <data name="HasNotBeenRegisterVal" xml:space="preserve">
+    <value>Mã hàng này chưa được đăng ký, vui lòng thông báo cho nhân viên bán hàng để đăng ký. Mã hàng: %GoodsCdVal%, Dòng: %LineVal%</value>
+  </data>
+  <data name="Hide" xml:space="preserve">
+    <value>Ẩn</value>
+  </data>
+  <data name="HideAll" xml:space="preserve">
+    <value>2: Ẩn hết</value>
+  </data>
+  <data name="Hinmei" xml:space="preserve">
+    <value>Tên hàng</value>
+  </data>
+  <data name="HintDownloadOffice" xml:space="preserve">
+    <value>Bạn có thể tải xuống Microsoft Office 365 hoặc Excel trên Google Play hoặc AppStore để mở tệp này.</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>Lịch sử</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Trang chủ</value>
+  </data>
+  <data name="HourValidContentSearch" xml:space="preserve">
+    <value>Vui lòng kiểm tra Giờ từ 00 đến 23, Phút từ 00 đến 59 và thử lại!</value>
+  </data>
+  <data name="HowUse" xml:space="preserve">
+    <value>Làm thế nào để sử dụng?</value>
+  </data>
+  <data name="ImageLimited" xml:space="preserve">
+    <value>Chỉ cho phép lưu trữ hình ảnh có dung lượng tối đa là 5Mb, vui lòng chỉnh sửa hình ảnh hoặc chọn ảnh khác</value>
+  </data>
+  <data name="ImportantNotes" xml:space="preserve">
+    <value>Các ghi chú quan trọng</value>
+  </data>
+  <data name="ImportExcel" xml:space="preserve">
+    <value>Nhập Excel</value>
+  </data>
+  <data name="In-Out" xml:space="preserve">
+    <value>Nhập xuất</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>Thông tin</value>
+  </data>
+  <data name="InformationAlert" xml:space="preserve">
+    <value>Thông tin</value>
+  </data>
+  <data name="InformationSecurity" xml:space="preserve">
+    <value>Bảo mật thông tin</value>
+  </data>
+  <data name="InOutDate" xml:space="preserve">
+    <value>Nhập xuất</value>
+  </data>
+  <data name="InOutReason" xml:space="preserve">
+    <value>Khu vực nhập xuất</value>
+  </data>
+  <data name="InOutStockType" xml:space="preserve">
+    <value>Loại nhập xuất</value>
+  </data>
+  <data name="InOut_Ku_2_1_1" xml:space="preserve">
+    <value>Input from outside bought items</value>
+  </data>
+  <data name="InOut_Ku_2_1_2" xml:space="preserve">
+    <value>Input goods made from production</value>
+  </data>
+  <data name="InOut_Ku_2_1_3" xml:space="preserve">
+    <value>Input for moving stock purpose</value>
+  </data>
+  <data name="InOut_Ku_2_1_4" xml:space="preserve">
+    <value>Điều chỉnh kho</value>
+  </data>
+  <data name="InOut_Ku_2_2_1" xml:space="preserve">
+    <value>Xuất hàng để bán</value>
+  </data>
+  <data name="InOut_Ku_2_2_2" xml:space="preserve">
+    <value>Xuất hàng sản xuất</value>
+  </data>
+  <data name="InOut_Ku_2_2_3" xml:space="preserve">
+    <value>Chuyển hàng tồn kho</value>
+  </data>
+  <data name="InOut_Ku_2_2_4" xml:space="preserve">
+    <value>Mẫu xuất đặc biệt</value>
+  </data>
+  <data name="Input" xml:space="preserve">
+    <value>Nhập vào</value>
+  </data>
+  <data name="inputArea" xml:space="preserve">
+    <value>&gt;</value>
+  </data>
+  <data name="InputGoodsCDPlaceHolder" xml:space="preserve">
+    <value>Nhập vào Mã hàng</value>
+  </data>
+  <data name="InputGoodsNamePlaceHolder" xml:space="preserve">
+    <value>Nhập vào Tên hàng</value>
+  </data>
+  <data name="InputInformationScan" xml:space="preserve">
+    <value>Nhập thông tin</value>
+  </data>
+  <data name="InputLineNumberAt" xml:space="preserve">
+    <value>Nhập số line</value>
+  </data>
+  <data name="InputLineNumberAtVal" xml:space="preserve">
+    <value>Nhập số line tại %LineVal%</value>
+  </data>
+  <data name="InputMachineIDPlaceHolder" xml:space="preserve">
+    <value>Nhập vào Mã máy</value>
+  </data>
+  <data name="InputMametanPlaceHolder" xml:space="preserve">
+    <value>Nhập vào số Mametan</value>
+  </data>
+  <data name="InputPoNoPlaceHolder" xml:space="preserve">
+    <value>Nhập vào số PO</value>
+  </data>
+  <data name="InputQTYZeroScan" xml:space="preserve">
+    <value>Bạn đã nhập QTY = 0, đúng chứ?</value>
+  </data>
+  <data name="InputYourUserIDPlaceHolderLogin" xml:space="preserve">
+    <value>Nhập ID của bạn</value>
+  </data>
+  <data name="InputYourUserPasswordHolderLogin" xml:space="preserve">
+    <value>Nhập Mật khẩu</value>
+  </data>
+  <data name="Insert" xml:space="preserve">
+    <value>Thêm</value>
+  </data>
+  <data name="InStock" xml:space="preserve">
+    <value>Còn hàng</value>
+  </data>
+  <data name="InStockType" xml:space="preserve">
+    <value>Kiểu nhập kho</value>
+  </data>
+  <data name="InstrIssueVal" xml:space="preserve">
+    <value>Chỉ thị: %InstrNo%, Mã hàng: %GoodsCd%, Dòng: %Line%. Không có chỉ thị này, vui lòng liên hệ bộ phận kế hoạch để phát hành chỉ thị</value>
+  </data>
+  <data name="InstrNo" xml:space="preserve">
+    <value>Chỉ thị</value>
+  </data>
+  <data name="InstrNoPoNoStatus" xml:space="preserve">
+    <value>Trạng thái Mametan và PONo</value>
+  </data>
+  <data name="InstrNoPoNoStatusContent" xml:space="preserve">
+    <value>Nếu có Màu nền xung quanh là màu Cam biểu thị InstructionNo và PONo này đã xuất hàng rồi, ngược lại là chưa xuất hàng</value>
+  </data>
+  <data name="InstructionNo" xml:space="preserve">
+    <value>Chỉ thị Mametan</value>
+  </data>
+  <data name="InstructionShipped" xml:space="preserve">
+    <value>Mametan này đã xuất rồi, có tiếp tục không?</value>
+  </data>
+  <data name="International" xml:space="preserve">
+    <value>Quốc tế</value>
+  </data>
+  <data name="InvalidContentScan" xml:space="preserve">
+    <value>không hợp lệ</value>
+  </data>
+  <data name="InvalidDataScan" xml:space="preserve">
+    <value>Dữ liệu không hợp lệ</value>
+  </data>
+  <data name="InvalidDate" xml:space="preserve">
+    <value>Ngày không hợp lệ</value>
+  </data>
+  <data name="InvalidSelectStockType" xml:space="preserve">
+    <value>Bạn quên chưa chọn gì đó. Vui lòng kiểm tra lại!</value>
+  </data>
+  <data name="InventoryAdj" xml:space="preserve">
+    <value>Điều chỉnh đặc biệt</value>
+  </data>
+  <data name="InventoryAlert" xml:space="preserve">
+    <value>Cảnh báo kho</value>
+  </data>
+  <data name="IppanLabel" xml:space="preserve">
+    <value>Chung</value>
+  </data>
+  <data name="IsEmpty" xml:space="preserve">
+    <value>là rỗng</value>
+  </data>
+  <data name="IsRequired" xml:space="preserve">
+    <value>là bắt buộc</value>
+  </data>
+  <data name="IssueDate" xml:space="preserve">
+    <value>Ngày phát hành</value>
+  </data>
+  <data name="Issuer" xml:space="preserve">
+    <value>Người phát hành</value>
+  </data>
+  <data name="JapaneseLanguage" xml:space="preserve">
+    <value>Tiếng Nhật</value>
+  </data>
+  <data name="KeepLocation" xml:space="preserve">
+    <value>Nơi lưu kho</value>
+  </data>
+  <data name="Key_A100_1" xml:space="preserve">
+    <value>Bản phát hành đầu tiên</value>
+  </data>
+  <data name="Key_A103_1" xml:space="preserve">
+    <value>Thêm Logic Outbox Sync mỗi khi nhập xuất</value>
+  </data>
+  <data name="Key_A104_1" xml:space="preserve">
+    <value>Thêm Logic Outbox Sync cho StockTransfer, sửa lỗi tìm kiếm Mametan bị GroupBy làm mất dòng ở chế độ tìm kiếm NoFilterMode</value>
+  </data>
+  <data name="Key_A108_1" xml:space="preserve">
+    <value>Thêm tính năng Import Arrival &amp; Shipment, cải thiện trạng thái giao diện RadioButton, một số cải tiến giao diện mobile khác.</value>
+  </data>
+  <data name="Key_A108_2" xml:space="preserve">
+    <value>Thêm thư viện SDK Seuic, Urovo hỗ trợ phím cứng quét QR/Barcode, thêm cài đặt Slider điều chỉnh âm lượng âm thanh khi quét.</value>
+  </data>
+  <data name="Key_A108_3" xml:space="preserve">
+    <value>Thêm tính năng tự động kiểm tra phiên bản mới, cập nhật phiên bản mới.</value>
+  </data>
+  <data name="Key_A108_4" xml:space="preserve">
+    <value>Cải tiến tính năng ImportTemplate (Không cần nhập LineNo, nhưng phải nhập PO, InstrNo, GoodsCd, số lượng tổng để lấy khóa)</value>
+  </data>
+  <data name="Key_Added" xml:space="preserve">
+    <value>Đã thêm</value>
+  </data>
+  <data name="Key_C108_1" xml:space="preserve">
+    <value>Thay đổi thư viện NPOI -&gt; OpenXML mới nhất của Microsoft tránh vi phạm bản quyền thu phí của NPOI 2.8.0</value>
+  </data>
+  <data name="Key_Changed" xml:space="preserve">
+    <value>Đã thay đổi</value>
+  </data>
+  <data name="Key_U101_1" xml:space="preserve">
+    <value>Gửi lên Trụ sở chính (Có thể xử lý nhiều lần nhập/xuất kho)</value>
+  </data>
+  <data name="Key_U102_1" xml:space="preserve">
+    <value>Sửa field hạn sử dụng (Chỉ áp dụng trên màn hình nhập kho)</value>
+  </data>
+  <data name="Key_U105_1" xml:space="preserve">
+    <value>Sửa logic Outbox Sync, sửa logic nhập xuất ở chế độ NoFilterMode, sửa lỗi Logic xuất nhiều phiếu thì phiếu thứ 2 trở đi không trừ kho</value>
+  </data>
+  <data name="Key_U106_1" xml:space="preserve">
+    <value>Cải tiến giao diện quét QR gộp nhiều InstrNo, PoNo, GoodsCd, StockType giống nhau thành 1 dòng</value>
+  </data>
+  <data name="Key_U107_1" xml:space="preserve">
+    <value>Cải thiện giao diện trên Mobile, sửa một số lỗi logic xuất nhập, sửa lỗi khi xem lịch sử mã hàng</value>
+  </data>
+  <data name="Key_U108_1" xml:space="preserve">
+    <value>Thay đổi thư viện NPOI -&gt; OpenXML mới nhất của Microsoft tránh vi phạm bản quyền thu phí của NPOI 2.8.0.</value>
+  </data>
+  <data name="Key_Updated" xml:space="preserve">
+    <value>Đã cập nhật</value>
+  </data>
+  <data name="KyotenCd" xml:space="preserve">
+    <value>Mã khu vực kho</value>
+  </data>
+  <data name="KyotenCdLabel" xml:space="preserve">
+    <value>Cứ điểm</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Tiếng Việt</value>
+  </data>
+  <data name="Languages" xml:space="preserve">
+    <value>Ngôn ngữ</value>
+  </data>
+  <data name="LanguagesContent" xml:space="preserve">
+    <value>Ở màn hình đăng nhập. Nhấp vào Tên ngôn ngữ hoặc biểu tượng ngôn ngữ ở góc phải phía trên để mở ra bảng chọn ngôn ngữ khác mà bạn muốn. Mặc định khi chưa chọn nó sẽ là Tiếng Anh</value>
+  </data>
+  <data name="LastestVersion" xml:space="preserve">
+    <value>Bạn đang sử dụng phiên bản mới nhất</value>
+  </data>
+  <data name="LeavingAppContent" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn thoát không?</value>
+  </data>
+  <data name="LeavingAppTitle" xml:space="preserve">
+    <value>Bạn đang rời khỏi ứng dụng!</value>
+  </data>
+  <data name="LessThan" xml:space="preserve">
+    <value>nhỏ hơn</value>
+  </data>
+  <data name="LessthanOneMonth" xml:space="preserve">
+    <value>Vui lòng điều chỉnh ngày tháng nhỏ hơn 1 tháng</value>
+  </data>
+  <data name="LessThanOrEqual" xml:space="preserve">
+    <value>phải nhỏ hơn hoặc bằng</value>
+  </data>
+  <data name="LimitBigData" xml:space="preserve">
+    <value>Kết quả tìm kiếm của bạn không có dữ liệu hoặc dữ liệu quá lớn, vui lòng kiểm tra lại khoảng thời gian tìm kiếm..</value>
+  </data>
+  <data name="LimitDateTimeSearch" xml:space="preserve">
+    <value>Chỉ cho phép tìm kiếm tối đa trong khoảng thời gian 1 tháng, vì vấn đề hiệu suất vui lòng xác định lại khoảng thời gian trong giới hạn cho phép!</value>
+  </data>
+  <data name="LimitStaffScan" xml:space="preserve">
+    <value>Chỉ có thể nhập tối đa 9 mã nhân viên, vui lòng kiểm tra lại!</value>
+  </data>
+  <data name="LineNo" xml:space="preserve">
+    <value>Số Line</value>
+  </data>
+  <data name="Loading" xml:space="preserve">
+    <value>Đang xử lý..</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>Nơi lưu kho</value>
+  </data>
+  <data name="LoggedOutContentLogin" xml:space="preserve">
+    <value>Bạn đã đăng xuất</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Đăng Nhập</value>
+  </data>
+  <data name="LoginAgain" xml:space="preserve">
+    <value>Vui lòng đăng nhập lại các thay đổi sẽ tự động áp dụng</value>
+  </data>
+  <data name="LoginLeft" xml:space="preserve">
+    <value>lần đăng nhập</value>
+  </data>
+  <data name="LoginsLeft" xml:space="preserve">
+    <value>lần đăng nhập</value>
+  </data>
+  <data name="LogoutLabel" xml:space="preserve">
+    <value>Đăng xuất</value>
+  </data>
+  <data name="LowStock" xml:space="preserve">
+    <value>Sắp hết</value>
+  </data>
+  <data name="LRDate" xml:space="preserve">
+    <value>Ngày nhập mới</value>
+  </data>
+  <data name="LSDate" xml:space="preserve">
+    <value>Xuất mới nhất</value>
+  </data>
+  <data name="MachineID" xml:space="preserve">
+    <value>Mã máy</value>
+  </data>
+  <data name="MachineIDScan" xml:space="preserve">
+    <value>Không tìm thấy MachineID, vui lòng nhập Mã máy MachineID!</value>
+  </data>
+  <data name="MachineName" xml:space="preserve">
+    <value>Tên máy</value>
+  </data>
+  <data name="Mametan" xml:space="preserve">
+    <value>Mametan</value>
+  </data>
+  <data name="MametanHasChanged" xml:space="preserve">
+    <value>Số mametan đã thay đổi, dữ liệu không còn khớp với Mametan đã tìm kiếm!</value>
+  </data>
+  <data name="MametanNothingToCheck" xml:space="preserve">
+    <value>Mametan này không thiếu công đoạn!</value>
+  </data>
+  <data name="Memo" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="MessageDialogTextError" xml:space="preserve">
+    <value>Lỗi</value>
+  </data>
+  <data name="MessageDialogTextInfo" xml:space="preserve">
+    <value>Thông tin</value>
+  </data>
+  <data name="MessageDialogTextWarn" xml:space="preserve">
+    <value>Cảnh báo</value>
+  </data>
+  <data name="MessageMicrosoftTeamsContentLogin" xml:space="preserve">
+    <value>Xin chào! Liêm-sama, tôi cần sự giúp đỡ của bạn! Lỗi ứng dụng M_T-WMS (Mobile)!</value>
+  </data>
+  <data name="MetaDataCorrupted" xml:space="preserve">
+    <value>Dữ liệu mô tả của tệp bị hỏng. Tải xuống lại không</value>
+  </data>
+  <data name="MinimumStock" xml:space="preserve">
+    <value>An toàn</value>
+  </data>
+  <data name="MinStockSuu" xml:space="preserve">
+    <value>Số lượng tối thiểu</value>
+  </data>
+  <data name="MissCameraPermission" xml:space="preserve">
+    <value>Ứng dụng không có quyền truy cập camera, không thể quét QR!</value>
+  </data>
+  <data name="MissingProcessTitleTable" xml:space="preserve">
+    <value>Bảng Thiếu Công Đoạn</value>
+  </data>
+  <data name="MissReadWritePermission" xml:space="preserve">
+    <value>Ứng dụng không có quyền đọc ghi dữ liệu, không thể sử dụng thư mục Download</value>
+  </data>
+  <data name="ModifiedTime" xml:space="preserve">
+    <value>T.Gian chỉnh sửa</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>Ngày</value>
+  </data>
+  <data name="MultilingualSlideShow" xml:space="preserve">
+    <value>Hỗ trợ đa ngôn ngữ</value>
+  </data>
+  <data name="MWMS" xml:space="preserve">
+    <value>M-WMS</value>
+  </data>
+  <data name="NeedCheckRememberFingerprintContentLogin" xml:space="preserve">
+    <value>Bạn cần đánh dấu 'Ghi nhớ mật khẩu' và đăng nhập thành công, sau đó mới có thể đăng nhập bằng dấu vân tay</value>
+  </data>
+  <data name="NeedToChooseLanguage" xml:space="preserve">
+    <value>Cần phải chọn ngôn ngữ!</value>
+  </data>
+  <data name="NetInventoryQty" xml:space="preserve">
+    <value>Dự kiến xuất kho</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>Thêm</value>
+  </data>
+  <data name="NewInterfaceSlideShow" xml:space="preserve">
+    <value>Giao diện mới</value>
+  </data>
+  <data name="NewLevelSlideShow" xml:space="preserve">
+    <value>Đẳng cấp mới</value>
+  </data>
+  <data name="NewTENTACSlideShow" xml:space="preserve">
+    <value>TENTAC mới</value>
+  </data>
+  <data name="NewVersionContent" xml:space="preserve">
+    <value>Đã có phiên bản mới, tải và cài đặt ngay?</value>
+  </data>
+  <data name="NewVersionTitle" xml:space="preserve">
+    <value>Phiên bản mới</value>
+  </data>
+  <data name="NextTimeAlert" xml:space="preserve">
+    <value>Để sau</value>
+  </data>
+  <data name="NoAlert" xml:space="preserve">
+    <value>Không</value>
+  </data>
+  <data name="NoChangesSaved" xml:space="preserve">
+    <value>Không có thay đổi nào được lưu</value>
+  </data>
+  <data name="NoDataFound" xml:space="preserve">
+    <value>Không có dữ liệu!</value>
+  </data>
+  <data name="NoGoodsCD" xml:space="preserve">
+    <value>Không có mã hàng, kiểm tra lại hoặc liên hệ Admin!</value>
+  </data>
+  <data name="NoGoodsCdSelected" xml:space="preserve">
+    <value>Không có mã hàng nào được chọn, vui lòng kiểm tra lại</value>
+  </data>
+  <data name="NoItemToExport" xml:space="preserve">
+    <value>Không có dữ liệu để xuất!</value>
+  </data>
+  <data name="NoItemToPrint" xml:space="preserve">
+    <value>Không có dữ liệu để in!</value>
+  </data>
+  <data name="NoMametanPrint" xml:space="preserve">
+    <value>Không có số Mametan, dữ liệu in không tương thích!</value>
+  </data>
+  <data name="NoNeedMachineIDScan" xml:space="preserve">
+    <value>Không cần quét "MachineID"</value>
+  </data>
+  <data name="NoScan" xml:space="preserve">
+    <value>Không quét</value>
+  </data>
+  <data name="NoSearchCriteriaFound" xml:space="preserve">
+    <value>Không có điều kiện tìm kiếm!</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="NoteCanEmpty" xml:space="preserve">
+    <value>Ghi chú có thể bỏ trống</value>
+  </data>
+  <data name="NotEnoughStock" xml:space="preserve">
+    <value>Kho không đủ số lượng, vui lòng kiểm tra lại</value>
+  </data>
+  <data name="NotFound" xml:space="preserve">
+    <value>Không tìm thấy</value>
+  </data>
+  <data name="NotFoundAccountContentLogin" xml:space="preserve">
+    <value>Không có tài khoản này</value>
+  </data>
+  <data name="NotFullyShipment" xml:space="preserve">
+    <value>Chưa xuất đủ</value>
+  </data>
+  <data name="NotHaveMicrosoftTeamsContentLogin" xml:space="preserve">
+    <value>Thiết bị của bạn không có ứng dụng Microsoft Teams. Bạn có nhu cầu cài đặt ứng dụng Microsoft Teams, vui lòng liên hệ quản trị hệ thống để được hỗ trợ cài đặt</value>
+  </data>
+  <data name="NothingExport" xml:space="preserve">
+    <value>Không có gì để xuất, vui lòng kiểm tra lại!</value>
+  </data>
+  <data name="NothingFound" xml:space="preserve">
+    <value>Không tìm thấy gì, vui lòng kiểm tra lại điều kiện tìm kiếm!</value>
+  </data>
+  <data name="NothingToChange" xml:space="preserve">
+    <value>Không có gì để thay đổi</value>
+  </data>
+  <data name="NothingToExclude" xml:space="preserve">
+    <value>Không có gì để loại trừ</value>
+  </data>
+  <data name="NothingToSave" xml:space="preserve">
+    <value>Không có thay đổi nào được lưu, bạn vẫn muốn tiếp tục chứ</value>
+  </data>
+  <data name="NothingToVerify" xml:space="preserve">
+    <value>Không có gì để xác thực, vui lòng kiểm tra lại</value>
+  </data>
+  <data name="NotInTheSelected" xml:space="preserve">
+    <value>Không có trong danh sách đã chọn</value>
+  </data>
+  <data name="NotMatchGoodsCd" xml:space="preserve">
+    <value>Mã đang xác thực không đúng</value>
+  </data>
+  <data name="NotSupported" xml:space="preserve">
+    <value>Chưa hỗ trợ</value>
+  </data>
+  <data name="NotSupportedAlertContentLogin" xml:space="preserve">
+    <value>Thiết bị của bạn không có Vân tay! Vui lòng nâng cấp điện thoại của bạn</value>
+  </data>
+  <data name="NotSupportedAlertLogin" xml:space="preserve">
+    <value>Không hỗ trợ</value>
+  </data>
+  <data name="NotSupportedAlertScan" xml:space="preserve">
+    <value>Không hỗ trợ</value>
+  </data>
+  <data name="NotSupportedWarehouseTransfer" xml:space="preserve">
+    <value>Hiện tại chưa hỗ trợ Di chuyển kho, vui lòng thực hiện trên phiên bản máy tính</value>
+  </data>
+  <data name="NoUpdateVersionFoundSMB" xml:space="preserve">
+    <value>Không có phiên bản mới trên máy chủ</value>
+  </data>
+  <data name="NowCurrentPage" xml:space="preserve">
+    <value>Bạn đang ở trang này rồi</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="OnlyAllow1GoodsCdStorageType" xml:space="preserve">
+    <value>Chỉ được chọn %Quantity% %GoodsCd% với cùng %StorageType%, vui lòng kiểm tra lại</value>
+  </data>
+  <data name="OnlyPrint" xml:space="preserve">
+    <value>Chỉ in</value>
+  </data>
+  <data name="Operators" xml:space="preserve">
+    <value>Công nhân</value>
+  </data>
+  <data name="OptDivisionIn" xml:space="preserve">
+    <value>Nhà cung cấp/Bộ phận</value>
+  </data>
+  <data name="OptDivisionOut" xml:space="preserve">
+    <value>Bộ phận sản xuất</value>
+  </data>
+  <data name="Option" xml:space="preserve">
+    <value>Tùy chọn</value>
+  </data>
+  <data name="OptionSetting" xml:space="preserve">
+    <value>Tùy chọn</value>
+  </data>
+  <data name="OptionsText" xml:space="preserve">
+    <value>Tùy chọn</value>
+  </data>
+  <data name="OptTime" xml:space="preserve">
+    <value>T.Gian chạy</value>
+  </data>
+  <data name="OrderCompleted" xml:space="preserve">
+    <value>Đơn hoàn thành</value>
+  </data>
+  <data name="OrderInFull" xml:space="preserve">
+    <value>PO hoàn thành</value>
+  </data>
+  <data name="OrderNumber" xml:space="preserve">
+    <value>STT</value>
+  </data>
+  <data name="OrderSuu" xml:space="preserve">
+    <value>Số lượng</value>
+  </data>
+  <data name="OutOfStock" xml:space="preserve">
+    <value>Hết hàng</value>
+  </data>
+  <data name="OutputCompleted" xml:space="preserve">
+    <value>Xuất thành công</value>
+  </data>
+  <data name="OutputPrint" xml:space="preserve">
+    <value>In và xuất Excel</value>
+  </data>
+  <data name="OutStockType" xml:space="preserve">
+    <value>Kiểu xuất kho</value>
+  </data>
+  <data name="OverLimit" xml:space="preserve">
+    <value>Số lượng thực tế nhiều hơn số lượng dự kiến. Bạn có muốn tiếp tục không?</value>
+  </data>
+  <data name="OverLimitNoQuestion" xml:space="preserve">
+    <value>Tổng số lượng thực tế nhiều hơn số lượng dự kiến</value>
+  </data>
+  <data name="OverShipment" xml:space="preserve">
+    <value>Xuất dư</value>
+  </data>
+  <data name="PageNotFound" xml:space="preserve">
+    <value>Không tìm thấy trang %name%</value>
+  </data>
+  <data name="Path" xml:space="preserve">
+    <value>Đường dẫn</value>
+  </data>
+  <data name="Pause" xml:space="preserve">
+    <value>Tạm dừng</value>
+  </data>
+  <data name="PGSyncError" xml:space="preserve">
+    <value>Lỗi đồng bộ PG</value>
+  </data>
+  <data name="PhotoSaved" xml:space="preserve">
+    <value>Đã lưu ảnh đẹp nhất của bạn thành công</value>
+  </data>
+  <data name="PlannedArrivalDate" xml:space="preserve">
+    <value>Ngày dự kiến đến</value>
+  </data>
+  <data name="PlannedArrivalQty" xml:space="preserve">
+    <value>Tổng nhập dự kiến</value>
+  </data>
+  <data name="PlannedShipmentQty" xml:space="preserve">
+    <value>Tổng xuất dự kiến</value>
+  </data>
+  <data name="PlanQTY" xml:space="preserve">
+    <value>SL Chỉ thị</value>
+  </data>
+  <data name="PlanQTY2" xml:space="preserve">
+    <value>SL Chỉ thị</value>
+  </data>
+  <data name="PleaseChoose" xml:space="preserve">
+    <value>Vui lòng chọn</value>
+  </data>
+  <data name="PleaseConfirm" xml:space="preserve">
+    <value>Vui lòng xác nhận</value>
+  </data>
+  <data name="PleaseEnterQuantityVal" xml:space="preserve">
+    <value>Vui lòng nhập số lượng ở dòng %LineVal%</value>
+  </data>
+  <data name="PleaseInput" xml:space="preserve">
+    <value>Vui lòng nhập</value>
+  </data>
+  <data name="PleaseInputIDContentLogin" xml:space="preserve">
+    <value>Vui lòng nhập ID người dùng của bạn</value>
+  </data>
+  <data name="PleaseInputInstrNoAndGoodsCd" xml:space="preserve">
+    <value>Vui lòng nhập %instr_no% hoặc %goods_cd%</value>
+  </data>
+  <data name="PleaseInputPasswordContentLogin" xml:space="preserve">
+    <value>Vui lòng nhập Mật khẩu của bạn!</value>
+  </data>
+  <data name="PleaseSelect" xml:space="preserve">
+    <value>Vui lòng chọn</value>
+  </data>
+  <data name="PleaseSelectAnotherDay" xml:space="preserve">
+    <value>Ngày này không có trong tháng. Vui lòng chọn ngày khác</value>
+  </data>
+  <data name="PleaseTryAgain" xml:space="preserve">
+    <value>Đã có lỗi gì đó xảy ra, hãy thử lại, nếu vẫn không được vui lòng liên hệ Admin! </value>
+  </data>
+  <data name="PoGyou" xml:space="preserve">
+    <value>Dòng Po</value>
+  </data>
+  <data name="PONo" xml:space="preserve">
+    <value>Số PO</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>In</value>
+  </data>
+  <data name="PrinterList" xml:space="preserve">
+    <value>Máy in</value>
+  </data>
+  <data name="PrivacyPolicyNotifi" xml:space="preserve">
+    <value>Ứng dụng này được bảo vệ bởi Chính sách an toàn bảo mật thông tin. Tuân thủ chính sách an toàn bảo mật thông tin. Không chia sẻ hình ảnh về ứng dụng, mọi thứ liên quan đến TENTAC khi bạn không được phép. Mọi thông tin rò rỉ về hình ảnh ứng dụng qua bất kỳ hình thức nào cũng sẽ phải chịu trách nhiệm trước pháp luật</value>
+  </data>
+  <data name="ProcessDataTitleEdit" xml:space="preserve">
+    <value>Chỉnh sửa công đoạn</value>
+  </data>
+  <data name="Processing" xml:space="preserve">
+    <value>Đang thực hiện</value>
+  </data>
+  <data name="ProcessingPerformanceTableTitleCSV" xml:space="preserve">
+    <value>Bảng Processing</value>
+  </data>
+  <data name="ProcessManagementSearch" xml:space="preserve">
+    <value>Quản lý Công đoạn</value>
+  </data>
+  <data name="ProcessNo" xml:space="preserve">
+    <value>Số công đoạn</value>
+  </data>
+  <data name="ProcInst" xml:space="preserve">
+    <value>Công đoạn</value>
+  </data>
+  <data name="ProcsessingProcInst" xml:space="preserve">
+    <value>Công đoạn đang xử lý</value>
+  </data>
+  <data name="ProcStatus" xml:space="preserve">
+    <value>T.Trạng</value>
+  </data>
+  <data name="ProcurementStaff" xml:space="preserve">
+    <value>Người mua</value>
+  </data>
+  <data name="QR" xml:space="preserve">
+    <value>QR</value>
+  </data>
+  <data name="QRScan" xml:space="preserve">
+    <value>Quét</value>
+  </data>
+  <data name="QtyDisposalGreatherThanStock" xml:space="preserve">
+    <value>Số lượng hủy không được lớn hơn số lượng hàng đang có.</value>
+  </data>
+  <data name="QtyDisposalLessThanZero" xml:space="preserve">
+    <value>Số lượng hủy phải lớn hơn 0</value>
+  </data>
+  <data name="QTYINST" xml:space="preserve">
+    <value>S.Lượng chỉ thị</value>
+  </data>
+  <data name="QTYNG" xml:space="preserve">
+    <value>Số lượng NG</value>
+  </data>
+  <data name="QTYOK" xml:space="preserve">
+    <value>Số lượng OK</value>
+  </data>
+  <data name="QTYOnlyInteger" xml:space="preserve">
+    <value>Số lượng không được nhập số thập phân, không chứa ký tự nào ngoài số nguyên!</value>
+  </data>
+  <data name="QtyRequiredAt" xml:space="preserve">
+    <value>Vui lòng nhập số lượng xử lý</value>
+  </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>Số lượng</value>
+  </data>
+  <data name="QuestionLogout" xml:space="preserve">
+    <value>Bạn muốn đăng xuất</value>
+  </data>
+  <data name="QueueNo" xml:space="preserve">
+    <value>T.Tự C.Đoạn</value>
+  </data>
+  <data name="Reason" xml:space="preserve">
+    <value>Lý do</value>
+  </data>
+  <data name="Received" xml:space="preserve">
+    <value>Đã nhận</value>
+  </data>
+  <data name="ReceivedBy" xml:space="preserve">
+    <value>Người nhận</value>
+  </data>
+  <data name="RedLabelNew" xml:space="preserve">
+    <value>Hình ảnh có nhãn New nền màu đỏ</value>
+  </data>
+  <data name="RedLabelNewContent" xml:space="preserve">
+    <value>Hình ảnh có nhãn new xuất hiện ở dòng InstructionNo và PoNo nào thì dòng đó được xác định là InstructionNo mới tạo trong ngày hôm nay.
+Hình ảnh có nhãn new xuất hiện ở dòng GoodsCD nào thì dòng GoodsCD đó được xác định là mới xuất hàng hôm nay. Xem hình ảnh ví dụ bên dưới về màn hình InstructionNo và PoNo.</value>
+  </data>
+  <data name="RefreshData" xml:space="preserve">
+    <value>Dữ liệu hiển thị sẽ được làm mới</value>
+  </data>
+  <data name="Regist" xml:space="preserve">
+    <value>Lưu</value>
+  </data>
+  <data name="RegistButtonText" xml:space="preserve">
+    <value>Lưu</value>
+  </data>
+  <data name="RegisterInventoryMaster" xml:space="preserve">
+    <value>Vui lòng đăng ký trong Hệ thống Quản lý Tồn kho Sản phẩm</value>
+  </data>
+  <data name="RegisterStockLocation" xml:space="preserve">
+    <value>Vui lòng đăng ký Nơi lưu kho trước!</value>
+  </data>
+  <data name="RemainingShipped" xml:space="preserve">
+    <value>Còn thiếu</value>
+  </data>
+  <data name="RemainingStockQtyIsLessThanInstructionQty" xml:space="preserve">
+    <value>Số lượng hàng tồn kho hiện có không đủ số lượng của chỉ thị</value>
+  </data>
+  <data name="Remarks" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="RemarksLabel" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="Remember" xml:space="preserve">
+    <value>Ghi nhớ</value>
+  </data>
+  <data name="RememberYourSelf" xml:space="preserve">
+    <value>Ghi nhớ rằng bảo vệ bí mật của công ty cũng chính là đang bảo vệ bạn.</value>
+  </data>
+  <data name="Repeat" xml:space="preserve">
+    <value>Làm lại</value>
+  </data>
+  <data name="RequestCompleted" xml:space="preserve">
+    <value>Yêu cầu hoàn thành</value>
+  </data>
+  <data name="RequestedBy" xml:space="preserve">
+    <value>Người yêu cầu</value>
+  </data>
+  <data name="RequestedDate" xml:space="preserve">
+    <value>Ngày yêu cầu</value>
+  </data>
+  <data name="RequestReadWritePermission" xml:space="preserve">
+    <value>Cần quyền đọc ghi dữ liệu</value>
+  </data>
+  <data name="RequestReadWritePermissionSub" xml:space="preserve">
+    <value>Ứng dụng cần toàn quyền đọc ghi dữ liệu để đọc ghi file Excel</value>
+  </data>
+  <data name="RequestSubmitted" xml:space="preserve">
+    <value>Đã gửi</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="Resume" xml:space="preserve">
+    <value>Tiếp tục</value>
+  </data>
+  <data name="Row" xml:space="preserve">
+    <value>dòng</value>
+  </data>
+  <data name="RuntimeException" xml:space="preserve">
+    <value>Lỗi thời gian chạy!</value>
+  </data>
+  <data name="SafetyRollback" xml:space="preserve">
+    <value>Tất cả tiến trình trước đó đã được hoàn tác an toàn</value>
+  </data>
+  <data name="SafetySecuritySlideShow" xml:space="preserve">
+    <value>An toàn Bảo mật</value>
+  </data>
+  <data name="SalesDescription" xml:space="preserve">
+    <value>Bộ phận Sales</value>
+  </data>
+  <data name="SalesNote" xml:space="preserve">
+    <value>Sales ghi chú</value>
+  </data>
+  <data name="SalesTanCdLabel" xml:space="preserve">
+    <value>Mã Sale</value>
+  </data>
+  <data name="SameDayEdit" xml:space="preserve">
+    <value>Thay đổi chỉ có thể thực hiện cùng ngày</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Lưu</value>
+  </data>
+  <data name="SaveAlert" xml:space="preserve">
+    <value>Lưu</value>
+  </data>
+  <data name="SaveAt" xml:space="preserve">
+    <value>Lưu tại</value>
+  </data>
+  <data name="SaveRegist" xml:space="preserve">
+    <value>Lưu</value>
+  </data>
+  <data name="Saving" xml:space="preserve">
+    <value>đang lưu</value>
+  </data>
+  <data name="Scan" xml:space="preserve">
+    <value>Quét</value>
+  </data>
+  <data name="ScanVolume" xml:space="preserve">
+    <value>Âm thanh quét</value>
+  </data>
+  <data name="Scheduled" xml:space="preserve">
+    <value>Dự kiến</value>
+  </data>
+  <data name="ScheduledRegistered" xml:space="preserve">
+    <value>Dự kiến đã đăng ký</value>
+  </data>
+  <data name="ScheduledShipDate" xml:space="preserve">
+    <value>Ngày giao dự kiến</value>
+  </data>
+  <data name="ScreenNameFrm0001" xml:space="preserve">
+    <value>Lịch sử kho</value>
+  </data>
+  <data name="ScreenNameFrm0002" xml:space="preserve">
+    <value>Công đoạn kho</value>
+  </data>
+  <data name="ScreenNameFrm0003" xml:space="preserve">
+    <value>Tùy chọn</value>
+  </data>
+  <data name="ScreenNameFrm0005" xml:space="preserve">
+    <value>Quản lý xuất</value>
+  </data>
+  <data name="InventoryManagement" xml:space="preserve">
+    <value>Quản lý hàng tồn kho</value>
+  </data>
+  <data name="ScreenNameFrm0007" xml:space="preserve">
+    <value>Loại hàng nhập xuất</value>
+  </data>
+  <data name="ScreenNameFrm0008" xml:space="preserve">
+    <value>Sơ đồ kho</value>
+  </data>
+  <data name="ScreenNameFrm0009" xml:space="preserve">
+    <value>Danh sách phiếu hủy</value>
+  </data>
+  <data name="ScreenNameFrm0010" xml:space="preserve">
+    <value>Quản lý phiếu hủy</value>
+  </data>
+  <data name="ScreenNameFrmGrps" xml:space="preserve">
+    <value>Nhóm</value>
+  </data>
+  <data name="ScreenNameOCS0104" xml:space="preserve">
+    <value>Menu</value>
+  </data>
+  <data name="ScreenNameOCS0205" xml:space="preserve">
+    <value>Quản lý</value>
+  </data>
+  <data name="ScreenNameOCS0216" xml:space="preserve">
+    <value>Tùy chọn</value>
+  </data>
+  <data name="SearchFilters" xml:space="preserve">
+    <value>Tìm</value>
+  </data>
+  <data name="SearchPeriod" xml:space="preserve">
+    <value>Khoảng thời gian tìm kiếm</value>
+  </data>
+  <data name="SearchPeriodContent" xml:space="preserve">
+    <value>Không nên tìm kiếm giống như hình dưới đây, khoảng thời gian 1 năm là rất nhiều dữ liệu, chỉ nên tìm kiếm tối đa trong 1 tháng..</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Tìm kiếm</value>
+  </data>
+  <data name="SelectFile" xml:space="preserve">
+    <value>Chọn file</value>
+  </data>
+  <data name="SelectFolder" xml:space="preserve">
+    <value>Chọn thư mục</value>
+  </data>
+  <data name="SelectGrps" xml:space="preserve">
+    <value>Chọn nhóm</value>
+  </data>
+  <data name="SelectLanguage" xml:space="preserve">
+    <value>Chọn ngôn ngữ</value>
+  </data>
+  <data name="SelectLocation" xml:space="preserve">
+    <value>Chọn nơi lưu kho</value>
+  </data>
+  <data name="SelectMultipleFiles" xml:space="preserve">
+    <value>Chọn nhiều file</value>
+  </data>
+  <data name="SelectMultipleFolders" xml:space="preserve">
+    <value>Chọn nhiều folder</value>
+  </data>
+  <data name="SelectProcessesToExclude" xml:space="preserve">
+    <value>Chọn công đoạn không cần quét</value>
+  </data>
+  <data name="SelectProcessPickerSearch" xml:space="preserve">
+    <value>Chọn công đoạn</value>
+  </data>
+  <data name="SelectReason" xml:space="preserve">
+    <value>Chọn khu vực</value>
+  </data>
+  <data name="SelectStockType" xml:space="preserve">
+    <value>Chọn loại kho</value>
+  </data>
+  <data name="SelectTitleLanguages" xml:space="preserve">
+    <value>Chọn ngôn ngữ của bạn</value>
+  </data>
+  <data name="SelectYourBasepointPickerSetting" xml:space="preserve">
+    <value>Chọn cứ điểm</value>
+  </data>
+  <data name="SendFileToAppChat" xml:space="preserve">
+    <value>Gửi file đến ứng dụng Chat Messenger của bạn?</value>
+  </data>
+  <data name="SendZipOrCSV" xml:space="preserve">
+    <value>Bạn muốn gửi ZIP hay CSV?</value>
+  </data>
+  <data name="ServerDatabaseSetting" xml:space="preserve">
+    <value>Database</value>
+  </data>
+  <data name="ServerNameSetting" xml:space="preserve">
+    <value>Server</value>
+  </data>
+  <data name="ServerPasswordSetting" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="ServerUserSetting" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="Setting" xml:space="preserve">
+    <value>Cài đặt</value>
+  </data>
+  <data name="ShareFile" xml:space="preserve">
+    <value>Chia sẻ file đến</value>
+  </data>
+  <data name="ShelfNo" xml:space="preserve">
+    <value>Số kệ</value>
+  </data>
+  <data name="Shipment" xml:space="preserve">
+    <value>Xuất</value>
+  </data>
+  <data name="ShipmentDate" xml:space="preserve">
+    <value>Ngày giao hàng</value>
+  </data>
+  <data name="ShipmentProcess" xml:space="preserve">
+    <value>Quản lý xuất</value>
+  </data>
+  <data name="ShipmentQty" xml:space="preserve">
+    <value>Số lượng xuất</value>
+  </data>
+  <data name="ShipmentSlip" xml:space="preserve">
+    <value>Phiếu xuất</value>
+  </data>
+  <data name="Shipped" xml:space="preserve">
+    <value>Đã xuất</value>
+  </data>
+  <data name="ShippedMoreThanPlanned" xml:space="preserve">
+    <value>Đã xuất nhiều hơn chỉ thị</value>
+  </data>
+  <data name="ShippedSuccessfully" xml:space="preserve">
+    <value>Xuất thành công</value>
+  </data>
+  <data name="ShortShipment" xml:space="preserve">
+    <value>Xuất thiếu</value>
+  </data>
+  <data name="Show" xml:space="preserve">
+    <value>Hiển thị</value>
+  </data>
+  <data name="ShowAll" xml:space="preserve">
+    <value>1: Xem hết</value>
+  </data>
+  <data name="ShowScan" xml:space="preserve">
+    <value>Show</value>
+  </data>
+  <data name="SkipVerifyGoodsCd" xml:space="preserve">
+    <value>Bạn có muốn bỏ qua kiểm tra quét mã hàng không?</value>
+  </data>
+  <data name="SlipNo" xml:space="preserve">
+    <value>Số Phiếu</value>
+  </data>
+  <data name="SlowConnectionTryAgain" xml:space="preserve">
+    <value>Kết nối Internet quá chậm hoặc không ổn định. Thử lại</value>
+  </data>
+  <data name="SomeRowsNullData" xml:space="preserve">
+    <value>Có 1 vài dòng dữ liệu rỗng, vui lòng liên hệ Administrator</value>
+  </data>
+  <data name="SomeThingWentWrong" xml:space="preserve">
+    <value>Có lỗi khi lưu</value>
+  </data>
+  <data name="SomethingWentWrongSearch" xml:space="preserve">
+    <value>Đã xảy ra lỗi khi tìm kiếm, vui lòng kiểm tra dữ liệu tìm kiếm và thử lại, nếu vẫn lỗi vui lòng liên hệ Liem-sama.</value>
+  </data>
+  <data name="SQLException" xml:space="preserve">
+    <value>Lỗi SQL!</value>
+  </data>
+  <data name="SQLServer" xml:space="preserve">
+    <value>Microsoft SQL Server</value>
+  </data>
+  <data name="SQLSyncError" xml:space="preserve">
+    <value>Lỗi đồng bộ SQL</value>
+  </data>
+  <data name="StaffExistScan" xml:space="preserve">
+    <value>Đã có mã nhân viên này rồi, vui lòng nhập mã nhân viên khác!</value>
+  </data>
+  <data name="StaffID" xml:space="preserve">
+    <value>ID Công nhân</value>
+  </data>
+  <data name="StaffIDNotFoundScan" xml:space="preserve">
+    <value>Vui lòng nhập ID Nhân viên, phải có ít nhất 1 mã nhân viên!</value>
+  </data>
+  <data name="StartDate" xml:space="preserve">
+    <value>Từ ngày</value>
+  </data>
+  <data name="StartDateValidContentSearch" xml:space="preserve">
+    <value>Vui lòng kiểm tra Ngày Bắt Đầu và thử lại!</value>
+  </data>
+  <data name="StartScan" xml:space="preserve">
+    <value>Bắt đầu</value>
+  </data>
+  <data name="StartSuccessfully" xml:space="preserve">
+    <value>Đã Start thành công, bạn có thể sử dụng nút Back để trở về Trang tìm kiếm.</value>
+  </data>
+  <data name="StartTime" xml:space="preserve">
+    <value>Thời gian bắt đầu</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Trạng thái</value>
+  </data>
+  <data name="StockBalance" xml:space="preserve">
+    <value>Hàng tồn kho</value>
+  </data>
+  <data name="StockDate" xml:space="preserve">
+    <value>Ngày nhập kho</value>
+  </data>
+  <data name="StockDiagram" xml:space="preserve">
+    <value>Sơ đồ kho</value>
+  </data>
+  <data name="StockGoodsList" xml:space="preserve">
+    <value>Quản lý hàng tồn kho</value>
+  </data>
+  <data name="StockIn-OutHistoryDetails" xml:space="preserve">
+    <value>Lịch sử nhập xuất</value>
+  </data>
+  <data name="StockIn-OutProcess" xml:space="preserve">
+    <value>Lịch sử nhập xuất</value>
+  </data>
+  <data name="StockInOutHistoryDetails" xml:space="preserve">
+    <value>Lịch sử nhập xuất</value>
+  </data>
+  <data name="StockInput" xml:space="preserve">
+    <value>Nhập kho</value>
+  </data>
+  <data name="StockList" xml:space="preserve">
+    <value>Danh sách kho</value>
+  </data>
+  <data name="StockLocation" xml:space="preserve">
+    <value>Nơi lưu kho</value>
+  </data>
+  <data name="StockOutput" xml:space="preserve">
+    <value>Xuất kho</value>
+  </data>
+  <data name="StockPeriodCheck" xml:space="preserve">
+    <value>Xuất báo cáo định kỳ</value>
+  </data>
+  <data name="StockShipped" xml:space="preserve">
+    <value>Thông tin đã xuất kho</value>
+  </data>
+  <data name="StockShippedContent" xml:space="preserve">
+    <value>Nhấp vào những InstructionNo &amp; PoNo có nền màu cam sẽ có thể biết được thông tin đã xuất, vui lòng xác nhận kỹ thông tin trước khi thực hiện tiếp tục. Xem ảnh Minh họa bên dưới</value>
+  </data>
+  <data name="StockSlip" xml:space="preserve">
+    <value>Số phiếu</value>
+  </data>
+  <data name="StockSuu" xml:space="preserve">
+    <value>Tồn</value>
+  </data>
+  <data name="StockSuuNotEnough" xml:space="preserve">
+    <value>Insufficient stock quantity. Please verify again</value>
+  </data>
+  <data name="StockTransfer" xml:space="preserve">
+    <value>Chuyển kho</value>
+  </data>
+  <data name="StockType" xml:space="preserve">
+    <value>Loại kho</value>
+  </data>
+  <data name="StockTypeChange" xml:space="preserve">
+    <value>Đổi loại kho</value>
+  </data>
+  <data name="StockTypeHasNotBeenRegister" xml:space="preserve">
+    <value>Loại kho này chưa được đăng ký</value>
+  </data>
+  <data name="StockTypeHasNotBeenRegisterVal" xml:space="preserve">
+    <value>Loại kho này chưa được đăng ký. Mã hàng: %GoodsCdVal%. Loại kho: %StockTypeVal%, Dòng: %LineVal%</value>
+  </data>
+  <data name="StockTypeRequired" xml:space="preserve">
+    <value>Cần chọn Loại kho</value>
+  </data>
+  <data name="Stop" xml:space="preserve">
+    <value>Dừng</value>
+  </data>
+  <data name="StoppedShipping" xml:space="preserve">
+    <value>Bạn đã dừng xuất hàng</value>
+  </data>
+  <data name="StorageTypeSDCardDisplay" xml:space="preserve">
+    <value>Tên bộ nhớ</value>
+  </data>
+  <data name="SUBIDResult" xml:space="preserve">
+    <value>Sub ID</value>
+  </data>
+  <data name="Success" xml:space="preserve">
+    <value>Thành công</value>
+  </data>
+  <data name="Successfully" xml:space="preserve">
+    <value>thành công</value>
+  </data>
+  <data name="Suu" xml:space="preserve">
+    <value>Số lượng</value>
+  </data>
+  <data name="SystemAutoInput" xml:space="preserve">
+    <value>Hệ thống tự động nhập</value>
+  </data>
+  <data name="SystemDescriptionNameLogin" xml:space="preserve">
+    <value>Quản Lý Công Đoạn Sản Xuất</value>
+  </data>
+  <data name="TargetStock" xml:space="preserve">
+    <value>Chuyển đến</value>
+  </data>
+  <data name="TemporarilySaved" xml:space="preserve">
+    <value>Tạm lưu</value>
+  </data>
+  <data name="TentacBranchSetting" xml:space="preserve">
+    <value>Chọn cứ điểm</value>
+  </data>
+  <data name="ThisMametanIsMachineIDOn" xml:space="preserve">
+    <value>Chế độ có "MachineID", vui lòng quét "MachineID" trước, sau đó mới quét Mametan.</value>
+  </data>
+  <data name="ThisProcessed" xml:space="preserve">
+    <value>Chỉ thị này đã được xử lý. Bạn có muốn tiếp tục không?</value>
+  </data>
+  <data name="ThisProcessedVal" xml:space="preserve">
+    <value>Chỉ thị: %InstrNo%, Mã hàng: %GoodsCd%, Loại kho: %StockType%. Chỉ thị này đã được xử lý. Bạn có muốn tiếp tục không?</value>
+  </data>
+  <data name="TimeOccur" xml:space="preserve">
+    <value>T.Gian chạy hàng</value>
+  </data>
+  <data name="ting" xml:space="preserve">
+    <value>Bạn có chắc muốn xóa tiến trình đã chọn không? : </value>
+  </data>
+  <data name="TitleProcessScan" xml:space="preserve">
+    <value>Scan Process</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>Đến ngày</value>
+  </data>
+  <data name="TokCdLabel" xml:space="preserve">
+    <value>Mã khách</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>Tổng</value>
+  </data>
+  <data name="TotalInQty" xml:space="preserve">
+    <value>Tổng nhập</value>
+  </data>
+  <data name="TotalItems" xml:space="preserve">
+    <value>Tổng: </value>
+  </data>
+  <data name="TotalItemsFinish" xml:space="preserve">
+    <value>Tổng: </value>
+  </data>
+  <data name="TotalItemsStart" xml:space="preserve">
+    <value>Tổng: </value>
+  </data>
+  <data name="TotalOutQty" xml:space="preserve">
+    <value>Tông xuất</value>
+  </data>
+  <data name="TotalPageCount" xml:space="preserve">
+    <value>Vui lòng chọn số trang nhỏ hơn hoặc bằng tổng trang hiện tại</value>
+  </data>
+  <data name="TotalPages" xml:space="preserve">
+    <value>Số trang:</value>
+  </data>
+  <data name="TotalShipped" xml:space="preserve">
+    <value>Đã xuất</value>
+  </data>
+  <data name="TurnOffRememberTurnOffMachineID" xml:space="preserve">
+    <value>Tắt tính năng 'Luôn tắt MachineID'?</value>
+  </data>
+  <data name="TurnOnSkipVerifyGoodsCd" xml:space="preserve">
+    <value>Không cần kiểm tra tem dán QR mã hàng</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Loại</value>
+  </data>
+  <data name="Undisposed" xml:space="preserve">
+    <value>Chưa hủy</value>
+  </data>
+  <data name="Unit" xml:space="preserve">
+    <value>Đơn vị</value>
+  </data>
+  <data name="UnprocessedArrival" xml:space="preserve">
+    <value>Chưa nhập</value>
+  </data>
+  <data name="UnprocessedShipment" xml:space="preserve">
+    <value>Chưa xuất</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Cập nhật</value>
+  </data>
+  <data name="UpdateButtonSetting" xml:space="preserve">
+    <value>Lưu</value>
+  </data>
+  <data name="UpdateSuccessfullySetting" xml:space="preserve">
+    <value>Cập nhật thành công</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>Người dùng</value>
+  </data>
+  <data name="UserCdLabel" xml:space="preserve">
+    <value>Mã người dùng</value>
+  </data>
+  <data name="UserCdRequestLabel" xml:space="preserve">
+    <value>Nhập mã người dùng</value>
+  </data>
+  <data name="UserCode" xml:space="preserve">
+    <value>Mã người dùng</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>Nhân viên</value>
+  </data>
+  <data name="UserNameAliasLabel" xml:space="preserve">
+    <value>Tên khác</value>
+  </data>
+  <data name="UserNameLabel" xml:space="preserve">
+    <value>Nhân viên</value>
+  </data>
+  <data name="UserSetting" xml:space="preserve">
+    <value>Tùy chọn</value>
+  </data>
+  <data name="v1000NotSupportedIOS" xml:space="preserve">
+    <value>Chưa hỗ trợ phiên bản IOS (Máy tính bảng, iphone, MAC..) vì các hạn chế của Apple</value>
+  </data>
+  <data name="v1000SupportedAndroid15" xml:space="preserve">
+    <value>Hoạt động tốt nhất với Android phiên bản 13. Hỗ trợ các phiên bản Android từ 7.1 đến 15.</value>
+  </data>
+  <data name="v1000SupportedDownloadNewVersion" xml:space="preserve">
+    <value>Đã hỗ trợ tính năng thông báo tải về khi có phiên bản mới</value>
+  </data>
+  <data name="v1000SupportedSyncSQLServer" xml:space="preserve">
+    <value>Đã hỗ trợ đồng bộ dữ liệu từ Cloud về máy chủ SQLServer</value>
+  </data>
+  <data name="ValidateActualQTY" xml:space="preserve">
+    <value>ActualQTY không được bằng 0 hoặc vượt quá chỉ thị</value>
+  </data>
+  <data name="ValidBranchContentSetting" xml:space="preserve">
+    <value>Bạn cần chọn Cứ điểm!</value>
+  </data>
+  <data name="ValidLimitMametan" xml:space="preserve">
+    <value>Chỉ cho phép Mametan 6 hoặc 3. Vui lòng kiểm tra lại Mametan</value>
+  </data>
+  <data name="ValidMachineID" xml:space="preserve">
+    <value>Vui lòng kiểm tra MachineID và thử lại!</value>
+  </data>
+  <data name="ValidOverDate" xml:space="preserve">
+    <value>Không có ngày này trong tháng và năm hiện tại, vui lòng chọn lại ngày khác!</value>
+  </data>
+  <data name="ValidPleaseCheckMametan" xml:space="preserve">
+    <value>Vui lòng kiểm tra Mametan và thử lại!</value>
+  </data>
+  <data name="ValidProcessOrFinishSearch" xml:space="preserve">
+    <value>Vui lòng kiểm tra lại, chỉ đánh dấu 1 trong 2 Đang xử lý hoặc Hoàn thành!</value>
+  </data>
+  <data name="ValidServerDatabaseNameContentSetting" xml:space="preserve">
+    <value>Vui lòng kiểm tra Tên cơ sở dữ liệu máy chủ và thử lại!</value>
+  </data>
+  <data name="ValidServerNameContentSetting" xml:space="preserve">
+    <value>Vui lòng kiểm tra Tên máy chủ và thử lại!</value>
+  </data>
+  <data name="ValidServerPasswordContentSetting" xml:space="preserve">
+    <value>Vui lòng kiểm tra Mật khẩu máy chủ và thử lại!</value>
+  </data>
+  <data name="ValidServerUserNameContentSetting" xml:space="preserve">
+    <value>Vui lòng kiểm tra Tên người dùng máy chủ và thử lại!</value>
+  </data>
+  <data name="Verify" xml:space="preserve">
+    <value>Xác thực</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>Phiên bản</value>
+  </data>
+  <data name="VietnameseLanguage" xml:space="preserve">
+    <value>Tiếng Việt</value>
+  </data>
+  <data name="WhatNew" xml:space="preserve">
+    <value>Có gì mới</value>
+  </data>
+  <data name="WHBalance" xml:space="preserve">
+    <value>Dư nợ</value>
+  </data>
+  <data name="WhereGetAccount" xml:space="preserve">
+    <value>Tài khoản đăng nhập lấy ở đâu?</value>
+  </data>
+  <data name="WhoUse" xml:space="preserve">
+    <value>Ai sử dụng ứng dụng này?</value>
+  </data>
+  <data name="WorkPath" xml:space="preserve">
+    <value>Xuất file ra thẻ SD</value>
+  </data>
+  <data name="WrongPasswordContentLogin" xml:space="preserve">
+    <value>Mật khẩu sai, vui lòng kiểm tra lại mật khẩu và thử lại</value>
+  </data>
+  <data name="Year" xml:space="preserve">
+    <value>Năm</value>
+  </data>
+  <data name="YouHave" xml:space="preserve">
+    <value>Còn</value>
+  </data>
+  <data name="YouMustSelectAtLeast1Item" xml:space="preserve">
+    <value>Bạn phải chọn ít nhất 1 mục</value>
+  </data>
+  <data name="YourConnectionNotCompany" xml:space="preserve">
+    <value>Kết nối của bạn không phải mạng công ty, ứng dụng chỉ hoạt động khi bạn kết nối mạng Công ty!</value>
+  </data>
+  <data name="ZaikoKu" xml:space="preserve">
+    <value>Loại kho</value>
+  </data>
+  <data name="ZIP" xml:space="preserve">
+    <value>ZIP</value>
+  </data>
+  <data name="LoggingIn" xml:space="preserve">
+    <value>Đang đăng nhập...</value>
+  </data>
+  <data name="Searching" xml:space="preserve">
+    <value>Đang tìm kiếm...</value>
+  </data>
+  <data name="SelectDate" xml:space="preserve">
+    <value>Chọn ngày</value>
+  </data>
+  <data name="Notification" xml:space="preserve">
+    <value>Thông Báo</value>
+  </data>
+  <data name="TheAppNeedsCameraPermissionToScan" xml:space="preserve">
+    <value>Ứng dụng cần quyền truy cập camera để quét.</value>
+  </data>
+  <data name="AddRow" xml:space="preserve">
+    <value>Thêm hàng</value>
+  </data>
+  <data name="DeliveryDate" xml:space="preserve">
+    <value>Ngày giao hàng</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Items" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="SelectItem" xml:space="preserve">
+    <value>Chọn mục</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>Chọn</value>
+  </data>
+  <data name="ShoCdIsNotRegistered" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="WMS9999CW0057" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="WMS9999CW0061" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="WMS9999CW0058" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+</root>

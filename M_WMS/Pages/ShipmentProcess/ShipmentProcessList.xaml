@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="M_WMS.Pages.ShipmentProcess.ShipmentProcessList"
+             xmlns:controls="clr-namespace:M_WMS.Controls.Buttons"
+             xmlns:controlsSelecr="clr-namespace:M_WMS.Controls.Selects"
+             xmlns:controlsBorder="clr-namespace:M_WMS.Controls.Borders"
+             xmlns:controlsEntries="clr-namespace:M_WMS.Controls.Entries"
+             xmlns:controlsDatePickers="clr-namespace:M_WMS.Controls.DatePickers"
+             xmlns:viewmodel="clr-namespace:M_WMS.ViewModel.ShipmentProcessViewModels"
+             xmlns:zxing="clr-namespace:ZXing.Net.Maui.Controls;assembly=ZXing.Net.MAUI.Controls"
+             xmlns:enum="clr-namespace:M_WMS.Enums"
+             xmlns:lang="clr-namespace:M_WMS.Helpers"
+             xmlns:icon="clr-namespace:M_WMS.FontAwesomeIs"
+             BackgroundColor="#F5F5F5"
+             Shell.NavBarIsVisible="False"
+             x:Name="ThisPage"
+             xmlns:local="clr-namespace:M_WMS.Extensions">
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:NumberFormatConverter x:Key="NumberFormatConverter"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid x:Name="RootGrid">
+        <Grid
+            x:Name="MainLayout" 
+            Padding="5"
+            RowDefinitions="Auto,*,55">
+            <!-- ================= SEARCH ================= -->
+            <Border
+                Grid.Row="0"
+                Padding="8"
+                BackgroundColor="White"
+                Stroke="#E0E0E0"
+                StrokeShape="RoundRectangle 12">
+
+                <VerticalStackLayout Spacing="8">
+
+                    <!-- Title -->
+                    <Grid 
+                        RowDefinitions="38"
+                        ColumnDefinitions="35,*,Auto">
+
+                        <Image
+                            Grid.Column="0"
+                            WidthRequest="28"
+                            HeightRequest="28"
+                            Source="stock_list.png"/>
+
+                        <Label
+                            Margin="10,0,0,0"
+                            Grid.Column="1"
+                            Text="{lang:Translate ShipmentProcess}"
+                            FontSize="24"
+                            FontAttributes="Bold"
+                            VerticalOptions="Center"
+                            TextColor="Black"/>
+
+                        <Border HorizontalOptions="End"
+                            Grid.Column="2"
+                            Padding="10,0,10,0"
+                            BackgroundColor="#E3F2FD"
+                            StrokeThickness="0"
+                            StrokeShape="RoundRectangle 19"
+                            HeightRequest="30">
+                            <Label
+                                FontSize="12"
+                                Text="{Binding StockLocation}"
+                                FontAttributes="Bold"
+                                VerticalOptions="Center"
+                                TextColor="DodgerBlue"/>
+                        </Border>
+                    </Grid>
+
+                    <!-- Search -->
+                    <Grid
+                        VerticalOptions="Center"
+                        Grid.Row="0"
+                        ColumnDefinitions="70,*,80"
+                        RowDefinitions="50,40,40"
+                        ColumnSpacing="10"
+                        RowSpacing="0">
+
+                        <!-- Inst No -->
+
+                        <Label
+                            VerticalTextAlignment="Center"
+                            TextColor="Black"
+                            Grid.Row="0"
+                            Grid.Column="0"
+                            Text="{lang:Translate InstrNo}"
+                            VerticalOptions="Center"
+                            Margin="0"/>
+                        <controlsBorder:WmsBorder
+                            Grid.Row="0"
+                            Grid.Column="1"
+                            BorderBottomThickness="1"
+                            BorderBottomBrush="#DADADA">
+                            <controlsBorder:WmsBorder.Child>
+                                <Grid ColumnDefinitions="*,16">
+                                    <Editor
+                                        TextTransform="Uppercase"
+                                        Margin="0"
+                                        Grid.Column="0"
+                                        Focused="OnEditorFocused"
+                                        Unfocused="OnEditorUnfocused"
+                                        x:Name="InstrNo"
+                                        VerticalTextAlignment="Center"
+                                        TextColor="Black"
+                                        Text="{Binding InstrNo}"
+                                        Placeholder="{lang:Translate InstrNo}"/>
+                                    <Image
+                                        IsVisible="False"
+                                        Grid.Column="1"
+                                        x:Name="ClearButton"
+                                        Source="close16x16.png"
+                                        HorizontalOptions="End">
+                                        <Image.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="OnClearTapped"/>
+                                        </Image.GestureRecognizers>
+                                    </Image>
+                                </Grid>
+                            </controlsBorder:WmsBorder.Child>
+                        </controlsBorder:WmsBorder>
+                        <ImageButton
+                            Grid.Row="0"
+                            Grid.RowSpan="2"
+                            Grid.Column="2"
+                            WidthRequest="56"
+                            HeightRequest="56"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            BackgroundColor="Transparent"
+                            Source="qr_code.png"
+                            Command="{Binding ScanCommand}" />
+                        <!-- Goods -->
+
+
+                        <Label
+                            TextColor="Black"
+                            Grid.Row="1"
+                            Grid.RowSpan="2"
+                            Grid.Column="0"
+                            Text="{lang:Translate ScheduledShipDate}"
+                            VerticalOptions="Center"/>
+
+                        <Grid 
+                            RowDefinitions="*,*"
+                            Grid.Row="1"
+                            Grid.RowSpan="2"
+                            Grid.Column="1">
+                            <controlsBorder:WmsBorder
+                                Grid.Row="0"
+                                BorderBottomThickness="1"
+                                BorderBottomBrush="#DADADA">
+                                <controlsBorder:WmsBorder.Child>
+                                    <controlsDatePickers:WmsDatePicker
+                                        x:Name="DateTimeStart"
+                                        Margin="10,0,0,0"
+                                        Date="{Binding StartDateSearch}"
+                                        Placeholder="{lang:Translate SelectDate}"
+                                        Format="yyyy/MM/dd"
+                                        TextColor="Black"
+                                        PlaceholderColor="Gray"
+                                        FontSize="14"
+                                        Icon="calendar.png"/>
+                                </controlsBorder:WmsBorder.Child>
+                            </controlsBorder:WmsBorder>
+
+                            <controlsBorder:WmsBorder
+                                Grid.Row="1"
+                                BorderBottomThickness="1"
+                                BorderBottomBrush="#DADADA">
+                                <controlsBorder:WmsBorder.Child>
+                                    <controlsDatePickers:WmsDatePicker
+                                        x:Name="DateTimeEnd"
+                                        Margin="10,0,0,0"
+                                        Date="{Binding EndDateSearch}"
+                                        Placeholder="{lang:Translate SelectDate}"
+                                        Format="yyyy/MM/dd"
+                                        TextColor="Black"
+                                        PlaceholderColor="Gray"
+                                        FontSize="14"
+                                        Icon="calendar.png"/>
+                                </controlsBorder:WmsBorder.Child>
+                            </controlsBorder:WmsBorder>
+                        </Grid>
+
+                        <controls:IconButton
+                            Grid.Row="2"
+                            Grid.Column="2"
+                            Text="{lang:Translate Search}"
+                            TextColor="White"
+                            Command="{Binding SearchCommand}"/>
+
+                    </Grid>
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- ================= DATA ================= -->
+            <Border
+                Grid.Row="1"
+                Padding="8"
+                BackgroundColor="White"
+                Stroke="#E0E0E0"
+                StrokeShape="RoundRectangle 12">
+                <Grid Grid.Row="1">
+                    <Grid RowDefinitions="40,1,*">
+
+                        <!-- Header -->
+                        <Border
+                            Grid.Row="0"
+                            Stroke="Transparent">
+
+                            <Grid ColumnDefinitions="80,85,*,60,30"
+                                ColumnSpacing="5">
+
+                                <Label Grid.Column="0"
+                                   TextColor="Black"
+                                   Text="{lang:Translate InstrNo}"
+                                   FontAttributes="Bold"
+                                   HorizontalTextAlignment="Center"
+                                   VerticalTextAlignment="Center"/>
+
+                                <Label Grid.Column="1"
+                                   TextColor="Black"
+                                   Text="{lang:Translate GoodsCD}"
+                                   FontAttributes="Bold"
+                                   VerticalTextAlignment="Center"/>
+
+                                <Label Grid.Column="2"
+                                   TextColor="Black"
+                                   Text="{lang:Translate StockType}"
+                                   FontAttributes="Bold"
+                                   HorizontalTextAlignment="Start"
+                                   VerticalTextAlignment="Center"/>
+
+                                <Label Grid.Column="3"
+                                   TextColor="Black"
+                                   Text="{lang:Translate ShipmentQty}"
+                                   FontAttributes="Bold"
+                                   HorizontalTextAlignment="End"
+                                   VerticalTextAlignment="Center"/>
+
+                                <Label Grid.Column="4"
+                                   TextColor="Black"
+                                   FontAttributes="Bold"
+                                   HorizontalTextAlignment="End"
+                                   VerticalTextAlignment="Center"/>
+                            </Grid>
+                        </Border>
+                        <BoxView Grid.Row="1" HeightRequest="1" Color="#2196F3"/>
+                        <!-- Data -->
+                        <CollectionView
+                            Grid.Row="2"
+                            RemainingItemsThreshold="5"
+                            RemainingItemsThresholdReachedCommand="{Binding LoadMoreCommand}"
+                            ItemsUpdatingScrollMode="KeepScrollOffset"
+                            ItemsSource="{Binding ListItems}"
+                            SelectionMode="None">
+
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid RowDefinitions="40,1">
+                                        <Border
+                                            Background="{Binding RowBackground}"
+                                            x:Name="RowBorder"
+                                            Stroke="Transparent"
+                                            Grid.Row="0"
+                                            StrokeThickness="0">
+                                            <Border.GestureRecognizers>
+
+                                                <TapGestureRecognizer
+                                                    Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}},
+                                                                      Path=BindingContext.SelectRowCommand}"
+                                                    CommandParameter="{Binding .}"/>
+
+                                            </Border.GestureRecognizers>
+                                            
+                                            <!--<Border.Triggers>
+                                                <DataTrigger
+                                                    TargetType="Border"
+                                                    Binding="{Binding StatusShoCd}"
+                                                    Value="{x:Static enum:StockStatus.StockNull}">
+                                                    <Setter Property="BackgroundColor" Value="#FFF3CD"/>
+                                                </DataTrigger>
+
+                                                <DataTrigger
+                                                    TargetType="Border"
+                                                    Binding="{Binding StatusShoCd}"
+                                                    Value="{x:Static enum:StockStatus.ShosNull}">
+                                                    <Setter Property="BackgroundColor" Value="#D4EDDA"/>
+                                                </DataTrigger>
+
+                                            </Border.Triggers>-->
+                                            <Grid>
+                                                <BoxView
+                                                    WidthRequest="4"
+                                                    HorizontalOptions="Start"
+                                                    VerticalOptions="Fill"
+                                                    Color="#2196F3"
+                                                    IsVisible="{Binding IsSelected}" />
+                                                <Grid ColumnDefinitions="80,85,*,60,30"
+                                                    HeightRequest="40"
+                                                    ColumnSpacing="5"
+                                                    BackgroundColor="{Binding StatusSho}">
+
+                                                    <Label Grid.Column="0"
+                                                       TextColor="Black"
+                                                       Text="{Binding InstrNo}"
+                                                       HorizontalTextAlignment="Center"
+                                                       VerticalTextAlignment="Center"/>
+
+                                                    <Label Grid.Column="1"
+                                                       TextColor="Black"
+                                                       Text="{Binding ShoCd}"
+                                                       VerticalTextAlignment="Center"
+                                                       LineBreakMode="TailTruncation"/>
+
+                                                    <Label Grid.Column="2"
+                                                       TextColor="Black"
+                                                       Text="{Binding StockTypeName}"
+                                                       HorizontalTextAlignment="Start"
+                                                       VerticalTextAlignment="Center"/>
+
+                                                    <Label Grid.Column="3"
+                                                       TextColor="Black"
+                                                       Text="{Binding Suu, Converter={StaticResource NumberFormatConverter}}"
+                                                       HorizontalTextAlignment="End"
+                                                       VerticalTextAlignment="Center"/>
+
+                                                    <Grid Grid.Column="4"
+                                                          Margin="3">
+                                                        <Image
+                                                            WidthRequest="24"
+                                                            HeightRequest="24"
+                                                            HorizontalOptions="End"
+                                                            VerticalOptions="Center"
+                                                            Source="qr_code.png">
+                                                            <Image.GestureRecognizers>
+                                                                <TapGestureRecognizer
+                                                                 Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}},
+                                                                                   Path=BindingContext.ScanBarcodeRowCommand}"
+                                                                 CommandParameter="{Binding}" />
+                                                            </Image.GestureRecognizers>
+
+                                                        </Image>
+                                                        <Image
+                                                            Source="check.png"
+                                                            WidthRequest="10"
+                                                            HeightRequest="10"
+                                                            HorizontalOptions="End"
+                                                            VerticalOptions="Start"
+                                                            Margin="0,-2,-2,0"
+                                                            IsVisible="{Binding IsSelected}"/>
+                                                    </Grid>
+                                                </Grid>
+                                            </Grid>
+                                        </Border>
+                                        <BoxView
+                                            Grid.Row="1"
+                                            HeightRequest="1"
+                                            BackgroundColor="#D9D9D9"/>
+                                    </Grid>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                            <CollectionView.Footer>
+
+                                <Grid Padding="10">
+
+                                    <ActivityIndicator
+                                        IsRunning="{Binding IsLoadingMore}"
+                                        IsVisible="{Binding IsLoadingMore}" />
+
+                                </Grid>
+
+                            </CollectionView.Footer>
+                        </CollectionView>
+
+                    </Grid>
+
+                    <!-- Loading Overlay -->
+                    <Grid
+                        IsVisible="{Binding IsLoading}"
+                        BackgroundColor="#80FFFFFF"
+                        InputTransparent="False"
+                        ZIndex="1">
+
+                        <VerticalStackLayout
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            Spacing="10">
+
+                            <ActivityIndicator
+                                IsRunning="{Binding IsLoading}"
+                                Color="DodgerBlue"
+                                WidthRequest="40"
+                                HeightRequest="40"/>
+
+                            <Label
+                                Text="{lang:Translate Searching}"
+                                FontSize="16"
+                                TextColor="Black"/>
+
+                        </VerticalStackLayout>
+
+                    </Grid>
+                </Grid>
+            </Border>
+            <!-- ================= Footer ================= -->
+            <Border Grid.Row="3"
+                Padding="8"
+                BackgroundColor="White"
+                Stroke="#E0E0E0"
+                StrokeShape="RoundRectangle 12">
+                <Grid
+                    Grid.Row="0"
+                    ColumnDefinitions="auto,*,auto"
+                    ColumnSpacing="8"
+                    RowSpacing="0">
+
+                    <controls:IconButton 
+                        Command="{Binding BackCommand}"
+                        IconSource="previous.png"
+                        Grid.Column="0" 
+                        Text="{lang:Translate Back}"/>
+
+                    <Label
+                        FontAttributes="Bold"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        TextColor="Black"
+                        Grid.Column="1"
+                        Text="{Binding ItemCount,StringFormat='Total : {0}'}"/>
+
+                    <controls:IconButton 
+                        Command="{Binding OkCommand}"
+                        IconSource="check.png"
+                        Grid.Column="2" 
+                        Text="{lang:Translate Ok}"/>
+                </Grid>
+            </Border>
+        </Grid>
+        <Grid
+            x:Name="PopupHost"
+            IsVisible="False"
+            ZIndex="9999">
+
+            <!-- Background -->
+            <BoxView
+                x:Name="PopupBackground"
+                BackgroundColor="#50000000">
+
+                <BoxView.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="PopupBackground_Tapped"/>
+                </BoxView.GestureRecognizers>
+
+            </BoxView>
+
+            <!-- Chỉ dùng để căn giữa -->
+            <Grid
+                HorizontalOptions="Center"
+                VerticalOptions="Center">
+
+                <!-- Chỉ lớn bằng Popup -->
+                <Grid
+                    x:Name="PopupContainer"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"/>
+
+            </Grid>
+
+        </Grid>
+    </Grid>
+</ContentPage>

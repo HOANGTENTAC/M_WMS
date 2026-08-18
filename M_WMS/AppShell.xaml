@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="M_WMS.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:pages="clr-namespace:M_WMS"
+    Title="M_WMS">
+
+    <ShellContent
+        Title="Home"
+        Route="LoginPage"
+        ContentTemplate="{DataTemplate pages:LoginPage}"/>
+    
+    <ShellContent
+        Title="Main"
+        Route="MainPage"
+        ContentTemplate="{DataTemplate pages:MainPage}" />
+</Shell>

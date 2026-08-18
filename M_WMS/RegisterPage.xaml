@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="M_WMS.RegisterPage"
+             Title="RegisterPage"
+             Padding="20"
+             BackgroundColor="White">
+    <ScrollView>
+    <VerticalStackLayout Spacing="20" Padding="30" VerticalOptions="Center">
+        <Label 
+            Text="Create Account"
+            FontSize="28"
+            TextColor="#333"
+            FontAttributes="Bold"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+            <Label Text="Email"
+                   FontSize="14"
+                   TextColor="#333"/>
+            <Border Stroke="#ddd" StrokeThickness="1" BackgroundColor="White" StrokeShape="RoundRectangle 10" Padding="10">
+                <Entry
+                    x:Name="EmailEntry"
+                    Placeholder="Enter your email"
+                    Keyboard="Email"
+                    FontSize="16"
+                    TextColor="#333"
+                    BackgroundColor="Transparent"
+                    PlaceholderColor="#aaa"/>
+            </Border>
+            <Label Text="Password" FontSize="14" TextColor="#333"/>
+            <Border Stroke="#ddd" StrokeThickness="1" BackgroundColor="White" StrokeShape="RoundRectangle 10" Padding="10">
+                <Entry x:Name="PasswordEntry"
+                       Placeholder="Enter your password"
+                       IsPassword="True"
+                       FontSize="16"
+                       TextColor="#333"
+                       BackgroundColor="Transparent"
+                       PlaceholderColor="#aaa"/>
+            </Border>
+            <Label Text="Confirm Password" FontSize="14" TextColor="#333"/>
+            <Border Stroke="#ddd" StrokeThickness="1" BackgroundColor="White" StrokeShape="RoundRectangle 10" Padding="10">
+                <Entry x:Name="ConfirmPasswordEntry"
+                       Placeholder="Confirm your password"
+                       IsPassword="True"
+                       FontSize="16"
+                       TextColor="#333"
+                       BackgroundColor="Transparent"
+                       PlaceholderColor="#aaa"/>
+            </Border>
+            <Button
+                Text="Register"
+                BackgroundColor="#007AFF"
+                TextColor="White"
+                FontSize="18"
+                CornerRadius="10"
+                HeightRequest="50"
+                Clicked="OnRegisterButtonClicked"/>
+            <Label
+                Text="Already have a account? Login"
+                HorizontalOptions="Center"
+                TextColor="#4e8ef7"
+                FontSize="14">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnLoginLabelTapped"/>
+                </Label.GestureRecognizers>
+            </Label>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

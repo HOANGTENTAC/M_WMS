@@ -1,0 +1,2118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="All" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="Arrival" xml:space="preserve">
+    <value>入庫</value>
+  </data>
+  <data name="ArrivalProcess" xml:space="preserve">
+    <value>入庫処理</value>
+  </data>
+  <data name="ArrivalQty" xml:space="preserve">
+    <value>入庫数量</value>
+  </data>
+  <data name="ArrivalShipmentStockSummary" xml:space="preserve">
+    <value>出入庫集計</value>
+  </data>
+  <data name="ArrivalShipmentTemplate" xml:space="preserve">
+    <value>複数入出庫処理</value>
+  </data>
+  <data name="ArrivalShipmentTemplateSub" xml:space="preserve">
+    <value>(テンプレート)</value>
+  </data>
+  <data name="ArrivalSlip" xml:space="preserve">
+    <value>入庫単</value>
+  </data>
+  <data name="AskYourManagerPermission" xml:space="preserve">
+    <value>許可がある場合のみ、このアプリをダウンロード・インストールしてください。使用できるかどうか、マネージャーに確認してください。</value>
+  </data>
+  <data name="AutoSelectFailed" xml:space="preserve">
+    <value>自動選択に失敗しました。商品コード %GoodsCd% に複数の %StorageType% が存在します。1つ選択してください。</value>
+  </data>
+  <data name="AvailableQty" xml:space="preserve">
+    <value>有効在庫</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>戻る</value>
+  </data>
+  <data name="BackToSearchPage" xml:space="preserve">
+    <value>検索ページに戻る</value>
+  </data>
+  <data name="BadConnection" xml:space="preserve">
+    <value>ネットワーク接続が不安定です。確認してもう一度お試しください。</value>
+  </data>
+  <data name="BadConnectionSetting" xml:space="preserve">
+    <value>接続が非常に悪いです。確認してもう一度お試しください</value>
+  </data>
+  <data name="BarcodeQRUnknowScan" xml:space="preserve">
+    <value>システムがバーコードを正しく認識できません。もう一度試して、できるだけ鮮明に画像をスキャンしてください。</value>
+  </data>
+  <data name="BarcodeUnknow2Scan" xml:space="preserve">
+    <value>システムはこのバーコードを認識できません。もう一度お試しください。エラーが続く場合は、管理者に連絡してください。</value>
+  </data>
+  <data name="BarcodeUnknowScan" xml:space="preserve">
+    <value>システムがバーコードを正しく認識できません。もう一度試して、できるだけ鮮明に画像をスキャンしてください。</value>
+  </data>
+  <data name="BasePoint" xml:space="preserve">
+    <value>拠点</value>
+  </data>
+  <data name="Branch" xml:space="preserve">
+    <value>拠点</value>
+  </data>
+  <data name="BuildingTest" xml:space="preserve">
+    <value>テスト</value>
+  </data>
+  <data name="Support" xml:space="preserve">
+    <value>サポート</value>
+  </data>
+  <data name="ButtonTextLogin" xml:space="preserve">
+    <value>ログイン</value>
+  </data>
+  <data name="PrivacyPolicy" xml:space="preserve">
+    <value>プライバシー</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="CancelAlert" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="CancelButtonText" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="Cancelled" xml:space="preserve">
+    <value>キャンセル済み</value>
+  </data>
+  <data name="CancelSlip" xml:space="preserve">
+    <value>キャンセル伝票</value>
+  </data>
+  <data name="CanEmpty" xml:space="preserve">
+    <value>空白可</value>
+  </data>
+  <data name="CannotBeEmptyContentScan" xml:space="preserve">
+    <value>空にすることはできません</value>
+  </data>
+  <data name="CannotConnect" xml:space="preserve">
+    <value>接続できません</value>
+  </data>
+  <data name="CannotConnectSMBServer" xml:space="preserve">
+    <value>新しいバージョンを確認するための社内SMBサーバーに接続できませんでした。最新のAPKバージョンへ更新する必要がない場合は、このメッセージを無視してください</value>
+  </data>
+  <data name="CannotConnectUpdateServerAPK" xml:space="preserve">
+    <value>更新サーバーに接続できません。システム管理者にお問い合わせください。</value>
+  </data>
+  <data name="CannotGetData" xml:space="preserve">
+    <value>データを取得できません</value>
+  </data>
+  <data name="CannotGetNewIndexNo" xml:space="preserve">
+    <value>SQLの新しいIndexNoを取得できません</value>
+  </data>
+  <data name="CannotGetNewStockSlip" xml:space="preserve">
+    <value>新しい在庫伝票番号を取得できません！</value>
+  </data>
+  <data name="CannotReadWrite" xml:space="preserve">
+    <value>データの読み書き不可。許可を与えてください</value>
+  </data>
+  <data name="CannotRefreshData" xml:space="preserve">
+    <value>問題が発生したため、表示中のデータを更新できませんでした。もう一度検索してください。</value>
+  </data>
+  <data name="CannotRetrieveHHID" xml:space="preserve">
+    <value>挿入後、HistoryHからHHIdを取得できません</value>
+  </data>
+  <data name="CannotSave" xml:space="preserve">
+    <value>保存できません</value>
+  </data>
+  <data name="CannotScanContentAlertScan" xml:space="preserve">
+    <value>エラーが発生しました。もう一度お試しください。
+カメラを動かさないでください。スキャンした画像は鮮明である必要があります。それでも問題が解決しない場合は、管理者に連絡してください。</value>
+  </data>
+  <data name="CannotUseCamera" xml:space="preserve">
+    <value>カメラが使えません。アプリに許可を与えてください！</value>
+  </data>
+  <data name="CannotValidateDownloadedFileAPK" xml:space="preserve">
+    <value>ダウンロードしたファイルの検証に失敗しました。もう一度試しますか</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>品類</value>
+  </data>
+  <data name="cb_stock_type_10" xml:space="preserve">
+    <value>商品</value>
+  </data>
+  <data name="cb_stock_type_11" xml:space="preserve">
+    <value>製品</value>
+  </data>
+  <data name="cb_stock_type_21" xml:space="preserve">
+    <value>半製品</value>
+  </data>
+  <data name="cb_stock_type_30" xml:space="preserve">
+    <value>原材料</value>
+  </data>
+  <data name="cb_stock_type_31" xml:space="preserve">
+    <value>直接原材料</value>
+  </data>
+  <data name="cb_stock_type_32" xml:space="preserve">
+    <value>間接原材料</value>
+  </data>
+  <data name="cb_stock_type_33" xml:space="preserve">
+    <value>製版直接原材料</value>
+  </data>
+  <data name="cb_stock_type_34" xml:space="preserve">
+    <value>製版間接原材料</value>
+  </data>
+  <data name="cb_stock_type_41" xml:space="preserve">
+    <value>消耗品</value>
+  </data>
+  <data name="cb_stock_type_42" xml:space="preserve">
+    <value>製版消耗品</value>
+  </data>
+  <data name="cb_stock_type_51" xml:space="preserve">
+    <value>預け-製品</value>
+  </data>
+  <data name="cb_stock_type_52" xml:space="preserve">
+    <value>預け-半製品</value>
+  </data>
+  <data name="cb_stock_type_53" xml:space="preserve">
+    <value>預け-原材料</value>
+  </data>
+  <data name="cb_stock_type_61" xml:space="preserve">
+    <value>預かり</value>
+  </data>
+  <data name="cb_stock_type_62" xml:space="preserve">
+    <value>預かり製品</value>
+  </data>
+  <data name="cb_stock_type_80" xml:space="preserve">
+    <value>研究開発費</value>
+  </data>
+  <data name="cb_stock_type_91" xml:space="preserve">
+    <value>廃棄</value>
+  </data>
+  <data name="ChangeAccount" xml:space="preserve">
+    <value>アカウントの変更</value>
+  </data>
+  <data name="ChangeAvatar" xml:space="preserve">
+    <value>アバター変更</value>
+  </data>
+  <data name="Changelog" xml:space="preserve">
+    <value>変更履歴</value>
+  </data>
+  <data name="ChangelogContent" xml:space="preserve">
+    <value>Version x.x.x.x または開発者名をタップすると、新機能が確認できます。（下の画像参照）</value>
+  </data>
+  <data name="CheckConnectionButtonSetting" xml:space="preserve">
+    <value>接続を確認する</value>
+  </data>
+  <data name="CheckFinishedProcessContentPage" xml:space="preserve">
+    <value>今すぐ「プロセスの終了」を確認しますか?</value>
+  </data>
+  <data name="CheckMissingProcessCheckPage" xml:space="preserve">
+    <value>不足しているプロセスを確認する</value>
+  </data>
+  <data name="CheckProcessTitleCheckPage" xml:space="preserve">
+    <value>工程のチェック</value>
+  </data>
+  <data name="CheckProcStep" xml:space="preserve">
+    <value>不足しているプロセスを確認する</value>
+  </data>
+  <data name="CheckStopped" xml:space="preserve">
+    <value>チェックは停止しました。</value>
+  </data>
+  <data name="CheckTabItem" xml:space="preserve">
+    <value>チェック</value>
+  </data>
+  <data name="ChooseYourBestPhoto" xml:space="preserve">
+    <value>最高の写真を選んでください</value>
+  </data>
+  <data name="ClearScan" xml:space="preserve">
+    <value>消去</value>
+  </data>
+  <data name="CloseAlert" xml:space="preserve">
+    <value>閉じる</value>
+  </data>
+  <data name="CloudSyncFailed" xml:space="preserve">
+    <value>クラウドデータ同期失敗</value>
+  </data>
+  <data name="ComingSoon" xml:space="preserve">
+    <value>近日公開...</value>
+  </data>
+  <data name="ComingSoonDevelopment" xml:space="preserve">
+    <value>近日公開予定です。この機能は現在開発中です</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>完了しました</value>
+  </data>
+  <data name="ConfirmAllSelected" xml:space="preserve">
+    <value>選択したすべてのグッズコードを検証してください</value>
+  </data>
+  <data name="ConnectingStatus" xml:space="preserve">
+    <value>接続中...</value>
+  </data>
+  <data name="ConnectionErrorContentLogin" xml:space="preserve">
+    <value>接続を確認してもう一度お試しいただくか、Liem 様にご連絡ください</value>
+  </data>
+  <data name="ConnectionErrorLogin" xml:space="preserve">
+    <value>接続エラー！</value>
+  </data>
+  <data name="ConnectionOKSetting" xml:space="preserve">
+    <value>接続OK!</value>
+  </data>
+  <data name="ContactSupportAccount" xml:space="preserve">
+    <value>ログイン情報を取得するには、あなたの部門のマネージャーに連絡してください。それでも解決しない場合は、リエム様に連絡してください。</value>
+  </data>
+  <data name="ContactSupportUse" xml:space="preserve">
+    <value>あなたの部門のマネージャーに連絡してください。それでも解決しない場合は、リエム様に連絡してください。</value>
+  </data>
+  <data name="ContentChangeLanguageAlertLogin" xml:space="preserve">
+    <value>言語の変更を完了するには、アプリケーションを再起動する必要がある場合があります</value>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>継続</value>
+  </data>
+  <data name="Copied" xml:space="preserve">
+    <value>コピーしました</value>
+  </data>
+  <data name="CreateDate" xml:space="preserve">
+    <value>作成日</value>
+  </data>
+  <data name="CSV" xml:space="preserve">
+    <value>CSV</value>
+  </data>
+  <data name="CsvFile" xml:space="preserve">
+    <value>CSV File</value>
+  </data>
+  <data name="CultureLabel" xml:space="preserve">
+    <value>カルチャ</value>
+  </data>
+  <data name="CurrentStock" xml:space="preserve">
+    <value>移動元</value>
+  </data>
+  <data name="CurrentStockData" xml:space="preserve">
+    <value>現在の倉庫データ</value>
+  </data>
+  <data name="DatabaseConnectionSetting" xml:space="preserve">
+    <value>データベース接続</value>
+  </data>
+  <data name="DatabaseNameSettingPlaceHolder" xml:space="preserve">
+    <value>データベース名</value>
+  </data>
+  <data name="DataSaved" xml:space="preserve">
+    <value>保存に成功しました</value>
+  </data>
+  <data name="Day" xml:space="preserve">
+    <value>日時</value>
+  </data>
+  <data name="DelayErrorGetMametan" xml:space="preserve">
+    <value>マメタンを取得できませんでした。何らかの遅延エラーが発生しました。削除して再スキャンしてください。</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>消去</value>
+  </data>
+  <data name="DeleteAlert" xml:space="preserve">
+    <value>削除しています...?</value>
+  </data>
+  <data name="DeleteAllExcludeProcesses" xml:space="preserve">
+    <value>除外されたプロセスをすべて削除してもよろしいですか?</value>
+  </data>
+  <data name="DeleteDataPermanently" xml:space="preserve">
+    <value>データを完全に削除します。本当に削除してもよろしいですか</value>
+  </data>
+  <data name="DeletedSuccessfully" xml:space="preserve">
+    <value>削除されました!</value>
+  </data>
+  <data name="DeleteErrorAlert" xml:space="preserve">
+    <value>エラーは削除できません</value>
+  </data>
+  <data name="DeliveredQty" xml:space="preserve">
+    <value>出荷数量</value>
+  </data>
+  <data name="DescriptionFolderPath" xml:space="preserve">
+    <value>エクスポートしたいフォルダを選択してください</value>
+  </data>
+  <data name="Deselect" xml:space="preserve">
+    <value>解除</value>
+  </data>
+  <data name="DeveloperLogin" xml:space="preserve">
+    <value>TENTAC（HO CHI MINH）が開発</value>
+  </data>
+  <data name="DisplayConnectionInfo" xml:space="preserve">
+    <value>サーバー接続情報を表示する</value>
+  </data>
+  <data name="Disposal" xml:space="preserve">
+    <value>廃棄指示書</value>
+  </data>
+  <data name="DisposalProcess" xml:space="preserve">
+    <value>廃棄処理済み</value>
+  </data>
+  <data name="DisposalSkipped" xml:space="preserve">
+    <value>この廃棄指示書が処理済みので、無視します</value>
+  </data>
+  <data name="DoesNotExist" xml:space="preserve">
+    <value>存在しない</value>
+  </data>
+  <data name="Dosmetic" xml:space="preserve">
+    <value>国内</value>
+  </data>
+  <data name="DownloadCompleted" xml:space="preserve">
+    <value>ダウンロード完了。今すぐインストールする</value>
+  </data>
+  <data name="Downloading" xml:space="preserve">
+    <value>ダウンロード中</value>
+  </data>
+  <data name="DownloadSuccess" xml:space="preserve">
+    <value>ダウンロードに成功しました</value>
+  </data>
+  <data name="DownloadTemplate" xml:space="preserve">
+    <value>テンプレートダウンロード</value>
+  </data>
+  <data name="DownloadVersionError" xml:space="preserve">
+    <value>ダウンロードエラーです。再起動して再試行してください。問題が続く場合は管理者に連絡してください</value>
+  </data>
+  <data name="DoYouWantCameraAccess" xml:space="preserve">
+    <value>カメラのアクセスを許可しますか？</value>
+  </data>
+  <data name="DoYouWantInstall" xml:space="preserve">
+    <value>インストールしますか</value>
+  </data>
+  <data name="DoYouWantReadWriteData" xml:space="preserve">
+    <value>アプリに読書き許可必要。許可しますか</value>
+  </data>
+  <data name="DoYouWantToChangeAvatar" xml:space="preserve">
+    <value>アバターを変更したいですか?</value>
+  </data>
+  <data name="DoYouWantToChangeStorageType" xml:space="preserve">
+    <value>倉庫の種類を変更しますか</value>
+  </data>
+  <data name="DoYouWantToContinueShipment" xml:space="preserve">
+    <value>出庫を続けますか</value>
+  </data>
+  <data name="DoYouWantToFinishScan" xml:space="preserve">
+    <value>終了しますか?</value>
+  </data>
+  <data name="DoYouWantToSaveConnectionSetting" xml:space="preserve">
+    <value>接続を保存しますか</value>
+  </data>
+  <data name="DoYouWantToUpdate" xml:space="preserve">
+    <value>更新しますか</value>
+  </data>
+  <data name="DraftProcurementList" xml:space="preserve">
+    <value>（仮）手配リスト</value>
+  </data>
+  <data name="DuplicateNotAllow" xml:space="preserve">
+    <value>重複してはいけません。ご確認ください。</value>
+  </data>
+  <data name="EasyToUseSlideShow" xml:space="preserve">
+    <value>使いやすい</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>編集</value>
+  </data>
+  <data name="EditedBy" xml:space="preserve">
+    <value>更新者</value>
+  </data>
+  <data name="EditedFlagResult" xml:space="preserve">
+    <value>編集済みFlag</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>メール</value>
+  </data>
+  <data name="EMailLabel" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="EmptyMametan" xml:space="preserve">
+    <value>指示を空白のままにすることはできません。</value>
+  </data>
+  <data name="EndDateValidContentSearch" xml:space="preserve">
+    <value>終了日は開始日よりも長くなければなりません。</value>
+  </data>
+  <data name="EnglishLanguage" xml:space="preserve">
+    <value>英語</value>
+  </data>
+  <data name="EntryDate" xml:space="preserve">
+    <value>発生日</value>
+  </data>
+  <data name="EntryTime" xml:space="preserve">
+    <value>発生時間</value>
+  </data>
+  <data name="ErrorAlert" xml:space="preserve">
+    <value>エラー</value>
+  </data>
+  <data name="ErrorCode" xml:space="preserve">
+    <value>エラーコード</value>
+  </data>
+  <data name="ErrorConnection" xml:space="preserve">
+    <value>接続エラー</value>
+  </data>
+  <data name="ErrorEditContentSave" xml:space="preserve">
+    <value>保存中にエラーが発生しました。もう一度お試しください。エラーが解決しない場合は、スクリーンショットを撮ってLiem様に送信してください。</value>
+  </data>
+  <data name="ErrorGetListGoodsCD" xml:space="preserve">
+    <value>ListGoodsCDの取得エラー、再試行してください！</value>
+  </data>
+  <data name="ErrorInsertEditDelete" xml:space="preserve">
+    <value>挿入・編集・削除エラー</value>
+  </data>
+  <data name="ErrorNumberAlert" xml:space="preserve">
+    <value>エラーコード</value>
+  </data>
+  <data name="ErrorSelectImage" xml:space="preserve">
+    <value>写真の選択中にエラーが発生しました。管理者のLiem様にご連絡ください。</value>
+  </data>
+  <data name="ErrorUpdateTable" xml:space="preserve">
+    <value>データ更新エラー</value>
+  </data>
+  <data name="EXCEL" xml:space="preserve">
+    <value>EXCEL</value>
+  </data>
+  <data name="ExcelFile" xml:space="preserve">
+    <value>Excel</value>
+  </data>
+  <data name="ExcelOutput" xml:space="preserve">
+    <value>エクセル出力</value>
+  </data>
+  <data name="ExcelOutputPath" xml:space="preserve">
+    <value>エクセル出力先</value>
+  </data>
+  <data name="ExcelOutputSuccess" xml:space="preserve">
+    <value>Excel出力は成功</value>
+  </data>
+  <data name="ExcelSaveError" xml:space="preserve">
+    <value>エラーが発生しました。Excelファイルを保存できません</value>
+  </data>
+  <data name="Exist" xml:space="preserve">
+    <value>現存の</value>
+  </data>
+  <data name="ExitLabel" xml:space="preserve">
+    <value>終了</value>
+  </data>
+  <data name="ExpectedArrivalDate" xml:space="preserve">
+    <value>入庫希望日</value>
+  </data>
+  <data name="ExpirationDate" xml:space="preserve">
+    <value>有効期限</value>
+  </data>
+  <data name="ExportExcel" xml:space="preserve">
+    <value>出力</value>
+  </data>
+  <data name="ExportFile" xml:space="preserve">
+    <value>ファイル出力</value>
+  </data>
+  <data name="ExportFirstCSV" xml:space="preserve">
+    <value>最初に CSV エクスポートが必要で、その後共有できます。</value>
+  </data>
+  <data name="ExportSuccessfully" xml:space="preserve">
+    <value>エクスポートに成功しました</value>
+  </data>
+  <data name="FactoryNote" xml:space="preserve">
+    <value>工場用のメモ</value>
+  </data>
+  <data name="FailedContentLogin" xml:space="preserve">
+    <value>失敗しました。指紋を確認してもう一度お試しください</value>
+  </data>
+  <data name="FailedLogin" xml:space="preserve">
+    <value>ログインに失敗しました</value>
+  </data>
+  <data name="FAQ" xml:space="preserve">
+    <value>FAQ</value>
+  </data>
+  <data name="FAQFull" xml:space="preserve">
+    <value>よくある質問</value>
+  </data>
+  <data name="FileLabel" xml:space="preserve">
+    <value>ファイル</value>
+  </data>
+  <data name="FileSaved" xml:space="preserve">
+    <value>ファイルは既にメモリに保存されています</value>
+  </data>
+  <data name="FilterStockType" xml:space="preserve">
+    <value>在庫種別</value>
+  </data>
+  <data name="Find" xml:space="preserve">
+    <value>検索</value>
+  </data>
+  <data name="FingerprintLogin" xml:space="preserve">
+    <value>指紋認証</value>
+  </data>
+  <data name="Finish" xml:space="preserve">
+    <value>処理済み</value>
+  </data>
+  <data name="FinishDate" xml:space="preserve">
+    <value>終了日</value>
+  </data>
+  <data name="FinishDateValidContentSearch" xml:space="preserve">
+    <value>終了日を確認してもう一度お試しください。</value>
+  </data>
+  <data name="FinishedTitleProcessPage" xml:space="preserve">
+    <value>終了した</value>
+  </data>
+  <data name="FinishSuccessfully" xml:space="preserve">
+    <value>完了に成功しました。[戻る] ボタンを使用して検索ページに戻ることができます。</value>
+  </data>
+  <data name="FinishWithoutMachineIDScan" xml:space="preserve">
+    <value>MachineID なしで「完了」してもよろしいですか?</value>
+  </data>
+  <data name="FontPathNotFound" xml:space="preserve">
+    <value>フォントパスが見つからないエラー: </value>
+  </data>
+  <data name="FRDate" xml:space="preserve">
+    <value>初回入庫日</value>
+  </data>
+  <data name="FreeSpace" xml:space="preserve">
+    <value>空き容量</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>から</value>
+  </data>
+  <data name="FSDate" xml:space="preserve">
+    <value>初回出庫日</value>
+  </data>
+  <data name="GetWMSAPI" xml:space="preserve">
+    <value>WMS API取得</value>
+  </data>
+  <data name="GoodsCD" xml:space="preserve">
+    <value>商品CD</value>
+  </data>
+  <data name="GoodsCDChange" xml:space="preserve">
+    <value>商品CD変換</value>
+  </data>
+  <data name="GoodsCdStockTypeAlreadyConfirmed" xml:space="preserve">
+    <value>この品目はすでに確認されています</value>
+  </data>
+  <data name="GoodsDetails" xml:space="preserve">
+    <value>製品情報</value>
+  </data>
+  <data name="GoodsName" xml:space="preserve">
+    <value>商品名</value>
+  </data>
+  <data name="GoodsType" xml:space="preserve">
+    <value>品種</value>
+  </data>
+  <data name="GroupCD" xml:space="preserve">
+    <value>グループCD</value>
+  </data>
+  <data name="GroupGoods" xml:space="preserve">
+    <value>グループ</value>
+  </data>
+  <data name="GroupName" xml:space="preserve">
+    <value>グループ名</value>
+  </data>
+  <data name="GrpCdLabel" xml:space="preserve">
+    <value>グループCD</value>
+  </data>
+  <data name="GrpStockType" xml:space="preserve">
+    <value>入出庫区分を選択してください。</value>
+  </data>
+  <data name="HasBeenOutput" xml:space="preserve">
+    <value>出力しました</value>
+  </data>
+  <data name="HasNotBeenRegister" xml:space="preserve">
+    <value>このCD製品番号は登録されていません。販売スタッフに通知して登録してください</value>
+  </data>
+  <data name="HasNotBeenRegisterVal" xml:space="preserve">
+    <value>このCD製品番号は登録されていません。販売スタッフに通知して登録してください。商品CD: %GoodsCdVal%, 行番号: %LineVal%</value>
+  </data>
+  <data name="Hide" xml:space="preserve">
+    <value>非表示</value>
+  </data>
+  <data name="HideAll" xml:space="preserve">
+    <value>2: リストに非表示する</value>
+  </data>
+  <data name="Hinmei" xml:space="preserve">
+    <value>商品名</value>
+  </data>
+  <data name="HintDownloadOffice" xml:space="preserve">
+    <value>このファイルを開くには、Google Play または AppStore から Microsoft Office 365 または Excel をダウンロードできます。</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>出入履歴</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>ホーム</value>
+  </data>
+  <data name="HourValidContentSearch" xml:space="preserve">
+    <value>時間は 00 から 23、分は 00 から 59 まで確認して、もう一度お試しください。</value>
+  </data>
+  <data name="HowUse" xml:space="preserve">
+    <value>どうやって使うの？</value>
+  </data>
+  <data name="ImageLimited" xml:space="preserve">
+    <value>最大サイズが5MBの画像のみ保存が許可されます。画像を編集するか、別の画像を選択してください</value>
+  </data>
+  <data name="ImportantNotes" xml:space="preserve">
+    <value>重要なメモ</value>
+  </data>
+  <data name="ImportExcel" xml:space="preserve">
+    <value>エクセル読み込む</value>
+  </data>
+  <data name="In-Out" xml:space="preserve">
+    <value>入出庫区</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>情報</value>
+  </data>
+  <data name="InformationAlert" xml:space="preserve">
+    <value>情報</value>
+  </data>
+  <data name="InformationSecurity" xml:space="preserve">
+    <value>情報セキュリティ</value>
+  </data>
+  <data name="InOutDate" xml:space="preserve">
+    <value>入出庫日</value>
+  </data>
+  <data name="InOutReason" xml:space="preserve">
+    <value>入出庫理由</value>
+  </data>
+  <data name="InOutStockType" xml:space="preserve">
+    <value>入出庫区分</value>
+  </data>
+  <data name="InOut_Ku_2_1_1" xml:space="preserve">
+    <value>外部から仕入れたものを入庫する時</value>
+  </data>
+  <data name="InOut_Ku_2_1_2" xml:space="preserve">
+    <value>製造したものを倉庫に入れるとき（製造入庫）</value>
+  </data>
+  <data name="InOut_Ku_2_1_3" xml:space="preserve">
+    <value>在庫移動するための入庫</value>
+  </data>
+  <data name="InOut_Ku_2_1_4" xml:space="preserve">
+    <value>棚卸し等の在庫調整 </value>
+  </data>
+  <data name="InOut_Ku_2_2_1" xml:space="preserve">
+    <value>倉庫から売り上げるために出庫する時</value>
+  </data>
+  <data name="InOut_Ku_2_2_2" xml:space="preserve">
+    <value>製造するために、材料として倉庫から出すとき（投入）</value>
+  </data>
+  <data name="InOut_Ku_2_2_3" xml:space="preserve">
+    <value>在庫移動するための出庫</value>
+  </data>
+  <data name="InOut_Ku_2_2_4" xml:space="preserve">
+    <value>サンプル出荷または、棚卸し等の在庫調整 </value>
+  </data>
+  <data name="Input" xml:space="preserve">
+    <value>入力</value>
+  </data>
+  <data name="inputArea" xml:space="preserve">
+    <value>&gt;</value>
+  </data>
+  <data name="InputGoodsCDPlaceHolder" xml:space="preserve">
+    <value>商品コード入力</value>
+  </data>
+  <data name="InputGoodsNamePlaceHolder" xml:space="preserve">
+    <value>商品名入力</value>
+  </data>
+  <data name="InputInformationScan" xml:space="preserve">
+    <value>入力情報</value>
+  </data>
+  <data name="InputLineNumberAt" xml:space="preserve">
+    <value>行番号を入力してください</value>
+  </data>
+  <data name="InputLineNumberAtVal" xml:space="preserve">
+    <value>行番号を入力してください %LineVal%</value>
+  </data>
+  <data name="InputMachineIDPlaceHolder" xml:space="preserve">
+    <value>機械NO入力</value>
+  </data>
+  <data name="InputMametanPlaceHolder" xml:space="preserve">
+    <value>豆単番号入力</value>
+  </data>
+  <data name="InputPoNoPlaceHolder" xml:space="preserve">
+    <value>発注NO入力</value>
+  </data>
+  <data name="InputQTYZeroScan" xml:space="preserve">
+    <value>QTY = 0 を入力しましたか?</value>
+  </data>
+  <data name="InputYourUserIDPlaceHolderLogin" xml:space="preserve">
+    <value>ユーザーID</value>
+  </data>
+  <data name="InputYourUserPasswordHolderLogin" xml:space="preserve">
+    <value>あなたのパスワード</value>
+  </data>
+  <data name="Insert" xml:space="preserve">
+    <value>入れる</value>
+  </data>
+  <data name="InStock" xml:space="preserve">
+    <value>在庫ありのみ</value>
+  </data>
+  <data name="InStockType" xml:space="preserve">
+    <value>入庫区分</value>
+  </data>
+  <data name="InstrIssueVal" xml:space="preserve">
+    <value>指示書No: %InstrNo%,  商品CD: %GoodsCd%, 行番号: %Line%. この指示は存在しません。計画部門に連絡して、この指示を発行してもらってください</value>
+  </data>
+  <data name="InstrNo" xml:space="preserve">
+    <value>指示書No</value>
+  </data>
+  <data name="InstrNoPoNoStatus" xml:space="preserve">
+    <value>InstructionNoとPONoの状態</value>
+  </data>
+  <data name="InstrNoPoNoStatusContent" xml:space="preserve">
+    <value>背景がオレンジなら出荷済み、そうでなければ未出荷</value>
+  </data>
+  <data name="InstructionNo" xml:space="preserve">
+    <value>指示書No</value>
+  </data>
+  <data name="InstructionShipped" xml:space="preserve">
+    <value>同じ指示書番号は既にありました。続行しますか</value>
+  </data>
+  <data name="International" xml:space="preserve">
+    <value>国際</value>
+  </data>
+  <data name="InvalidContentScan" xml:space="preserve">
+    <value>無効</value>
+  </data>
+  <data name="InvalidDataScan" xml:space="preserve">
+    <value>無効なデータです</value>
+  </data>
+  <data name="InvalidDate" xml:space="preserve">
+    <value>無効な日付</value>
+  </data>
+  <data name="InvalidSelectStockType" xml:space="preserve">
+    <value>何か選び忘れていませんか？ご確認ください！</value>
+  </data>
+  <data name="InventoryAdj" xml:space="preserve">
+    <value>在庫調整</value>
+  </data>
+  <data name="InventoryAlert" xml:space="preserve">
+    <value>在庫アラート</value>
+  </data>
+  <data name="IppanLabel" xml:space="preserve">
+    <value>一般</value>
+  </data>
+  <data name="IsEmpty" xml:space="preserve">
+    <value>空です</value>
+  </data>
+  <data name="IsRequired" xml:space="preserve">
+    <value>必須です</value>
+  </data>
+  <data name="IssueDate" xml:space="preserve">
+    <value>発行日</value>
+  </data>
+  <data name="Issuer" xml:space="preserve">
+    <value>作成者</value>
+  </data>
+  <data name="JapaneseLanguage" xml:space="preserve">
+    <value>日本語</value>
+  </data>
+  <data name="KeepLocation" xml:space="preserve">
+    <value>在庫場所</value>
+  </data>
+  <data name="Key_A100_1" xml:space="preserve">
+    <value>最初リリース</value>
+  </data>
+  <data name="Key_A103_1" xml:space="preserve">
+    <value>入出庫処理時にOutbox同期ロジックを追加</value>
+  </data>
+  <data name="Key_A104_1" xml:space="preserve">
+    <value>StockTransfer向けのOutbox同期ロジックを追加し、NoFilterMode検索時にGroupBy処理によってMametanの検索結果の行が欠落する不具合を修正</value>
+  </data>
+  <data name="Key_A108_1" xml:space="preserve">
+    <value>Arrival &amp; Shipmentのインポート機能を追加し、RadioButtonの表示状態を改善しました。また、モバイル画面のその他のUI改善を実施しました。</value>
+  </data>
+  <data name="Key_A108_2" xml:space="preserve">
+    <value>SeuicおよびUrovoのSDKライブラリを追加し、QRコード・バーコードのハードウェアスキャンキーに対応しました。また、スキャン時の音量を調整できるスライダー設定機能を追加しました。</value>
+  </data>
+  <data name="Key_A108_3" xml:space="preserve">
+    <value>新しいバージョンを自動的に確認する機能を追加し、最新バージョンへのアップデートに対応しました。</value>
+  </data>
+  <data name="Key_A108_4" xml:space="preserve">
+    <value>ImportTemplate機能を改善し、LineNoの入力を不要にしました。代わりに、キー取得のためにPO、InstrNo、GoodsCd、および合計数量の入力を必須としました。</value>
+  </data>
+  <data name="Key_Added" xml:space="preserve">
+    <value>追加</value>
+  </data>
+  <data name="Key_C108_1" xml:space="preserve">
+    <value>NPOI から Microsoft の最新 OpenXML ライブラリへ移行し、NPOI 2.8.0 の有償ライセンスに関する問題を回避しました。</value>
+  </data>
+  <data name="Key_Changed" xml:space="preserve">
+    <value>変更</value>
+  </data>
+  <data name="Key_U101_1" xml:space="preserve">
+    <value>本社に提出する（複数入出庫処理可能）</value>
+  </data>
+  <data name="Key_U102_1" xml:space="preserve">
+    <value>有効期限の修正（入庫画面のみ）</value>
+  </data>
+  <data name="Key_U105_1" xml:space="preserve">
+    <value>Outbox同期ロジックを修正し、NoFilterModeでの入出庫処理ロジックを改善しました。また、複数の出庫伝票を処理する際に、2件目以降の伝票で在庫が正しく減算されない不具合を修正しました。</value>
+  </data>
+  <data name="Key_U106_1" xml:space="preserve">
+    <value>QRスキャン画面を改善し、同一のInstrNo、PoNo、GoodsCd、StockTypeを1行に集約するようにしました。</value>
+  </data>
+  <data name="Key_U107_1" xml:space="preserve">
+    <value>モバイル画面のUIを改善し、入出庫処理に関する複数のロジック不具合を修正しました。また、商品履歴参照時の不具合を修正しました。</value>
+  </data>
+  <data name="Key_U108_1" xml:space="preserve">
+    <value>Android 13、14、15、16でファイルの読み書きができない不具合を修正し、MANAGE_EXTERNAL_STORAGE権限に対応しました。</value>
+  </data>
+  <data name="Key_Updated" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="KyotenCd" xml:space="preserve">
+    <value>拠点CD</value>
+  </data>
+  <data name="KyotenCdLabel" xml:space="preserve">
+    <value>拠点CD</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>日本語</value>
+  </data>
+  <data name="Languages" xml:space="preserve">
+    <value>言語</value>
+  </data>
+  <data name="LanguagesContent" xml:space="preserve">
+    <value>ログイン画面で、右上の言語名またはアイコンをタップし、言語を選択。デフォルトは英語です</value>
+  </data>
+  <data name="LastestVersion" xml:space="preserve">
+    <value>すでに最新バージョンをご利用です</value>
+  </data>
+  <data name="LeavingAppContent" xml:space="preserve">
+    <value>本当に終了してもよろしいですか?</value>
+  </data>
+  <data name="LeavingAppTitle" xml:space="preserve">
+    <value>アプリケーションを終了しますか!</value>
+  </data>
+  <data name="LessThan" xml:space="preserve">
+    <value>未満</value>
+  </data>
+  <data name="LessthanOneMonth" xml:space="preserve">
+    <value>日付の間隔を1か月未満に調整してください</value>
+  </data>
+  <data name="LessThanOrEqual" xml:space="preserve">
+    <value>以下でなければならない</value>
+  </data>
+  <data name="LimitBigData" xml:space="preserve">
+    <value>検索結果にデータがないか、データが大きすぎます。検索時間の範囲をもう一度確認してください。</value>
+  </data>
+  <data name="LimitDateTimeSearch" xml:space="preserve">
+    <value>1 か月以内の検索のみを許可します。パフォーマンスの問題のため、許可された制限内で期間を再定義してください。</value>
+  </data>
+  <data name="LimitStaffScan" xml:space="preserve">
+    <value>入力できる従業員コードは 9 つだけです。もう一度確認してください。</value>
+  </data>
+  <data name="LineNo" xml:space="preserve">
+    <value>行番号</value>
+  </data>
+  <data name="Loading" xml:space="preserve">
+    <value>読み込み中...</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>在庫場所</value>
+  </data>
+  <data name="LoggedOutContentLogin" xml:space="preserve">
+    <value>ログアウトしました</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>ログイン</value>
+  </data>
+  <data name="LoginAgain" xml:space="preserve">
+    <value>変更を適用するには、再度ログインしてください</value>
+  </data>
+  <data name="LoginLeft" xml:space="preserve">
+    <value>回ログイン</value>
+  </data>
+  <data name="LoginsLeft" xml:space="preserve">
+    <value>回ログイン</value>
+  </data>
+  <data name="LogoutLabel" xml:space="preserve">
+    <value>ログアウト</value>
+  </data>
+  <data name="LowStock" xml:space="preserve">
+    <value>安全在庫未満</value>
+  </data>
+  <data name="LRDate" xml:space="preserve">
+    <value>最終入庫日</value>
+  </data>
+  <data name="LSDate" xml:space="preserve">
+    <value>最終出庫日</value>
+  </data>
+  <data name="MachineID" xml:space="preserve">
+    <value>機械NO</value>
+  </data>
+  <data name="MachineIDScan" xml:space="preserve">
+    <value>MachineID が見つかりません。MachineID を入力してください。</value>
+  </data>
+  <data name="MachineName" xml:space="preserve">
+    <value>機械名</value>
+  </data>
+  <data name="Mametan" xml:space="preserve">
+    <value>豆単</value>
+  </data>
+  <data name="MametanHasChanged" xml:space="preserve">
+    <value>まめたん番号が変更されたため、検索したまめたんとデータが一致しなくなりました。</value>
+  </data>
+  <data name="MametanNothingToCheck" xml:space="preserve">
+    <value>このまめたんは進歩が足りないわけではない</value>
+  </data>
+  <data name="Memo" xml:space="preserve">
+    <value>メモ</value>
+  </data>
+  <data name="MessageDialogTextError" xml:space="preserve">
+    <value>エラー</value>
+  </data>
+  <data name="MessageDialogTextInfo" xml:space="preserve">
+    <value>情報</value>
+  </data>
+  <data name="MessageDialogTextWarn" xml:space="preserve">
+    <value>警告</value>
+  </data>
+  <data name="MessageMicrosoftTeamsContentLogin" xml:space="preserve">
+    <value>こんにちは！Liem様、助けてください！(携帯) M_T-WMS アプリケーション エラーです！</value>
+  </data>
+  <data name="MetaDataCorrupted" xml:space="preserve">
+    <value>ファイルのメタデータが破損しています。もう一度ダウンロードしますか</value>
+  </data>
+  <data name="MinimumStock" xml:space="preserve">
+    <value>安全在庫</value>
+  </data>
+  <data name="MinStockSuu" xml:space="preserve">
+    <value>最小在庫</value>
+  </data>
+  <data name="MissCameraPermission" xml:space="preserve">
+    <value>アプリはカメラアクセスがなく、QRをスキャンできません！</value>
+  </data>
+  <data name="MissingProcessTitleTable" xml:space="preserve">
+    <value>Tableプロセスが見つからない</value>
+  </data>
+  <data name="MissReadWritePermission" xml:space="preserve">
+    <value>アプリに読書き権限なし、ダウンロードフォルダ使用不可</value>
+  </data>
+  <data name="ModifiedTime" xml:space="preserve">
+    <value>変更日</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="MultilingualSlideShow" xml:space="preserve">
+    <value>多言語サポート</value>
+  </data>
+  <data name="MWMS" xml:space="preserve">
+    <value>入出庫処理</value>
+  </data>
+  <data name="NeedCheckRememberFingerprintContentLogin" xml:space="preserve">
+    <value>「パスワードを記憶する」をチェックして正常にログインすると、指紋でログインできるようになります</value>
+  </data>
+  <data name="NeedToChooseLanguage" xml:space="preserve">
+    <value>言語を選択する必要があります</value>
+  </data>
+  <data name="NetInventoryQty" xml:space="preserve">
+    <value>出庫予定在庫</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>新規</value>
+  </data>
+  <data name="NewInterfaceSlideShow" xml:space="preserve">
+    <value>新しいインターフェース</value>
+  </data>
+  <data name="NewLevelSlideShow" xml:space="preserve">
+    <value>新しいレベル</value>
+  </data>
+  <data name="NewTENTACSlideShow" xml:space="preserve">
+    <value>新型テンタック</value>
+  </data>
+  <data name="NewVersionContent" xml:space="preserve">
+    <value>新バージョンあり、今すぐダウンロード</value>
+  </data>
+  <data name="NewVersionTitle" xml:space="preserve">
+    <value>新バージョン</value>
+  </data>
+  <data name="NextTimeAlert" xml:space="preserve">
+    <value>次回</value>
+  </data>
+  <data name="NoAlert" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="NoChangesSaved" xml:space="preserve">
+    <value>保存なし (ほぞんなし)</value>
+  </data>
+  <data name="NoDataFound" xml:space="preserve">
+    <value>データが見つかりません</value>
+  </data>
+  <data name="NoGoodsCD" xml:space="preserve">
+    <value>商品コードがありません。確認するか、管理者に報告してください。</value>
+  </data>
+  <data name="NoGoodsCdSelected" xml:space="preserve">
+    <value>商品コードが選択されていません。再度確認してください</value>
+  </data>
+  <data name="NoItemToExport" xml:space="preserve">
+    <value>エクスポートするアイテムがありません!</value>
+  </data>
+  <data name="NoItemToPrint" xml:space="preserve">
+    <value>印刷するアイテムがありません!</value>
+  </data>
+  <data name="NoMametanPrint" xml:space="preserve">
+    <value>まめたん番号がないので印刷データが対応していません！</value>
+  </data>
+  <data name="NoNeedMachineIDScan" xml:space="preserve">
+    <value>「MachineID」をスキャンする必要はありません。</value>
+  </data>
+  <data name="NoScan" xml:space="preserve">
+    <value>スキャンなし</value>
+  </data>
+  <data name="NoSearchCriteriaFound" xml:space="preserve">
+    <value>検索条件が見つかりません!</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>メモ</value>
+  </data>
+  <data name="NoteCanEmpty" xml:space="preserve">
+    <value>メモは空欄にすることができます。</value>
+  </data>
+  <data name="NotEnoughStock" xml:space="preserve">
+    <value>在庫が不足しています。もう一度ご確認ください</value>
+  </data>
+  <data name="NotFound" xml:space="preserve">
+    <value>見つかりません</value>
+  </data>
+  <data name="NotFoundAccountContentLogin" xml:space="preserve">
+    <value>アカウントが見つかりません</value>
+  </data>
+  <data name="NotFullyShipment" xml:space="preserve">
+    <value>未完全出荷</value>
+  </data>
+  <data name="NotHaveMicrosoftTeamsContentLogin" xml:space="preserve">
+    <value>お使いのデバイスには Microsoft Teams アプリがありません。Microsoft Teams アプリケーションをインストールする必要があります。インストールのサポートについては、システム管理者にお問い合わせください</value>
+  </data>
+  <data name="NothingExport" xml:space="preserve">
+    <value>エクスポートするものがありません。もう一度確認してください</value>
+  </data>
+  <data name="NothingFound" xml:space="preserve">
+    <value>何も見つかりません。検索条件をもう一度確認してください</value>
+  </data>
+  <data name="NothingToChange" xml:space="preserve">
+    <value>変更することは何もありません</value>
+  </data>
+  <data name="NothingToExclude" xml:space="preserve">
+    <value>除外するものは何もありません</value>
+  </data>
+  <data name="NothingToSave" xml:space="preserve">
+    <value>変更が保存されていませんが、それでも続けますか</value>
+  </data>
+  <data name="NothingToVerify" xml:space="preserve">
+    <value>確認する対象がありません。もう一度確認してください</value>
+  </data>
+  <data name="NotInTheSelected" xml:space="preserve">
+    <value>選択リストにありません</value>
+  </data>
+  <data name="NotMatchGoodsCd" xml:space="preserve">
+    <value>スキャンした商品コードが確認対象の商品コードと一致しません</value>
+  </data>
+  <data name="NotSupported" xml:space="preserve">
+    <value>未対応</value>
+  </data>
+  <data name="NotSupportedAlertContentLogin" xml:space="preserve">
+    <value>お使いのデバイスには指紋認証機能がありません。携帯電話をアップグレードしてください</value>
+  </data>
+  <data name="NotSupportedAlertLogin" xml:space="preserve">
+    <value>サポートされていません</value>
+  </data>
+  <data name="NotSupportedAlertScan" xml:space="preserve">
+    <value>サポートされていません</value>
+  </data>
+  <data name="NotSupportedWarehouseTransfer" xml:space="preserve">
+    <value>倉庫移動は未対応です。PC版で実行してください</value>
+  </data>
+  <data name="NoUpdateVersionFoundSMB" xml:space="preserve">
+    <value>サーバーに新しいバージョンはありません</value>
+  </data>
+  <data name="NowCurrentPage" xml:space="preserve">
+    <value>あなたはすでにこのページにいます</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="OnlyAllow1GoodsCdStorageType" xml:space="preserve">
+    <value>同じ %StorageType% に対して、%Quantity% 個の %GoodsCd% のみ選択できます。再度ご確認ください</value>
+  </data>
+  <data name="OnlyPrint" xml:space="preserve">
+    <value>印刷のみ</value>
+  </data>
+  <data name="Operators" xml:space="preserve">
+    <value>作業者</value>
+  </data>
+  <data name="OptDivisionIn" xml:space="preserve">
+    <value>サプライヤ・生産部門</value>
+  </data>
+  <data name="OptDivisionOut" xml:space="preserve">
+    <value>生産部門</value>
+  </data>
+  <data name="Option" xml:space="preserve">
+    <value>オプション</value>
+  </data>
+  <data name="OptionSetting" xml:space="preserve">
+    <value>オプション設定</value>
+  </data>
+  <data name="OptionsText" xml:space="preserve">
+    <value>オプション</value>
+  </data>
+  <data name="OptTime" xml:space="preserve">
+    <value>発生時刻</value>
+  </data>
+  <data name="OrderCompleted" xml:space="preserve">
+    <value>手配済</value>
+  </data>
+  <data name="OrderInFull" xml:space="preserve">
+    <value>PO完納</value>
+  </data>
+  <data name="OrderNumber" xml:space="preserve">
+    <value>順番</value>
+  </data>
+  <data name="OrderSuu" xml:space="preserve">
+    <value>受注数</value>
+  </data>
+  <data name="OutOfStock" xml:space="preserve">
+    <value>在庫切れ</value>
+  </data>
+  <data name="OutputCompleted" xml:space="preserve">
+    <value>出庫処理完了しました</value>
+  </data>
+  <data name="OutputPrint" xml:space="preserve">
+    <value>ファイル出力後印刷</value>
+  </data>
+  <data name="OutStockType" xml:space="preserve">
+    <value>出庫区分</value>
+  </data>
+  <data name="OverLimit" xml:space="preserve">
+    <value>実際の数量が計画数量を超えています。続行しますか</value>
+  </data>
+  <data name="OverLimitNoQuestion" xml:space="preserve">
+    <value>実績数量の合計が計画数量を超えています</value>
+  </data>
+  <data name="OverShipment" xml:space="preserve">
+    <value>出庫過多</value>
+  </data>
+  <data name="PageNotFound" xml:space="preserve">
+    <value>ページ「%name%」が見つかりません</value>
+  </data>
+  <data name="Path" xml:space="preserve">
+    <value>パス</value>
+  </data>
+  <data name="Pause" xml:space="preserve">
+    <value>一時停止</value>
+  </data>
+  <data name="PGSyncError" xml:space="preserve">
+    <value>PG同期エラー</value>
+  </data>
+  <data name="PhotoSaved" xml:space="preserve">
+    <value>あなたの最高の写真を正常に保存しました。</value>
+  </data>
+  <data name="PlannedArrivalDate" xml:space="preserve">
+    <value>入庫予定日（範囲設定）</value>
+  </data>
+  <data name="PlannedArrivalQty" xml:space="preserve">
+    <value>入庫予定数</value>
+  </data>
+  <data name="PlannedShipmentQty" xml:space="preserve">
+    <value>出庫予定数</value>
+  </data>
+  <data name="PlanQTY" xml:space="preserve">
+    <value>予定数量</value>
+  </data>
+  <data name="PlanQTY2" xml:space="preserve">
+    <value>出庫予定</value>
+  </data>
+  <data name="PleaseChoose" xml:space="preserve">
+    <value>選んでください</value>
+  </data>
+  <data name="PleaseConfirm" xml:space="preserve">
+    <value>確認してください</value>
+  </data>
+  <data name="PleaseEnterQuantityVal" xml:space="preserve">
+    <value>%LineVal%行目の数量を入力してください。</value>
+  </data>
+  <data name="PleaseInput" xml:space="preserve">
+    <value>入力してください</value>
+  </data>
+  <data name="PleaseInputIDContentLogin" xml:space="preserve">
+    <value>ユーザーIDを入力してください</value>
+  </data>
+  <data name="PleaseInputInstrNoAndGoodsCd" xml:space="preserve">
+    <value>%instr_no% または %goods_cd% を入力してください</value>
+  </data>
+  <data name="PleaseInputPasswordContentLogin" xml:space="preserve">
+    <value>パスワードを入力してください。</value>
+  </data>
+  <data name="PleaseSelect" xml:space="preserve">
+    <value>選択してください</value>
+  </data>
+  <data name="PleaseSelectAnotherDay" xml:space="preserve">
+    <value>この日は今月にありません。別の日を選んでください</value>
+  </data>
+  <data name="PleaseTryAgain" xml:space="preserve">
+    <value>問題が発生しました。もう一度お試しください。それでも問題が解決しない場合は、管理者に連絡してください。</value>
+  </data>
+  <data name="PoGyou" xml:space="preserve">
+    <value>PO行</value>
+  </data>
+  <data name="PONo" xml:space="preserve">
+    <value>PO番号</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>印刷</value>
+  </data>
+  <data name="PrinterList" xml:space="preserve">
+    <value>使用プリンタ</value>
+  </data>
+  <data name="PrivacyPolicyNotifi" xml:space="preserve">
+    <value>このアプリケーションは情報セキュリティポリシーによって保護されています。情報セキュリティポリシーを遵守してください。許可されていない限り、アプリケーションの画像やTENTACに関するすべての情報を共有しないでください。いかなる手段であれ、アプリケーションの画像に関する情報漏洩は法的責任を問われます。</value>
+  </data>
+  <data name="ProcessDataTitleEdit" xml:space="preserve">
+    <value>プロセスデータ編集</value>
+  </data>
+  <data name="Processing" xml:space="preserve">
+    <value>処理中</value>
+  </data>
+  <data name="ProcessingPerformanceTableTitleCSV" xml:space="preserve">
+    <value>加工実績表</value>
+  </data>
+  <data name="ProcessManagementSearch" xml:space="preserve">
+    <value>生産工程管理システム</value>
+  </data>
+  <data name="ProcessNo" xml:space="preserve">
+    <value>No.翻訳</value>
+  </data>
+  <data name="ProcInst" xml:space="preserve">
+    <value>工程</value>
+  </data>
+  <data name="ProcsessingProcInst" xml:space="preserve">
+    <value>処理中豆単</value>
+  </data>
+  <data name="ProcStatus" xml:space="preserve">
+    <value>生産状況</value>
+  </data>
+  <data name="ProcurementStaff" xml:space="preserve">
+    <value>商品担当者</value>
+  </data>
+  <data name="QR" xml:space="preserve">
+    <value>QR</value>
+  </data>
+  <data name="QRScan" xml:space="preserve">
+    <value>スキャン</value>
+  </data>
+  <data name="QtyDisposalGreatherThanStock" xml:space="preserve">
+    <value>廃棄する数量は在庫数量を超えることはできません</value>
+  </data>
+  <data name="QtyDisposalLessThanZero" xml:space="preserve">
+    <value>廃棄数量は0より大きくなければなりません</value>
+  </data>
+  <data name="QTYINST" xml:space="preserve">
+    <value>指示数量</value>
+  </data>
+  <data name="QTYNG" xml:space="preserve">
+    <value>NG数量</value>
+  </data>
+  <data name="QTYOK" xml:space="preserve">
+    <value>OK数量</value>
+  </data>
+  <data name="QTYOnlyInteger" xml:space="preserve">
+    <value>数量は小数を含めず、整数のみ含む必要があります！</value>
+  </data>
+  <data name="QtyRequiredAt" xml:space="preserve">
+    <value>処理する数量を入力してください</value>
+  </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>数量</value>
+  </data>
+  <data name="QuestionLogout" xml:space="preserve">
+    <value>ログアウトしますか</value>
+  </data>
+  <data name="QueueNo" xml:space="preserve">
+    <value>工程順</value>
+  </data>
+  <data name="Reason" xml:space="preserve">
+    <value>理由</value>
+  </data>
+  <data name="Received" xml:space="preserve">
+    <value>受領済</value>
+  </data>
+  <data name="ReceivedBy" xml:space="preserve">
+    <value>受取人</value>
+  </data>
+  <data name="RedLabelNew" xml:space="preserve">
+    <value>赤い背景に「New」ラベルの画像</value>
+  </data>
+  <data name="RedLabelNewContent" xml:space="preserve">
+    <value>「New」ラベルの画像が InstructionNo や PoNo の行に表示される場合、その行は本日新規作成された InstructionNo です。
+「New」ラベルの画像が GoodsCD の行に表示される場合、その行は本日出荷された GoodsCD です。
+下の画像で InstructionNo と PoNo の画面を確認してください。</value>
+  </data>
+  <data name="RefreshData" xml:space="preserve">
+    <value>表示データ更新</value>
+  </data>
+  <data name="Regist" xml:space="preserve">
+    <value>登録</value>
+  </data>
+  <data name="RegistButtonText" xml:space="preserve">
+    <value>登録</value>
+  </data>
+  <data name="RegisterInventoryMaster" xml:space="preserve">
+    <value>商品在庫マスタに登録して下さい</value>
+  </data>
+  <data name="RegisterStockLocation" xml:space="preserve">
+    <value>先に在庫場所を登録してください。</value>
+  </data>
+  <data name="RemainingShipped" xml:space="preserve">
+    <value>数量</value>
+  </data>
+  <data name="RemainingStockQtyIsLessThanInstructionQty" xml:space="preserve">
+    <value>残り在庫数が指示数量を下回っています</value>
+  </data>
+  <data name="Remarks" xml:space="preserve">
+    <value>備考</value>
+  </data>
+  <data name="RemarksLabel" xml:space="preserve">
+    <value>備考</value>
+  </data>
+  <data name="Remember" xml:space="preserve">
+    <value>パスワード保存</value>
+  </data>
+  <data name="RememberYourSelf" xml:space="preserve">
+    <value>会社の秘密を守ることは、自分自身を守ることでもあります。</value>
+  </data>
+  <data name="Repeat" xml:space="preserve">
+    <value>再発行</value>
+  </data>
+  <data name="RequestCompleted" xml:space="preserve">
+    <value>依頼済</value>
+  </data>
+  <data name="RequestedBy" xml:space="preserve">
+    <value>依頼者</value>
+  </data>
+  <data name="RequestedDate" xml:space="preserve">
+    <value>依頼日（範囲設定）</value>
+  </data>
+  <data name="RequestReadWritePermission" xml:space="preserve">
+    <value>データアクセス権限を許可</value>
+  </data>
+  <data name="RequestReadWritePermissionSub" xml:space="preserve">
+    <value>Excelファイルの読み書きを行うために、アプリにデータの読み書き権限が必要です</value>
+  </data>
+  <data name="RequestSubmitted" xml:space="preserve">
+    <value>依頼済</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="Resume" xml:space="preserve">
+    <value>再開</value>
+  </data>
+  <data name="Row" xml:space="preserve">
+    <value>行</value>
+  </data>
+  <data name="RuntimeException" xml:space="preserve">
+    <value>例外Runtime!</value>
+  </data>
+  <data name="SafetyRollback" xml:space="preserve">
+    <value>以前の進捗は安全に元に戻されました</value>
+  </data>
+  <data name="SafetySecuritySlideShow" xml:space="preserve">
+    <value>安全、セキュリティ</value>
+  </data>
+  <data name="SalesDescription" xml:space="preserve">
+    <value>(営業用）</value>
+  </data>
+  <data name="SalesNote" xml:space="preserve">
+    <value>営業用のメモ</value>
+  </data>
+  <data name="SalesTanCdLabel" xml:space="preserve">
+    <value>営業担当者CD</value>
+  </data>
+  <data name="SameDayEdit" xml:space="preserve">
+    <value>当日のみ変更可能です。</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>登録</value>
+  </data>
+  <data name="SaveAlert" xml:space="preserve">
+    <value>登録</value>
+  </data>
+  <data name="SaveAt" xml:space="preserve">
+    <value>保存先</value>
+  </data>
+  <data name="SaveRegist" xml:space="preserve">
+    <value>登録</value>
+  </data>
+  <data name="Saving" xml:space="preserve">
+    <value>セーブ</value>
+  </data>
+  <data name="Scan" xml:space="preserve">
+    <value>スキャン</value>
+  </data>
+  <data name="ScanVolume" xml:space="preserve">
+    <value>スキャン音量</value>
+  </data>
+  <data name="Scheduled" xml:space="preserve">
+    <value>出荷予定日</value>
+  </data>
+  <data name="ScheduledRegistered" xml:space="preserve">
+    <value>入庫予定日登録済</value>
+  </data>
+  <data name="ScheduledShipDate" xml:space="preserve">
+    <value>出荷予定日</value>
+  </data>
+  <data name="ScreenNameFrm0001" xml:space="preserve">
+    <value>入出庫履歴表</value>
+  </data>
+  <data name="ScreenNameFrm0002" xml:space="preserve">
+    <value>入出庫処理</value>
+  </data>
+  <data name="ScreenNameFrm0003" xml:space="preserve">
+    <value>オプション設定</value>
+  </data>
+  <data name="ScreenNameFrm0005" xml:space="preserve">
+    <value>出庫処理</value>
+  </data>
+  <data name="InventoryManagement" xml:space="preserve">
+    <value>商品在庫管理</value>
+  </data>
+  <data name="ScreenNameFrm0007" xml:space="preserve">
+    <value>在庫区分選択</value>
+  </data>
+  <data name="ScreenNameFrm0008" xml:space="preserve">
+    <value>Diagram倉</value>
+  </data>
+  <data name="ScreenNameFrm0009" xml:space="preserve">
+    <value>廃棄指示書</value>
+  </data>
+  <data name="ScreenNameFrm0010" xml:space="preserve">
+    <value>廃棄指示書</value>
+  </data>
+  <data name="ScreenNameFrmGrps" xml:space="preserve">
+    <value>グループ</value>
+  </data>
+  <data name="ScreenNameOCS0104" xml:space="preserve">
+    <value>メニュー</value>
+  </data>
+  <data name="ScreenNameOCS0205" xml:space="preserve">
+    <value>担当者コード入力</value>
+  </data>
+  <data name="ScreenNameOCS0216" xml:space="preserve">
+    <value>ユーザー設定</value>
+  </data>
+  <data name="SearchFilters" xml:space="preserve">
+    <value>検索条件</value>
+  </data>
+  <data name="SearchPeriod" xml:space="preserve">
+    <value>検索期間</value>
+  </data>
+  <data name="SearchPeriodContent" xml:space="preserve">
+    <value>このような検索は避けてください。1年はデータが多すぎるため、最大1ヶ月以内で検索してください。</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>検索</value>
+  </data>
+  <data name="SelectFile" xml:space="preserve">
+    <value>ファイルを選択</value>
+  </data>
+  <data name="SelectFolder" xml:space="preserve">
+    <value>フォルダを選択</value>
+  </data>
+  <data name="SelectGrps" xml:space="preserve">
+    <value>グループを選択</value>
+  </data>
+  <data name="SelectLanguage" xml:space="preserve">
+    <value>言語選択</value>
+  </data>
+  <data name="SelectLocation" xml:space="preserve">
+    <value>在庫場所を選択</value>
+  </data>
+  <data name="SelectMultipleFiles" xml:space="preserve">
+    <value>複数のファイルを選択</value>
+  </data>
+  <data name="SelectMultipleFolders" xml:space="preserve">
+    <value>複数のファイルを選択</value>
+  </data>
+  <data name="SelectProcessesToExclude" xml:space="preserve">
+    <value>除外するプロセスを選択</value>
+  </data>
+  <data name="SelectProcessPickerSearch" xml:space="preserve">
+    <value>プロセスを選択</value>
+  </data>
+  <data name="SelectReason" xml:space="preserve">
+    <value>地域を選択</value>
+  </data>
+  <data name="SelectStockType" xml:space="preserve">
+    <value>在庫タイプを選択</value>
+  </data>
+  <data name="SelectTitleLanguages" xml:space="preserve">
+    <value>国語</value>
+  </data>
+  <data name="SelectYourBasepointPickerSetting" xml:space="preserve">
+    <value>基点を選択</value>
+  </data>
+  <data name="SendFileToAppChat" xml:space="preserve">
+    <value>AppChatMessengerにファイルを送信する</value>
+  </data>
+  <data name="SendZipOrCSV" xml:space="preserve">
+    <value>ZIP または CSV を送信しますか?</value>
+  </data>
+  <data name="ServerDatabaseSetting" xml:space="preserve">
+    <value>Database</value>
+  </data>
+  <data name="ServerNameSetting" xml:space="preserve">
+    <value>Server</value>
+  </data>
+  <data name="ServerPasswordSetting" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="ServerUserSetting" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="Setting" xml:space="preserve">
+    <value>設定</value>
+  </data>
+  <data name="ShareFile" xml:space="preserve">
+    <value>ファイルを共有</value>
+  </data>
+  <data name="ShelfNo" xml:space="preserve">
+    <value>棚番号</value>
+  </data>
+  <data name="Shipment" xml:space="preserve">
+    <value>出庫</value>
+  </data>
+  <data name="ShipmentDate" xml:space="preserve">
+    <value>出庫日</value>
+  </data>
+  <data name="ShipmentProcess" xml:space="preserve">
+    <value>出庫処理</value>
+  </data>
+  <data name="ShipmentQty" xml:space="preserve">
+    <value>出庫数量</value>
+  </data>
+  <data name="ShipmentSlip" xml:space="preserve">
+    <value>出庫単</value>
+  </data>
+  <data name="Shipped" xml:space="preserve">
+    <value>出庫済み</value>
+  </data>
+  <data name="ShippedMoreThanPlanned" xml:space="preserve">
+    <value>計画以上出荷</value>
+  </data>
+  <data name="ShippedSuccessfully" xml:space="preserve">
+    <value>発送成功</value>
+  </data>
+  <data name="ShortShipment" xml:space="preserve">
+    <value>出庫不足</value>
+  </data>
+  <data name="Show" xml:space="preserve">
+    <value>表示</value>
+  </data>
+  <data name="ShowAll" xml:space="preserve">
+    <value>1: リストに全て表す</value>
+  </data>
+  <data name="ShowScan" xml:space="preserve">
+    <value>示す</value>
+  </data>
+  <data name="SkipVerifyGoodsCd" xml:space="preserve">
+    <value>商品CDシールの確認はスキップしますか</value>
+  </data>
+  <data name="SlipNo" xml:space="preserve">
+    <value>入出庫No</value>
+  </data>
+  <data name="SlowConnectionTryAgain" xml:space="preserve">
+    <value>インターネット接続が非常に遅い、または不安定です。再試行しますか</value>
+  </data>
+  <data name="SomeRowsNullData" xml:space="preserve">
+    <value>一部の行にNULLデータがあります。管理者へ報告してください</value>
+  </data>
+  <data name="SomeThingWentWrong" xml:space="preserve">
+    <value>何らかのエラーが発生しました</value>
+  </data>
+  <data name="SomethingWentWrongSearch" xml:space="preserve">
+    <value>検索中にエラーが発生しました。検索データを確認してもう一度お試しください。エラーが解決しない場合は、Liem 様までご連絡ください。</value>
+  </data>
+  <data name="SQLException" xml:space="preserve">
+    <value>例外SQL!</value>
+  </data>
+  <data name="SQLServer" xml:space="preserve">
+    <value>SQLサーバー</value>
+  </data>
+  <data name="SQLSyncError" xml:space="preserve">
+    <value>SQL同期エラー</value>
+  </data>
+  <data name="StaffExistScan" xml:space="preserve">
+    <value>この従業員コードは既に存在します。別の従業員コードを入力してください。</value>
+  </data>
+  <data name="StaffID" xml:space="preserve">
+    <value>スタッフID</value>
+  </data>
+  <data name="StaffIDNotFoundScan" xml:space="preserve">
+    <value>従業員 ID を入力してください。少なくとも 1 つの従業員コードが必要です。</value>
+  </data>
+  <data name="StartDate" xml:space="preserve">
+    <value>開始日</value>
+  </data>
+  <data name="StartDateValidContentSearch" xml:space="preserve">
+    <value>開始日を確認してもう一度お試しください。</value>
+  </data>
+  <data name="StartScan" xml:space="preserve">
+    <value>始める</value>
+  </data>
+  <data name="StartSuccessfully" xml:space="preserve">
+    <value>開始が成功したら、[戻る] ボタンを使用して検索ページに戻ることができます。</value>
+  </data>
+  <data name="StartTime" xml:space="preserve">
+    <value>開始時間</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>ステータス</value>
+  </data>
+  <data name="StockBalance" xml:space="preserve">
+    <value>在庫商品情報</value>
+  </data>
+  <data name="StockDate" xml:space="preserve">
+    <value>発生時刻</value>
+  </data>
+  <data name="StockDiagram" xml:space="preserve">
+    <value>在庫図表</value>
+  </data>
+  <data name="StockGoodsList" xml:space="preserve">
+    <value>商品在庫マスタ</value>
+  </data>
+  <data name="StockIn-OutHistoryDetails" xml:space="preserve">
+    <value>入出庫履歴明細</value>
+  </data>
+  <data name="StockIn-OutProcess" xml:space="preserve">
+    <value>入出庫処理</value>
+  </data>
+  <data name="StockInOutHistoryDetails" xml:space="preserve">
+    <value>入出庫履歴明細</value>
+  </data>
+  <data name="StockInput" xml:space="preserve">
+    <value>入庫</value>
+  </data>
+  <data name="StockList" xml:space="preserve">
+    <value>在庫リスト</value>
+  </data>
+  <data name="StockLocation" xml:space="preserve">
+    <value>在庫場所</value>
+  </data>
+  <data name="StockOutput" xml:space="preserve">
+    <value>出庫</value>
+  </data>
+  <data name="StockPeriodCheck" xml:space="preserve">
+    <value>在庫期間調査</value>
+  </data>
+  <data name="StockShipped" xml:space="preserve">
+    <value>出荷済み情報</value>
+  </data>
+  <data name="StockShippedContent" xml:space="preserve">
+    <value>オレンジ色の背景のInstructionNo &amp; PoNoをクリックすると、出荷情報を確認できます。続行する前に十分確認してください。下の画像を参照</value>
+  </data>
+  <data name="StockSlip" xml:space="preserve">
+    <value>入出庫No</value>
+  </data>
+  <data name="StockSuu" xml:space="preserve">
+    <value>在庫数量</value>
+  </data>
+  <data name="StockSuuNotEnough" xml:space="preserve">
+    <value>在庫数量が不足しています。再度ご確認ください</value>
+  </data>
+  <data name="StockTransfer" xml:space="preserve">
+    <value>在庫移動</value>
+  </data>
+  <data name="StockType" xml:space="preserve">
+    <value>在庫区分</value>
+  </data>
+  <data name="StockTypeChange" xml:space="preserve">
+    <value>在庫区変換</value>
+  </data>
+  <data name="StockTypeHasNotBeenRegister" xml:space="preserve">
+    <value>在庫区分がまだ登録されていません</value>
+  </data>
+  <data name="StockTypeHasNotBeenRegisterVal" xml:space="preserve">
+    <value>在庫区分がまだ登録されていません。商品CD: %GoodsCdVal%。在庫区分: %StockTypeVal%, 行番号: %LineVal%</value>
+  </data>
+  <data name="StockTypeRequired" xml:space="preserve">
+    <value>在庫区分選択が必要です</value>
+  </data>
+  <data name="Stop" xml:space="preserve">
+    <value>停止</value>
+  </data>
+  <data name="StoppedShipping" xml:space="preserve">
+    <value>配送を停止しました</value>
+  </data>
+  <data name="StorageTypeSDCardDisplay" xml:space="preserve">
+    <value>ストレージ名</value>
+  </data>
+  <data name="SUBIDResult" xml:space="preserve">
+    <value>サブID</value>
+  </data>
+  <data name="Success" xml:space="preserve">
+    <value>成功</value>
+  </data>
+  <data name="Successfully" xml:space="preserve">
+    <value>成功しました</value>
+  </data>
+  <data name="Suu" xml:space="preserve">
+    <value>数量</value>
+  </data>
+  <data name="SystemAutoInput" xml:space="preserve">
+    <value>システム自動入力</value>
+  </data>
+  <data name="SystemDescriptionNameLogin" xml:space="preserve">
+    <value>生産工程管理システム</value>
+  </data>
+  <data name="TargetStock" xml:space="preserve">
+    <value>目的地</value>
+  </data>
+  <data name="TemporarilySaved" xml:space="preserve">
+    <value>一時保存</value>
+  </data>
+  <data name="TentacBranchSetting" xml:space="preserve">
+    <value>支店 TENTAC</value>
+  </data>
+  <data name="ThisMametanIsMachineIDOn" xml:space="preserve">
+    <value>「MachineID」のあるモードでは、まず「MachineID」をスキャンしてから、まめたんをスキャンしてください。</value>
+  </data>
+  <data name="ThisProcessed" xml:space="preserve">
+    <value>この指示書は出庫処理したので、よろしいでしょうか。</value>
+  </data>
+  <data name="ThisProcessedVal" xml:space="preserve">
+    <value>指示書No: %InstrNo%,  商品CD: %GoodsCd%, 在庫区分: %StockType%。この指示書は出庫処理したので、よろしいでしょうか。</value>
+  </data>
+  <data name="TimeOccur" xml:space="preserve">
+    <value>発生時刻</value>
+  </data>
+  <data name="ting" xml:space="preserve">
+    <value>選択した工程を削除しますか？ : </value>
+  </data>
+  <data name="TitleProcessScan" xml:space="preserve">
+    <value>スキャンプロセス</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>まで</value>
+  </data>
+  <data name="TokCdLabel" xml:space="preserve">
+    <value>得意先CD</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>合計</value>
+  </data>
+  <data name="TotalInQty" xml:space="preserve">
+    <value>入庫数合計</value>
+  </data>
+  <data name="TotalItems" xml:space="preserve">
+    <value>件数: </value>
+  </data>
+  <data name="TotalItemsFinish" xml:space="preserve">
+    <value>件数: </value>
+  </data>
+  <data name="TotalItemsStart" xml:space="preserve">
+    <value>件数: </value>
+  </data>
+  <data name="TotalOutQty" xml:space="preserve">
+    <value>出庫数合計</value>
+  </data>
+  <data name="TotalPageCount" xml:space="preserve">
+    <value>総ページ数以下を選んでください</value>
+  </data>
+  <data name="TotalPages" xml:space="preserve">
+    <value>総ページ数:</value>
+  </data>
+  <data name="TotalShipped" xml:space="preserve">
+    <value>総出荷</value>
+  </data>
+  <data name="TurnOffRememberTurnOffMachineID" xml:space="preserve">
+    <value>「マシンIDを常にオフにする」機能を無効にしますか？</value>
+  </data>
+  <data name="TurnOnSkipVerifyGoodsCd" xml:space="preserve">
+    <value>商品CDシールのQRコード確認不要</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>物別</value>
+  </data>
+  <data name="Undisposed" xml:space="preserve">
+    <value>未廃棄処理</value>
+  </data>
+  <data name="Unit" xml:space="preserve">
+    <value>単位</value>
+  </data>
+  <data name="UnprocessedArrival" xml:space="preserve">
+    <value>入庫未処理</value>
+  </data>
+  <data name="UnprocessedShipment" xml:space="preserve">
+    <value>出庫未処理</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>修正</value>
+  </data>
+  <data name="UpdateButtonSetting" xml:space="preserve">
+    <value>登録する</value>
+  </data>
+  <data name="UpdateSuccessfullySetting" xml:space="preserve">
+    <value>更新に成功しました</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>担当者名</value>
+  </data>
+  <data name="UserCdLabel" xml:space="preserve">
+    <value>担当者コード</value>
+  </data>
+  <data name="UserCdRequestLabel" xml:space="preserve">
+    <value>担当者コードを入力してください</value>
+  </data>
+  <data name="UserCode" xml:space="preserve">
+    <value>ユーザーコード</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>ユーザー名</value>
+  </data>
+  <data name="UserNameAliasLabel" xml:space="preserve">
+    <value>担当者別名</value>
+  </data>
+  <data name="UserNameLabel" xml:space="preserve">
+    <value>担当者名</value>
+  </data>
+  <data name="UserSetting" xml:space="preserve">
+    <value>ユーザー設定</value>
+  </data>
+  <data name="v1000NotSupportedIOS" xml:space="preserve">
+    <value>Appleの制約によりiOS版 (タブレット、iPhone、Mac) は未対応</value>
+  </data>
+  <data name="v1000SupportedAndroid15" xml:space="preserve">
+    <value>Android バージョン 13 で最適に動作します。Android バージョン 7.1 から 15 がサポートされています。</value>
+  </data>
+  <data name="v1000SupportedDownloadNewVersion" xml:space="preserve">
+    <value>新バージョンのダウンロード通知を追加</value>
+  </data>
+  <data name="v1000SupportedSyncSQLServer" xml:space="preserve">
+    <value>クラウドからSQL Serverへのデータ同期をサポート</value>
+  </data>
+  <data name="ValidateActualQTY" xml:space="preserve">
+    <value>実際数量はゼロであってはならず、指示された数量を超えてはなりません。</value>
+  </data>
+  <data name="ValidBranchContentSetting" xml:space="preserve">
+    <value>ブランチを選択する必要があります。</value>
+  </data>
+  <data name="ValidLimitMametan" xml:space="preserve">
+    <value>Mametanは6または3のみ許可されています。再確認してください。</value>
+  </data>
+  <data name="ValidMachineID" xml:space="preserve">
+    <value>マシンIDを確認してもう一度お試しください。</value>
+  </data>
+  <data name="ValidOverDate" xml:space="preserve">
+    <value>現在の月と年にはこの日付は存在しません。別の日付を選択してください！</value>
+  </data>
+  <data name="ValidPleaseCheckMametan" xml:space="preserve">
+    <value>まめたんを確認してもう一度お試しください！</value>
+  </data>
+  <data name="ValidProcessOrFinishSearch" xml:space="preserve">
+    <value>もう一度確認してください。処理中または完了の 2 つのうち 1 つだけをチェックしてください。</value>
+  </data>
+  <data name="ValidServerDatabaseNameContentSetting" xml:space="preserve">
+    <value>サーバーデータベース名を確認して、もう一度お試しください。</value>
+  </data>
+  <data name="ValidServerNameContentSetting" xml:space="preserve">
+    <value>サーバー名を確認してもう一度お試しください。</value>
+  </data>
+  <data name="ValidServerPasswordContentSetting" xml:space="preserve">
+    <value>サーバーパスワードを確認してもう一度お試しください。</value>
+  </data>
+  <data name="ValidServerUserNameContentSetting" xml:space="preserve">
+    <value>サーバーユーザー名を確認して、もう一度お試しください。</value>
+  </data>
+  <data name="Verify" xml:space="preserve">
+    <value>検証</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>バージョン</value>
+  </data>
+  <data name="VietnameseLanguage" xml:space="preserve">
+    <value>ベトナム語</value>
+  </data>
+  <data name="WhatNew" xml:space="preserve">
+    <value>新着</value>
+  </data>
+  <data name="WHBalance" xml:space="preserve">
+    <value>倉庫・生産間残高</value>
+  </data>
+  <data name="WhereGetAccount" xml:space="preserve">
+    <value>ログインアカウントはどこで取得できますか？</value>
+  </data>
+  <data name="WhoUse" xml:space="preserve">
+    <value>誰がこのアプリを使う？</value>
+  </data>
+  <data name="WorkPath" xml:space="preserve">
+    <value>SDカード出力</value>
+  </data>
+  <data name="WrongPasswordContentLogin" xml:space="preserve">
+    <value>パスワードが間違っています。パスワードを確認してもう一度お試しください</value>
+  </data>
+  <data name="Year" xml:space="preserve">
+    <value>年</value>
+  </data>
+  <data name="YouHave" xml:space="preserve">
+    <value>あと</value>
+  </data>
+  <data name="YouMustSelectAtLeast1Item" xml:space="preserve">
+    <value>少なくとも 1 つの項目を選択する必要があります</value>
+  </data>
+  <data name="YourConnectionNotCompany" xml:space="preserve">
+    <value>あなたの接続は企業ネットワークではありません。アプリは企業ネットワークに接続している場合にのみ動作します。</value>
+  </data>
+  <data name="ZaikoKu" xml:space="preserve">
+    <value>在庫区CD</value>
+  </data>
+  <data name="ZIP" xml:space="preserve">
+    <value>ZIP</value>
+  </data>
+  <data name="LoggingIn" xml:space="preserve">
+    <value>ログイン中...</value>
+  </data>
+  <data name="Searching" xml:space="preserve">
+    <value>検索中...</value>
+  </data>
+  <data name="SelectDate" xml:space="preserve">
+    <value>日付を選択</value>
+  </data>
+  <data name="Notification" xml:space="preserve">
+    <value>通知</value>
+  </data>
+  <data name="TheAppNeedsCameraPermissionToScan" xml:space="preserve">
+    <value>スキャンを行うには、アプリにカメラへのアクセス許可が必要です。</value>
+  </data>
+  <data name="AddRow" xml:space="preserve">
+    <value>行を追加</value>
+  </data>
+  <data name="DeliveryDate" xml:space="preserve">
+    <value>配送日</value>
+  </data>
+  <data name="Items" xml:space="preserve">
+    <value>アイテム</value>
+  </data>
+  <data name="SelectItem" xml:space="preserve">
+    <value>品目を選択</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>選択</value>
+  </data>
+  <data name="ShoCdIsNotRegistered" xml:space="preserve">
+    <value>このCD製品番号は登録されていません。販売スタッフに通知して登録してください。&amp;#13 CD: {0}</value>
+  </data>
+  <data name="WMS9999CW0057" xml:space="preserve">
+    <value>数量は正の整数であり、0 より大きい必要があります。</value>
+  </data>
+  <data name="WMS9999CW0061" xml:space="preserve">
+    <value>残り在庫数が指示数量を下回っています！</value>
+  </data>
+  <data name="WMS9999CW0058" xml:space="preserve">
+    <value>入出庫区分を選択してください。</value>
+  </data>
+</root>

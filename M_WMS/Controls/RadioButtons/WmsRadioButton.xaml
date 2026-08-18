@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="M_WMS.Controls.RadioButtons.WmsRadioButton"
+             x:Name="this">
+    <Grid ColumnDefinitions="Auto, *" 
+          ColumnSpacing="{Binding Spacing, Source={x:Reference this}}"
+          Margin="{Binding ControlMargin, Source={x:Reference this}}"
+          BackgroundColor="Transparent"
+          InputTransparent="False">
+
+        <Grid.GestureRecognizers>
+            <TapGestureRecognizer Tapped="OnTapped" />
+        </Grid.GestureRecognizers>
+
+        <!-- Khung chứa vòng tròn -->
+        <Grid Grid.Column="0" 
+              x:Name="CircleContainer"
+              WidthRequest="{Binding CircleSize, Source={x:Reference this}}"
+              HeightRequest="{Binding CircleSize, Source={x:Reference this}}"
+              VerticalOptions="Center"
+              HorizontalOptions="Center">
+
+            <!-- Hiệu ứng lan tỏa nền -->
+            <Ellipse x:Name="ClickEffectCircle"
+                     Fill="{Binding ActiveColor, Source={x:Reference this}}"
+                     Opacity="0.3"
+                     Scale="0"
+                     HorizontalOptions="Center" 
+                     VerticalOptions="Center"/>
+
+            <!-- Vòng tròn ngoài -->
+            <Border x:Name="OuterBorder"
+                    StrokeThickness="2"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Fill">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="50" />
+                </Border.StrokeShape>
+
+                <!-- Vòng tròn con bên trong -->
+                <Ellipse x:Name="InnerCircle"
+                         Fill="{Binding InnerCircleColor, Source={x:Reference this}}"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center" />
+            </Border>
+        </Grid>
+
+        <!-- Nhãn chữ -->
+        <Label Grid.Column="1"
+               Text="{Binding Text, Source={x:Reference this}}"
+               FontSize="{Binding FontSize, Source={x:Reference this}}"
+               TextColor="{Binding TextColor, Source={x:Reference this}}"
+               Margin="{Binding ControlPadding, Source={x:Reference this}}"
+               VerticalOptions="Center" />
+    </Grid>
+</ContentView>

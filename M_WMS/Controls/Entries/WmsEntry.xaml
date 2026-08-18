@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="M_WMS.Controls.Entries.WmsEntry"
+             x:Name="this">
+    <Grid x:Name="containerGrid">
+        <Grid.GestureRecognizers>
+            <PointerGestureRecognizer PointerEntered="OnPointerEntered" 
+                                      PointerExited="OnPointerExited" />
+        </Grid.GestureRecognizers>
+        <Border x:Name="borderContainer"
+                Stroke="{Binding BorderColor, Source={x:Reference this}}"
+                StrokeThickness="{Binding BorderThickness, Source={x:Reference this}}"
+                Padding="{Binding InnerPadding, Source={x:Reference this}}"
+                BackgroundColor="{Binding ContainerBackgroundColor, Source={x:Reference this}}">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="{Binding CornerRadius, Source={x:Reference this}}"/>
+            </Border.StrokeShape>
+            <Border.Triggers>
+                <DataTrigger TargetType="Border" Binding="{Binding IsUnderline, Source={x:Reference this}}" Value="True">
+                    <Setter Property="StrokeThickness" Value="0" />
+                    <Setter Property="BackgroundColor" Value="Transparent" />
+                </DataTrigger>
+            </Border.Triggers>
+            <!-- Quản lý trạng thái Visual State (Hover / Focus) --><!--
+            <VisualStateManager.VisualStateGroups>
+                <VisualStateGroupList>
+                    <VisualStateGroup x:Name="CommonStates">
+
+                        --><!-- Trạng thái mặc định --><!--
+                        <VisualState x:Name="Normal" />
+
+                        --><!-- 1. Trạng thái HOVER (Di chuột qua - Desktop/Windows) --><!--
+                        <VisualState x:Name="PointerOver">
+                            <VisualState.Setters>
+                                <Setter Property="Stroke" Value="#2196F3" />
+                                --><!-- Đổi màu viền sang Xanh Dương --><!--
+                                <Setter Property="BackgroundColor" Value="#F5F5F5" />
+                                --><!-- Đổi nền xám nhạt --><!--
+                            </VisualState.Setters>
+                        </VisualState>
+
+                        --><!-- 2. Trạng thái FOCUS (Đang nhập liệu) --><!--
+                        <VisualState x:Name="Focused">
+                            <VisualState.Setters>
+                                <Setter Property="Stroke" Value="#2196F3" />
+                                --><!-- Đổi màu viền sang Xanh Lá --><!--
+                                <Setter Property="StrokeThickness" Value="2" />
+                                --><!-- Viền dày hơn --><!--
+                            </VisualState.Setters>
+                        </VisualState>
+
+                    </VisualStateGroup>
+                </VisualStateGroupList>
+            </VisualStateManager.VisualStateGroups>-->
+
+            <!-- Layout Grid chứa Icon & Entry -->
+            <Grid ColumnDefinitions="Auto, *, Auto, Auto" ColumnSpacing="4">
+                <!-- 1. Icon Trái -->
+                <!-- Option A: Dùng Hình ảnh -->
+                <Image Source="{Binding LeftIconSource, Source={x:Reference this}}"
+                       IsVisible="{Binding IsLeftIconVisible, Source={x:Reference this}}"
+                       WidthRequest="18" 
+                       HeightRequest="18"
+                       VerticalOptions="Center" 
+                       Grid.Column="0" />
+                <!-- Option B: Dùng FontAwesome -->
+                <Label Text="{Binding LeftIconGlyph, Source={x:Reference this}}"
+                       FontFamily="FA-Solid"
+                       FontSize="{Binding IconSize, Source={x:Reference this}}"
+                       TextColor="{Binding IconColor, Source={x:Reference this}}"
+                       IsVisible="{Binding IsLeftIconGlyphVisible, Source={x:Reference this}}"
+                       VerticalOptions="Center" HorizontalOptions="Center"
+                       Grid.Column="0" />
+                
+                <!-- 2. Entry Nội Bộ -->
+                <Entry x:Name="internalEntry"
+                       Text="{Binding Text, Source={x:Reference this}, Mode=TwoWay}"
+                       Placeholder="{Binding Placeholder, Source={x:Reference this}}"
+                       PlaceholderColor="{Binding PlaceholderColor, Source={x:Reference this}}"
+                       TextColor="{Binding TextColor, Source={x:Reference this}}"
+                       IsPassword="{Binding IsPassword, Source={x:Reference this}}"
+                       Keyboard="{Binding Keyboard, Source={x:Reference this}}"
+                       VerticalTextAlignment="{Binding VerticalTextAlignment, Source={x:Reference this}}"
+                       HorizontalTextAlignment="{Binding HorizontalTextAlignment, Source={x:Reference this}}"
+                       Focused="OnEntryFocused"
+                       Unfocused="OnEntryUnfocused"
+                       TextChanged="OnInternalEntryTextChanged"
+                       FontSize="14"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Fill"
+                       Margin="0,-8,0,-8"
+                       Grid.Column="1"/>
+
+                <!-- 3. Nút Clear Custom Nhỏ Gọn (Chỉ hiện khi Text không rỗng) -->
+                <Image Source="close16x16.png" 
+                       IsVisible="{Binding IsClearButtonVisible, Source={x:Reference this}}"
+                       WidthRequest="14" 
+                       HeightRequest="14"
+                       VerticalOptions="Center" 
+                       Grid.Column="2">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnCustomClearTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <!-- 4. Icon Phải (Có sự kiện Click nếu cần) -->
+                <!-- Option A: Dùng Hình ảnh -->
+                <Image Source="{Binding RightIconSource, Source={x:Reference this}}"
+                       IsVisible="{Binding IsRightIconVisible, Source={x:Reference this}}"
+                       WidthRequest="18" HeightRequest="18"
+                       VerticalOptions="Center" Grid.Column="3">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnRightIconTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <!-- Option B: Dùng FontAwesome -->
+                <Label Text="{Binding RightIconGlyph, Source={x:Reference this}}"
+                       FontFamily="FA-Solid"
+                       FontSize="{Binding IconSize, Source={x:Reference this}}"
+                       TextColor="{Binding IconColor, Source={x:Reference this}}"
+                       IsVisible="{Binding IsRightIconGlyphVisible, Source={x:Reference this}}"
+                       VerticalOptions="Center" HorizontalOptions="Center"
+                       Grid.Column="3">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnRightIconTapped" />
+                    </Label.GestureRecognizers>
+                </Label>
+            </Grid>
+        </Border>
+        <BoxView x:Name="underlineView"
+                 Color="{Binding BorderColor, Source={x:Reference this}}"
+                 HeightRequest="{Binding BorderThickness, Source={x:Reference this}}"
+                 VerticalOptions="End" 
+                 HorizontalOptions="Fill"
+                 IsVisible="{Binding IsUnderline, Source={x:Reference this}}" />
+    </Grid>
+</ContentView>

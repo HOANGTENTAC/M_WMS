@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<toolkit:Popup xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="M_WMS.Controls.Selects.WmsSelectPopup"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:controls="clr-namespace:M_WMS.Controls.Selects"
+             CanBeDismissedByTappingOutsideOfPopup="True"
+             x:Name="ThisPopup">
+    <Border
+        x:Name="PART_Border"
+        WidthRequest="300"
+        BackgroundColor="White"
+        Stroke="#F0F0F0"
+        StrokeThickness="0"
+        StrokeShape="RoundRectangle 16">
+        <!--<Grid
+            RowDefinitions="50,Auto,*">-->
+        <VerticalStackLayout Spacing="0">
+
+            <!-- Header -->
+
+            <Grid
+                HeightRequest="50"
+                Padding="15,5,15,5"
+                ColumnDefinitions="*,Auto,Auto">
+                <Label
+                    TextColor="Black"
+                    x:Name="PART_Title"
+                    Text="{Binding Source={x:Reference ThisPopup}, Path=Title}"
+                    FontSize="20"
+                    FontAttributes="Bold"
+                    VerticalOptions="Center"/>
+
+                <Image
+                    Margin="0,0,10,0"
+                    Grid.Column="1"
+                    Source="filter.png"
+                    WidthRequest="18"
+                    HeightRequest="18">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnFilterTapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image
+                    Grid.Column="2"
+                    x:Name="PART_Close"
+                    Source="close.png"
+                    WidthRequest="20"
+                    HeightRequest="20"
+                    HorizontalOptions="End"
+                    VerticalOptions="Center">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnCloseTapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+            </Grid>
+
+            <!-- Search -->
+
+            <Border
+                x:Name="PART_SearchBorder"
+                IsVisible="False"
+                Margin="15,0,15,10"
+                Stroke="#2196F3"
+                StrokeShape="RoundRectangle 10">
+
+                <Border>
+                    <Grid ColumnDefinitions="*,Auto">
+                        <Entry
+                            Margin="10,0,10,0"
+                            TextColor="Black"
+                            x:Name="PART_SearchEntry"
+                            Text="{Binding SearchText}"
+                            Placeholder="Search..."/>
+
+                        <Image
+                            x:Name="PART_ClearButton"
+                            Grid.Column="1"
+                            Source="close.png"
+                            WidthRequest="12"
+                            HeightRequest="12"
+                            Margin="0,0,10,0"
+                            HorizontalOptions="End"
+                            VerticalOptions="Center"
+                            BackgroundColor="Transparent">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnClearTapped"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </Grid>
+                </Border>
+            </Border>
+
+            <!-- List -->
+            <Grid Grid.Row="2">
+                <CollectionView
+                    SelectionMode="Single"
+                    x:Name="PART_CollectionView"
+                    SelectionChanged="OnSelectionChanged"
+                    Margin="10,0,10,10">
+
+                    <CollectionView.EmptyView>
+                        <VerticalStackLayout
+                            Spacing="10"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center">
+                            <Image
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                Source="search.png"
+                                WidthRequest="40"
+                                HeightRequest="40"
+                                Opacity="0.4"/>
+                            <Label Text="{Binding Source={x:Reference ThisPopup}, Path=EmptyText}"
+                                FontSize="14"
+                                TextColor="#888888"
+                                HorizontalTextAlignment="Center"/>
+                        </VerticalStackLayout>
+                    </CollectionView.EmptyView>
+
+                    <CollectionView.ItemsLayout>
+                        <LinearItemsLayout
+                            Orientation="Vertical"
+                            ItemSpacing="0"/>
+                    </CollectionView.ItemsLayout>
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <controls:WmsSelectItemContainer/>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+                
+                <!-- Loading -->
+                <Grid
+                    x:Name="PART_LoadingGrid"
+                    IsVisible="False"
+                    BackgroundColor="Transparent">
+
+                    <VerticalStackLayout
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Spacing="10">
+
+                        <ActivityIndicator
+                            IsRunning="True"
+                            Color="DodgerBlue"/>
+
+                        <Label
+                            Text="Loading..."
+                            TextColor="Gray"
+                            HorizontalTextAlignment="Center"/>
+
+                    </VerticalStackLayout>
+                </Grid>
+            </Grid>
+        </VerticalStackLayout>
+    </Border>
+</toolkit:Popup>

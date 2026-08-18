@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="M_WMS.Controls.Selects.WmsSelectItemContainer">
+    <Border
+        HeightRequest="40"
+        x:Name="PART_Root"
+        Margin="4,0"
+        Padding="10,0"
+        Background="{Binding BackgroundBrush}"
+        StrokeThickness="0"
+        Stroke="#D0D0D0"
+        InputTransparent="True"
+        StrokeShape="RoundRectangle 8">
+        <Grid ColumnDefinitions="*,Auto">
+
+            <ContentView
+                x:Name="PART_Content"
+                Grid.Column="0"/>
+
+            <Image
+                Grid.Column="1"
+                WidthRequest="16"
+                HeightRequest="16"
+                VerticalOptions="Center"
+                Source="check.png"
+                IsVisible="{Binding IsSelected}" />
+
+        </Grid>
+
+    </Border>
+    
+</ContentView>

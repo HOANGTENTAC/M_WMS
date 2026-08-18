@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converters="clr-namespace:M_WMS.Converters"
+             x:Class="M_WMS.Controls.Buttons.IconButton"
+             x:Name="this">
+    
+    <ContentView.Resources>
+        <ResourceDictionary>
+            <converters:IsNotNullConverter x:Key="IsNotNullConverter" />
+        </ResourceDictionary>
+    </ContentView.Resources>
+
+    <ContentView.GestureRecognizers>
+        <TapGestureRecognizer Tapped="OnTapped" />
+    </ContentView.GestureRecognizers>
+
+    <Border x:Name="MainBorder"
+            Stroke="Transparent"
+            StrokeThickness="0"
+            BackgroundColor="{Binding ButtonBackgroundColor, Source={x:Reference this}}"
+            Padding="12,8"
+            HorizontalOptions="Fill" 
+            VerticalOptions="Fill">
+        <Border.StrokeShape>
+            <RoundRectangle CornerRadius="{Binding CornerRadius, Source={x:Reference this}}" />
+        </Border.StrokeShape>
+
+        <Grid x:Name="ContainerGrid"
+              HorizontalOptions="Center" 
+              VerticalOptions="Center">
+
+            <!-- Thêm Aspect="AspectFit" và giới hạn kích thước nhẹ nếu cần -->
+            <Image x:Name="IconImage"
+                   Source="{Binding IconSource, Source={x:Reference this}}"
+                   IsVisible="{Binding IconSource, Source={x:Reference this}, Converter={StaticResource IsNotNullConverter}}"
+                   HeightRequest="{Binding IconHeight, Source={x:Reference this}}"
+                   WidthRequest="{Binding IconWidth, Source={x:Reference this}}"
+                   Aspect="AspectFit"
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Center"/>
+
+            <Label x:Name="TextLabel"
+                   FontSize="{Binding FontSize, Source={x:Reference this}}"
+                   Text="{Binding Text, Source={x:Reference this}}"
+                   TextColor="{Binding TextColor, Source={x:Reference this}}"
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Center" />
+        </Grid>
+    </Border>
+</ContentView>

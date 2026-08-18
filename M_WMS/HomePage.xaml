@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="M_WMS.HomePage"
+             Shell.NavBarIsVisible="False">
+    <Grid x:Name="RootGrid">
+        <Grid x:Name="MainLayout" 
+              RowDefinitions="50,*,Auto">
+
+            <!-- Header -->
+            <Grid Grid.Row="0"
+              BackgroundColor="#1E88E5"
+              Padding="10"
+              ColumnDefinitions="50,*,50">
+
+                <Image Grid.Column="0"
+                   Source="user1.png"
+                   HeightRequest="40"/>
+
+                <Label Grid.Column="1"
+                   Text="{Binding UserName}"
+                   TextColor="White"
+                   FontSize="20"
+                   VerticalOptions="Center"/>
+
+                <Image Grid.Column="2"
+               HeightRequest="40"
+               WidthRequest="40"
+               Source="vietnam.png"
+               VerticalOptions="Center"
+               HorizontalOptions="Center">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding ChangeLanguageTappedCommand}" />
+                    </Image.GestureRecognizers>
+                </Image>
+            </Grid>
+
+            <!-- Menu -->
+            <Grid Grid.Row="1" BackgroundColor="#aaa" Padding="10">
+
+                <CollectionView BackgroundColor="#aaa" ItemsSource="{Binding Menus}" SelectionMode="None" ItemSizingStrategy="MeasureAllItems">
+
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout Orientation="Vertical" Span="2" VerticalItemSpacing="6" HorizontalItemSpacing="6" />
+                    </CollectionView.ItemsLayout>
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+
+                            <Border Margin="5" Padding="10" StrokeThickness="0" BackgroundColor="#F2F2F2" StrokeShape="RoundRectangle 10">
+
+                                <Grid RowDefinitions="auto,auto">
+
+                                    <Image
+                                    VerticalOptions="Center"
+                                    HorizontalOptions="Center"
+                                    Grid.Row="0"
+                                    Source="{Binding Icon}"
+                                    HeightRequest="50"/>
+
+                                    <Label
+                                    FontAttributes="Bold"
+                                    HorizontalOptions="Center"
+                                    Grid.Row="1"
+                                    Text="{Binding Title}"
+                                    VerticalOptions="Center"
+                                    FontSize="16"
+                                    TextColor="Black"/>
+
+                                    <Grid.GestureRecognizers>
+                                        <TapGestureRecognizer
+                                        Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.OpenMenuCommand}"
+                                        CommandParameter="{Binding .}" />
+                                    </Grid.GestureRecognizers>
+
+                                </Grid>
+
+                            </Border>
+
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+
+                </CollectionView>
+
+            </Grid>
+
+            <!-- Footer -->
+            <Grid Grid.Row="2"
+              RowDefinitions="Auto,Auto">
+
+                <VerticalStackLayout
+                BackgroundColor="#aaa"
+                Padding="10"
+                Spacing="2">
+
+                    <Label Text="Server: Test" TextColor="#1E88E5"/>
+                    <Label Text="SQL: 192.168.40.51" TextColor="#1E88E5"/>
+                    <Label Text="ERP: test_erp" TextColor="#1E88E5"/>
+                    <Label Text="CMMS: test_cmms" TextColor="#1E88E5"/>
+
+                </VerticalStackLayout>
+            </Grid>
+        </Grid>
+    </Grid>
+</ContentView>

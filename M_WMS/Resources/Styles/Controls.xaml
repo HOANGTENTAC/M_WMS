@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="M_WMS.Resources.Styles.Controls">
+    <!-- Label -->
+
+    <Style x:Key="WmsLabeltyle" TargetType="Label">
+
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="TextColor" Value="{StaticResource TextPrimary}"/>
+        <Setter Property="VerticalTextAlignment" Value="Center"/>
+
+    </Style>
+
+    <!-- Entry -->
+
+    <Style x:Key="WmsEntryStyle" TargetType="Entry">
+        <Setter Property="HeightRequest" Value="38"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="TextColor" Value="{StaticResource TextPrimary}"/>
+        <Setter Property="ClearButtonVisibility" Value="WhileEditing"/>
+
+    </Style>
+
+    <!-- Picker -->
+
+    <Style x:Key="WmsPickertyle" TargetType="Picker">
+
+        <Setter Property="HeightRequest" Value="38"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="TextColor" Value="{StaticResource TextPrimary}"/>
+
+    </Style>
+
+    <!-- Button -->
+
+    <Style x:Key="WmsButtonStyle" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="{StaticResource PrimaryColor}"/>
+        <Setter Property="TextColor" Value="{StaticResource CardBackground}"/>
+        <Setter Property="HeightRequest" Value="40"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="CornerRadius" Value="8"/>
+        <Setter Property="Padding" Value="8,2"/>
+
+    </Style>
+</ResourceDictionary>

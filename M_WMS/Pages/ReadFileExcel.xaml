@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:radioButtons="clr-namespace:M_WMS.Controls.RadioButtons"
+             xmlns:model="clr-namespace:M_WMS.Model"
+             xmlns:iconButton="clr-namespace:M_WMS.Controls.Buttons"
+             xmlns:local="clr-namespace:M_WMS.ViewModel"
+             x:DataType="local:ReadFileExcelViewModel"
+             x:Class="M_WMS.Pages.ReadFileExcel"
+             Shell.NavBarIsVisible="False">
+    <Grid RowDefinitions="*,55" BackgroundColor="#aaa">
+        <Border BackgroundColor="White"
+                StrokeShape="RoundRectangle 12"
+                Margin="5">
+            <ScrollView>
+                <VerticalStackLayout Padding="20" Spacing="10">
+
+                    <VerticalStackLayout Spacing="0">
+                        <Label Text="Chọn Nhập hoặc xuất kho:" TextColor="Black" />
+                        <radioButtons:WmsRadioButton 
+                                    Text="Input"
+                                    InnerCircleColor="Black"
+                                    ControlPadding="5,0,0,0"
+                                    Margin="0,5,0,5"
+                                    Spacing="4"
+                                    GroupName="GrpType"
+                                    IsChecked="{Binding IsInputSelect}"/>
+
+                        <radioButtons:WmsRadioButton 
+                                    Text="Output"
+                                    InnerCircleColor="Black"
+                                    ControlPadding="5,0,0,0"
+                                    Spacing="4"
+                                    GroupName="GrpType"
+                                    IsChecked="{Binding IsOutputSelect}"/>
+                    </VerticalStackLayout>
+
+                    <!-- Nút bấm chọn file -->
+                    <Button Text="Chọn &amp; Đọc File Excel"
+                    Command="{Binding PickAndReadExcelCommand}"
+                    BackgroundColor="#1976D2"
+                    TextColor="White"
+                    CornerRadius="8"
+                    HeightRequest="50"/>
+
+                    <!-- Nhãn hiển thị trạng thái -->
+                    <Label x:Name="StatusLabel" 
+                   Text="{Binding StatusText}"
+                   HorizontalOptions="Center" 
+                   TextColor="Black"/>
+
+                    <!-- Danh sách hiển thị kết quả -->
+                    <CollectionView ItemsSource="{Binding StockInoutTenplate}">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate x:DataType="model:StockInoutTenplate">
+                                <Border Padding="10" Margin="0,5" StrokeShape="RoundRectangle 8">
+                                    <VerticalStackLayout Spacing="3">
+                                        <Label Text="{Binding InstrNo}" FontAttributes="Bold" FontSize="16" TextColor="Black"/>
+                                        <HorizontalStackLayout Spacing="10">
+                                            <Label Text="{Binding GoosdCd}" TextColor="Black"/>
+                                            <Label Text="{Binding StockType}" TextColor="Black"/>
+                                            <Label Text="{Binding Qty}" TextColor="Black"/>
+                                        </HorizontalStackLayout>
+                                    </VerticalStackLayout>
+                                </Border>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+
+                </VerticalStackLayout>
+            </ScrollView>
+        </Border>
+        <Border Grid.Row="1"
+                Margin="5,0,5,0"
+                Padding="8"
+                BackgroundColor="White"
+                Stroke="#E0E0E0"
+                StrokeShape="RoundRectangle 12">
+            <Grid
+                Grid.Row="0"
+                ColumnDefinitions="auto,*,auto"
+                ColumnSpacing="8"
+                RowSpacing="0">
+
+                <iconButton:IconButton 
+                    Command="{Binding BackCommand}"
+                    IconSource="previous.png"
+                    Grid.Column="0" 
+                    Text="Back"/>
+            </Grid>
+        </Border>
+    </Grid>
+</ContentPage>

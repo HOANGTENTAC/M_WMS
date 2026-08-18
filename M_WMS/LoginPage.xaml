@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converters="clr-namespace:M_WMS.Converters"
+             xmlns:lang="clr-namespace:M_WMS.Helpers"
+             xmlns:controls="clr-namespace:M_WMS.Controls.CheckBoxs"
+             xmlns:buttons="clr-namespace:M_WMS.Controls.Buttons"
+             x:Class="M_WMS.LoginPage"
+             Title="Login"
+             BackgroundColor="White"
+             Shell.NavBarIsVisible="False">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:InvertedBoolConverter x:Key="InvertedBoolConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <Grid>
+        <ScrollView Padding="20">
+            <Grid RowDefinitions="*,Auto">
+                <VerticalStackLayout Padding="20" Spacing="15" Grid.Row="0">
+                    <!-- Language -->
+                    <HorizontalStackLayout HorizontalOptions="End">
+                        <Label Text="{lang:Translate Language}" TextColor="Black"/>
+                        <Image Source="language.png" HeightRequest="20" Margin="5,0,0,0"/>
+                        <HorizontalStackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding ChangeLanguageTappedCommand}" />
+                        </HorizontalStackLayout.GestureRecognizers>
+                    </HorizontalStackLayout>
+
+                    <!-- Logo -->
+                    <Image Source="ware_house_icon.png" HeightRequest="80" />
+
+                    <Label Text="{lang:Translate MWMS}" FontAttributes="Bold" FontSize="36" HorizontalOptions="Center" TextColor="#2A2E9E"/>
+
+                    <!-- User -->
+                    <Border Stroke="#2196F3" StrokeThickness="2" StrokeShape="RoundRectangle 20">
+                        <Grid ColumnDefinitions="40,*,20">
+                            <Image Grid.Column="0" Source="user.png" HeightRequest="20"/>
+                            <Entry Grid.Column="1"
+                               Text="{Binding UserCode}" 
+                               Placeholder="{lang:Translate UserCode}" 
+                               TextColor="Black" 
+                               PlaceholderColor="#aaa" 
+                               ClearButtonVisibility="WhileEditing"
+                               IsEnabled="{Binding IsBusy, Converter={StaticResource InvertedBoolConverter}}"/>
+                            <!--<ImageButton Grid.Column="2" Source="close16x16.png" Command="{Binding ClearUserCommand}"/>-->
+                        </Grid>
+                    </Border>
+
+                    <!-- Fingerprint -->
+                    <Grid ColumnDefinitions="Auto,*,Auto">
+                        <HorizontalStackLayout Grid.Column="0" Grid.ColumnSpan="2" Spacing="5">
+                            <Image Source="fingerprint.png" HeightRequest="20"/>
+                            <Label Text="{lang:Translate FingerprintLogin}" VerticalOptions="Center" TextColor="Black"/>
+                        </HorizontalStackLayout>
+
+                        <HorizontalStackLayout Grid.Column="2" Spacing="3">
+                            <!--<CheckBox IsChecked="{Binding RememberMe}" Margin="0"/>-->
+                            <controls:WmsCheckBox 
+                                IsChecked="{Binding RememberMe}" 
+                                Text="{lang:Translate Remember}" 
+                                CheckedColor="#1976D2"
+                                CornerRadius="4"/>
+                            <!--<Label Text="{lang:Translate Remember}" VerticalOptions="Center" TextColor="Black"/>-->
+                        </HorizontalStackLayout>
+                    </Grid>
+
+                    <!-- Change Account -->
+                    <HorizontalStackLayout>
+                        <Image Source="change_user.png" HeightRequest="20" Margin="0,0,5,0"/>
+                        <Label Text="{lang:Translate ChangeAccount}" TextColor="Black" VerticalOptions="Center"/>
+                    </HorizontalStackLayout>
+
+                    <!-- Login -->
+                    <!--<Button BackgroundColor="#007AFF" 
+                        Text="{lang:Translate Login}" 
+                        WidthRequest="140" 
+                        HorizontalOptions="Center" 
+                        Command="{Binding LoginCommand}" 
+                        Margin="0,10,0,0"
+                        IsVisible="{Binding IsBusy, Converter={StaticResource InvertedBoolConverter}}"/>-->
+
+                    <buttons:IconButton Text="{lang:Translate Login}"
+                                        WidthRequest="140"
+                                        HorizontalOptions="Center" 
+                                        Position="Left"
+                                        TextColor="White"
+                                        Command="{Binding LoginCommand}" 
+                                        CornerRadius="10">
+                        <buttons:IconButton.IconSource>
+                            <FontImageSource FontFamily="FA-Solid" Glyph="&#xf2f6;" Color="White" Size="20" />
+                        </buttons:IconButton.IconSource>
+                    </buttons:IconButton>
+                    
+                </VerticalStackLayout>
+
+                <VerticalStackLayout Grid.Row="1" Spacing="5" Margin="0,0,0,0">
+                    <!-- Footer -->
+                    <Grid ColumnDefinitions="*,*,*" Margin="0,0,0,10">
+                        <VerticalStackLayout Grid.Column="0" HorizontalOptions="Center">
+                            <Image Source="security.png" HeightRequest="24" />
+                            <Label Text="{lang:Translate PrivacyPolicy}" FontSize="12" HorizontalTextAlignment="Center" TextColor="Black"/>
+                        </VerticalStackLayout>
+
+                        <VerticalStackLayout Grid.Column="1" HorizontalOptions="Center">
+                            <Image Source="question_mark.png" HeightRequest="24" />
+                            <Label Text="{lang:Translate FAQ}" FontSize="12" HorizontalTextAlignment="Center" TextColor="Black"/>
+                        </VerticalStackLayout>
+
+                        <VerticalStackLayout Grid.Column="2" HorizontalOptions="Center">
+                            <Image Source="business.png" HeightRequest="24" />
+                            <Label Text="{lang:Translate Support}" FontSize="12" HorizontalTextAlignment="Center" TextColor="Black"/>
+                        </VerticalStackLayout>
+                    </Grid>
+
+                    <!-- Version -->
+                    <Label Text="Version 1.0.0.1 Test" TextColor="#4A90E2" FontAttributes="Bold" HorizontalOptions="Center" FontSize="12"/>
+
+                </VerticalStackLayout>
+            </Grid>
+        </ScrollView>
+            
+        <!-- LOADING OVERLAY (Tự động đè lên toàn màn hình khi IsBusy = True) -->
+        <Grid Grid.RowSpan="2" 
+          BackgroundColor="#80000000" 
+          IsVisible="{Binding IsBusy}" 
+          HorizontalOptions="Fill" 
+          VerticalOptions="Fill">
+
+            <Border BackgroundColor="White" 
+                Padding="20" 
+                HorizontalOptions="Center" 
+                VerticalOptions="Center" 
+                StrokeShape="RoundRectangle 10">
+                <VerticalStackLayout Spacing="10" HorizontalOptions="Center">
+                    <ActivityIndicator IsRunning="{Binding IsBusy}" 
+                       Color="#1E88E5" 
+                       HeightRequest="40" 
+                       WidthRequest="40" />
+                    <Label Text="{lang:Translate LoggingIn}" TextColor="Black" FontSize="14"/>
+                </VerticalStackLayout>
+            </Border>
+        </Grid>
+    </Grid>
+</ContentPage>

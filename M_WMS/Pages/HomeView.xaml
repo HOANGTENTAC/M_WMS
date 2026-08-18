@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:M_WMS.ViewModel"
+             xmlns:controls="clr-namespace:M_WMS.Controls.Card"
+             x:Class="M_WMS.Pages.HomeView"
+             xmlns:lang="clr-namespace:M_WMS.Helpers"
+             x:Name="ThiPage">
+
+    <!--<ContentView.Resources>
+        <ResourceDictionary>
+            <DataTemplate x:Key="MenuItemTemplate">
+                <Border Margin="5" Padding="10" StrokeThickness="0" BackgroundColor="#F2F2F2" StrokeShape="RoundRectangle 10">
+                    <Grid RowDefinitions="auto,auto">
+                        <Image
+                            VerticalOptions="Center"
+                            HorizontalOptions="Center"
+                            Grid.Row="0"
+                            Source="{Binding Icon}"
+                            HeightRequest="50"/>
+
+                        <Label
+                            FontAttributes="Bold"
+                            HorizontalOptions="Center"
+                            Grid.Row="1"
+                            Text="{Binding Title}"
+                            VerticalOptions="Center"
+                            FontSize="16"
+                            TextColor="Black"/>
+
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type vm:HomeViewModel}}, Path=OpenMenuCommand}"
+                                CommandParameter="{Binding .}" />
+                        </Grid.GestureRecognizers>
+                    </Grid>
+                </Border>
+            </DataTemplate>
+        </ResourceDictionary>
+    </ContentView.Resources>-->
+    
+    <Grid>
+        <Grid x:Name="RootGrid">
+            <Grid x:Name="MainLayout" 
+              RowDefinitions="50,*">
+
+                <!-- Header -->
+                <Grid Grid.Row="0"
+                  BackgroundColor="#1E88E5"
+                  Padding="10"
+                  ColumnDefinitions="50,*,50">
+
+                    <Image Grid.Column="0"
+                   Source="user1.png"
+                   HeightRequest="40"/>
+
+                    <Label Grid.Column="1"
+                       Text="{Binding UserName}"
+                       TextColor="White"
+                       FontSize="20"
+                       VerticalOptions="Center"/>
+
+                    <Image Grid.Column="2"
+                       HeightRequest="40"
+                       WidthRequest="40"
+                       Source="{Binding IconCountry}"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding ChangeLanguageTappedCommand}" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Grid>
+
+                <!-- Menu -->
+                <Grid Grid.Row="1" BackgroundColor="#aaa" Padding="10">
+
+                    <!-- 1. KHUNG XƯƠNG (HIỂN THỊ KHI ĐANG LOAD) -->
+                    <!--<Grid IsVisible="{Binding IsLoading}">
+                        <Grid.Resources>
+                            <Style x:Key="SkeletonItem" TargetType="Border">
+                                <Setter Property="BackgroundColor" Value="#E0E0E0" />
+                                <Setter Property="StrokeThickness" Value="0" />
+                                <Setter Property="StrokeShape" Value="RoundRectangle 10" />
+                                <Setter Property="Margin" Value="5" />
+                            </Style>
+                        </Grid.Resources>
+
+                        <Grid ColumnDefinitions="*,*" RowDefinitions="100,100">
+                            --><!-- Giả lập 4 ô menu đang tải --><!--
+                            <Border Grid.Row="0" Grid.Column="0" Style="{StaticResource SkeletonItem}" x:Name="Sk1"/>
+                            <Border Grid.Row="0" Grid.Column="1" Style="{StaticResource SkeletonItem}" x:Name="Sk2"/>
+                            <Border Grid.Row="1" Grid.Column="0" Style="{StaticResource SkeletonItem}" x:Name="Sk3"/>
+                            <Border Grid.Row="1" Grid.Column="1" Style="{StaticResource SkeletonItem}" x:Name="Sk4"/>
+                        </Grid>
+                    </Grid>-->
+
+                    <CollectionView BackgroundColor="#aaa" 
+                                    IsVisible="{Binding IsNotLoading}"
+                                    ItemsSource="{Binding Menus}" 
+                                    SelectionMode="None" 
+                                    ItemSizingStrategy="MeasureFirstItem">
+
+                        <CollectionView.ItemsLayout>
+                            <GridItemsLayout Orientation="Vertical" Span="2" VerticalItemSpacing="0" HorizontalItemSpacing="0" />
+                        </CollectionView.ItemsLayout>
+
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <controls:CardView
+                                    FontSize="14"
+                                    ImageHeight="50"
+                                    ImageWidth="50"
+                                    TextAlignment="Center"
+                                    CardTitle="{Binding Title}"
+                                    CardImage="{Binding Icon}"
+                                    Command="{Binding Source={RelativeSource AncestorType={x:Type ContentView}}, Path=BindingContext.OpenMenuCommand}"
+                                    CommandParameter="{Binding}" />
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </Grid>
+
+                <!-- Footer --><!--
+                <Grid Grid.Row="2"
+                    RowDefinitions="Auto,Auto">
+
+                    <VerticalStackLayout
+                        BackgroundColor="#aaa"
+                        Padding="10"
+                        Spacing="2">
+
+                        <Label Text="Server: Test" TextColor="#1E88E5"/>
+                        <Label Text="SQL: 192.168.40.51" TextColor="#1E88E5"/>
+                        <Label Text="ERP: test_erp" TextColor="#1E88E5"/>
+                        <Label Text="CMMS: test_cmms" TextColor="#1E88E5"/>
+
+                    </VerticalStackLayout>
+                </Grid>-->
+            </Grid>
+        </Grid>
+        
+        <!-- LOADING OVERLAY (Tự động đè lên toàn màn hình khi IsBusy = True) -->
+        <Grid Grid.RowSpan="2" 
+          BackgroundColor="#80000000" 
+          IsVisible="{Binding IsBusy}" 
+          HorizontalOptions="Fill" 
+          VerticalOptions="Fill">
+
+            <Border BackgroundColor="White" 
+                Padding="20" 
+                HorizontalOptions="Center" 
+                VerticalOptions="Center" 
+                StrokeShape="RoundRectangle 10">
+                <VerticalStackLayout Spacing="10" HorizontalOptions="Center">
+                    <ActivityIndicator IsRunning="{Binding IsBusy}" 
+                       Color="#1E88E5" 
+                       HeightRequest="40" 
+                       WidthRequest="40" />
+                    <Label Text="{lang:Translate Loading}" TextColor="Black" FontSize="14"/>
+                </VerticalStackLayout>
+            </Border>
+        </Grid>
+    </Grid>
+</ContentView>

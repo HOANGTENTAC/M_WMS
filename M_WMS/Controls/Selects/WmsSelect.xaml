@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="M_WMS.Controls.Selects.WmsSelect"
+             x:Name="ThisControl">
+    <Grid
+        x:Name="PART_Grid"
+        ColumnDefinitions="Auto,*,Auto"
+        Background="{Binding BackgroundBrush,
+                              Source={x:Reference ThisControl}}"
+        HorizontalOptions="Fill"
+        VerticalOptions="Fill">
+
+        <!-- ========================= -->
+        <!-- Leading Image              -->
+        <!-- ========================= -->
+
+        <Image
+            x:Name="PART_LeadingIcon"
+            Grid.Column="0"
+            WidthRequest="{Binding LeadingIconSize,
+                                   Source={x:Reference ThisControl}}"
+            HeightRequest="{Binding LeadingIconSize,
+                                    Source={x:Reference ThisControl}}"
+            Source="{Binding LeadingIconSource,
+                             Source={x:Reference ThisControl}}"
+            Aspect="AspectFit"
+            Margin="0"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            IsVisible="{Binding ShowLeadingIcon,
+                                 Source={x:Reference ThisControl}}"/>
+
+
+        <!-- ========================= -->
+        <!-- Leading FontAwesome        -->
+        <!-- ========================= -->
+
+        <Label
+            x:Name="PART_LeadingFontAwesomeIcon"
+            Grid.Column="0"
+            Text="{Binding LeadingFontAwesomeIcon,
+                           Source={x:Reference ThisControl}}"
+            TextColor="{Binding LeadingFontAwesomeIconColor,
+                                Source={x:Reference ThisControl}}"
+            FontFamily="FA-Solid"
+            FontSize="{Binding LeadingIconSize,
+                               Source={x:Reference ThisControl}}"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"
+            IsVisible="False"/>
+
+
+        <!-- ========================= -->
+        <!-- Selected text              -->
+        <!-- ========================= -->
+
+        <Label
+            x:Name="PART_Display"
+            Grid.Column="1"
+            TextColor="{Binding DisplayTextColor,
+                                Source={x:Reference ThisControl}}"
+            FontSize="{Binding FontSize,
+                               Source={x:Reference ThisControl}}"
+            Margin="{Binding DisplayMargin,
+                             Source={x:Reference ThisControl}}"
+            LineBreakMode="TailTruncation"
+            MaxLines="2"
+            VerticalTextAlignment="Center"
+            HorizontalOptions="Fill"
+            VerticalOptions="Center"/>
+
+
+        <!-- ========================= -->
+        <!-- Arrow                      -->
+        <!-- ========================= -->
+
+        <Image
+            x:Name="PART_Arrow"
+            Grid.Column="2"
+            Source="{Binding ArrowSource,
+                             Source={x:Reference ThisControl}}"
+            WidthRequest="{Binding ArrowWidth,
+                                   Source={x:Reference ThisControl}}"
+            HeightRequest="{Binding ArrowHeight,
+                                    Source={x:Reference ThisControl}}"
+            Margin="{Binding ArrowMargin,
+                             Source={x:Reference ThisControl}}"
+            Aspect="AspectFit"
+            HorizontalOptions="End"
+            VerticalOptions="Center"
+            IsVisible="{Binding ShowArrow,
+                                 Source={x:Reference ThisControl}}"/>
+
+    </Grid>
+</ContentView>

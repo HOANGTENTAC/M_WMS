@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="M_WMS.Controls.CheckBoxs.WmsCheckBox"
+             xmlns:converters="clr-namespace:M_WMS.Converters"
+             x:Name="this">
+    
+    <HorizontalStackLayout Spacing="{Binding Spacing, Source={x:Reference this}}"
+                           VerticalOptions="Center">
+
+        <Border x:Name="BoxBorder"
+                WidthRequest="{Binding BoxSize, Source={x:Reference this}}"
+                HeightRequest="{Binding BoxSize, Source={x:Reference this}}"
+                StrokeShape="{RoundRectangle CornerRadius={Binding CornerRadius, Source={x:Reference this}}}"
+                Padding="0"
+                StrokeThickness="1.5"
+                HorizontalOptions="Start"
+                VerticalOptions="Center">
+            <Border.Style>
+                <Style TargetType="Border">
+                    <Setter Property="Stroke" Value="{Binding UncheckedColor, Source={x:Reference this}}" />
+                    <Setter Property="BackgroundColor" Value="Transparent" />
+                    <Style.Triggers>
+                        <DataTrigger TargetType="Border" Binding="{Binding IsChecked, Source={x:Reference this}}" Value="True">
+                            <Setter Property="Stroke" Value="{Binding CheckedColor, Source={x:Reference this}}" />
+                            <Setter Property="BackgroundColor" Value="{Binding CheckedColor, Source={x:Reference this}}" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Border.Style>
+            <Border.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnTapped" />
+            </Border.GestureRecognizers>
+
+            <Path x:Name="CheckPath"
+                  Data="M 3 8 L 7 12 L 15 3"
+                  Stroke="{Binding CheckMarkColor, Source={x:Reference this}}"
+                  StrokeThickness="2"
+                  HorizontalOptions="Center"
+                  VerticalOptions="Center"
+                  Opacity="0">
+            </Path>
+        </Border>
+
+        <Label Text="{Binding Text, Source={x:Reference this}}"
+               FontSize="{Binding FontSize, Source={x:Reference this}}"
+               TextColor="{Binding TextColor, Source={x:Reference this}}"
+               VerticalOptions="Center">
+            <Label.Triggers>
+                <Trigger TargetType="Label" Property="Text" Value="">
+                    <Setter Property="IsVisible" Value="False" />
+                </Trigger>
+                <Trigger TargetType="Label" Property="Text" Value="{x:Null}">
+                    <Setter Property="IsVisible" Value="False" />
+                </Trigger>
+            </Label.Triggers>
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnTapped" />
+            </Label.GestureRecognizers>
+        </Label>
+
+    </HorizontalStackLayout>
+</ContentView>

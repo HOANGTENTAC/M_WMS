@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="M_WMS.Controls.Card.CardView"
+             x:Name="this">
+    
+    <Border StrokeShape="RoundRectangle 12"
+            StrokeThickness="0"
+            BackgroundColor="White"
+            Margin="8">
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroupList>
+                <!-- Nhóm các trạng thái phổ biến -->
+                <VisualStateGroup x:Name="CommonStates">
+
+                    <!-- 1. Trạng thái bình thường -->
+                    <VisualState x:Name="Normal" />
+
+                    <!-- 2. Trạng thái khi di chuột qua (Desktop) -->
+                    <VisualState x:Name="PointerOver">
+                        <VisualState.Setters>
+                            <!-- Đổi màu nền sang xám nhạt -->
+                            <Setter Property="BackgroundColor" Value="#F0F0F0" />
+                            <!-- Có thể phóng to nhẹ card -->
+                            <Setter Property="Scale" Value="1.02" />
+                        </VisualState.Setters>
+                    </VisualState>
+
+                    <!-- 3. Trạng thái khi được nhấn (Mobile/Tablet) -->
+                    <!-- Thường dùng StateTrigger hoặc PointerPressed để kích hoạt -->
+
+                </VisualStateGroup>
+            </VisualStateGroupList>
+        </VisualStateManager.VisualStateGroups>
+        <Border.Shadow>
+            <Shadow Brush="Black" Offset="2,2" Radius="6" Opacity="0.1" />
+        </Border.Shadow>
+        <Border.GestureRecognizers>
+            <TapGestureRecognizer 
+            Command="{Binding Source={x:Reference this}, Path=Command}"
+            CommandParameter="{Binding Source={x:Reference this}, Path=CommandParameter}" />
+        </Border.GestureRecognizers>
+        <!-- Dùng VerticalStackLayout giúp các phần tử tự co lại khi bị ẩn -->
+        <VerticalStackLayout Padding="12" Spacing="6">
+
+            <!-- Hình ảnh: Ẩn nếu không truyền ImageSource -->
+            <Image Source="{Binding Source={x:Reference this}, Path=CardImage}" 
+                   Aspect="AspectFit"
+                   HeightRequest="{Binding Source={x:Reference this}, Path=ImageHeight}"
+                   WidthRequest="{Binding Source={x:Reference this}, Path=ImageWidth}">
+                <Image.Triggers>
+                    <DataTrigger TargetType="Image" 
+                                 Binding="{Binding Source={x:Reference this}, Path=CardImage}" 
+                                 Value="{x:Null}">
+                        <Setter Property="IsVisible" Value="False" />
+                    </DataTrigger>
+                </Image.Triggers>
+            </Image>
+
+            <!-- Tiêu đề -->
+            <Label Text="{Binding Source={x:Reference this}, Path=CardTitle}" 
+                   HorizontalOptions="{Binding Source={x:Reference this}, Path=TextAlignment}"
+                   HorizontalTextAlignment="{Binding Source={x:Reference this}, Path=TextAlignment}"
+                   TextColor="Black" 
+                   FontAttributes="Bold" 
+                   FontSize="{Binding Source={x:Reference this}, Path=FontSize}">
+                <Label.Triggers>
+                    <DataTrigger TargetType="Label" 
+                                 Binding="{Binding Source={x:Reference this}, Path=CardTitle}" 
+                                 Value="">
+                        <Setter Property="IsVisible" Value="False" />
+                    </DataTrigger>
+                </Label.Triggers>
+            </Label>
+
+            <!-- Mô tả -->
+            <Label Text="{Binding Source={x:Reference this}, Path=CardDescription}" 
+                   HorizontalOptions="{Binding Source={x:Reference this}, Path=TextAlignment}"
+                   HorizontalTextAlignment="{Binding Source={x:Reference this}, Path=TextAlignmentDescription}"
+                   TextColor="Gray" FontSize="13" MaxLines="2">
+                <Label.Triggers>
+                    <DataTrigger TargetType="Label" 
+                                 Binding="{Binding Source={x:Reference this}, Path=CardDescription}" 
+                                 Value="">
+                        <Setter Property="IsVisible" Value="False" />
+                    </DataTrigger>
+                </Label.Triggers>
+            </Label>
+
+            <!-- Giá tiền -->
+            <Label Text="{Binding Source={x:Reference this}, Path=CardPrice}" 
+                   HorizontalOptions="{Binding Source={x:Reference this}, Path=TextAlignment}"
+                   HorizontalTextAlignment="{Binding Source={x:Reference this}, Path=TextAlignmentPrice}"
+                   TextColor="#2B0B98" FontAttributes="Bold" FontSize="15">
+                <Label.Triggers>
+                    <DataTrigger TargetType="Label" 
+                                 Binding="{Binding Source={x:Reference this}, Path=CardPrice}" 
+                                 Value="">
+                        <Setter Property="IsVisible" Value="False" />
+                    </DataTrigger>
+                </Label.Triggers>
+            </Label>
+
+        </VerticalStackLayout>
+    </Border>
+</ContentView>

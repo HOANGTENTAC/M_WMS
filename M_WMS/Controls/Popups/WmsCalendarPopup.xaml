@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Border xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+        x:Class="M_WMS.Controls.Popups.WmsCalendarPopup"
+        WidthRequest="320"
+        BackgroundColor="White"
+        Stroke="#DADADA"
+        StrokeThickness="0"
+        StrokeShape="16">
+    <VerticalStackLayout
+        Padding="10"
+        Spacing="10">
+
+        <!-- Header -->
+
+        <Grid ColumnDefinitions="40,*,40">
+
+            <!--<Button
+                BackgroundColor="#1976D2"
+                Text="◀"
+                Clicked="PrevMonth_Clicked"/>-->
+            <Label
+                FontAttributes="Bold"
+                TextColor="Black"
+                Text="❮"
+                FontSize="22"
+                HorizontalOptions="Center"
+                VerticalOptions="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="PrevMonth_Clicked"/>
+                </Label.GestureRecognizers>
+            </Label>
+
+            <Label
+                FontAttributes="Bold"
+                TextColor="Black"
+                x:Name="PART_Header"
+                Grid.Column="1"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                FontSize="18">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Header_Tapped"/>
+                </Label.GestureRecognizers>
+            </Label>
+
+            <!--<Button
+                BackgroundColor="#1976D2"
+                Grid.Column="2"
+                Text="▶"
+                Clicked="NextMonth_Clicked"/>-->
+            <Label
+                FontAttributes="Bold"
+                TextColor="Black"
+                Grid.Column="2"
+                Text="❯"
+                FontSize="22"
+                HorizontalOptions="Center"
+                VerticalOptions="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="NextMonth_Clicked"/>
+                </Label.GestureRecognizers>
+            </Label>
+        </Grid>
+
+        <Grid 
+            x:Name="PART_DayView" 
+            RowDefinitions="Auto,Auto,Auto,Auto">
+
+            <!-- Week -->
+            <Grid
+                Grid.Row="0"
+                BackgroundColor="Transparent" 
+                Padding="0,6"
+                ColumnDefinitions="*,*,*,*,*,*,*">
+
+                <Label HorizontalOptions="Center" Text="CN" TextColor="#D32F2F"/>
+                <Label HorizontalOptions="Center" Grid.Column="1" Text="T2" TextColor="#444"/>
+                <Label HorizontalOptions="Center" Grid.Column="2" Text="T3" TextColor="#444"/>
+                <Label HorizontalOptions="Center" Grid.Column="3" Text="T4" TextColor="#444"/>
+                <Label HorizontalOptions="Center" Grid.Column="4" Text="T5" TextColor="#444"/>
+                <Label HorizontalOptions="Center" Grid.Column="5" Text="T6" TextColor="#444"/>
+                <Label HorizontalOptions="Center" Grid.Column="6" Text="T7" TextColor="#1976D2"/>
+
+            </Grid>
+
+            <BoxView Grid.Row="1" HeightRequest="1" BackgroundColor="#DDDDDD"/>
+            <!-- Days -->
+
+            <Grid Grid.Row="2"
+                x:Name="CalendarGrid"
+                RowDefinitions="*,*,*,*,*,*"
+                ColumnDefinitions="*,*,*,*,*,*,*"/>
+        
+            <VerticalStackLayout
+                Grid.Row="3"
+                x:Name="TimePanel"
+                IsVisible="False">
+
+                <Label
+                    TextColor="Black"
+                    Text="Time"
+                    FontAttributes="Bold"/>
+
+                <Grid
+                    RowDefinitions="40"
+                    ColumnDefinitions="*,Auto,*,Auto,*">
+
+                    <Picker
+                        HorizontalOptions="Center"
+                        TextColor="Black"
+                        x:Name="HourPicker"
+                        Grid.Column="0"/>
+
+                    <Label
+                        TextColor="Black"
+                        Grid.Column="1"
+                        Text=":"
+                        VerticalOptions="Center"/>
+
+                    <Picker
+                        HorizontalOptions="Center"
+                        TextColor="Black"
+                        x:Name="MinutePicker"
+                        Grid.Column="2"/>
+
+                    <Label
+                        TextColor="Black"
+                        x:Name="SecondColon"
+                        Grid.Column="3"
+                        Text=":"
+                        VerticalOptions="Center"/>
+
+                    <Picker
+                        HorizontalOptions="Center"
+                        TextColor="Black"
+                        x:Name="SecondPicker"
+                        Grid.Column="4"/>
+
+                </Grid>
+
+            </VerticalStackLayout>
+        </Grid>
+
+        <!-- Month -->
+        <Grid
+            x:Name="PART_MonthView"
+            IsVisible="False">
+            <Grid
+                x:Name="PART_MonthGrid"
+                RowDefinitions="Auto,Auto,Auto,Auto"
+                ColumnDefinitions="*,*,*"/>
+        </Grid>
+
+        <!-- Year -->
+        <Grid
+            x:Name="PART_YearView"
+            IsVisible="False">
+            <Grid
+                x:Name="PART_YearGrid"
+                RowDefinitions="Auto,Auto,Auto,Auto"
+                ColumnDefinitions="*,*,*"/>
+        </Grid>
+
+        <Grid
+            ColumnDefinitions="*,*,*,*">
+            <Button
+                FontAttributes="Bold"
+                BackgroundColor="Transparent"
+                Grid.Column="0"
+                Text="Today"
+                TextColor="#1976D2"
+                Clicked="Today_Clicked"/>
+            
+            <Button
+                x:Name="btnClear"
+                FontAttributes="Bold"
+                BackgroundColor="Transparent"
+                Grid.Column="1"
+                Text="Clear"
+                TextColor="Red"
+                Clicked="Clear_Clicked"/>
+            
+            <Button
+                FontAttributes="Bold"
+                Grid.Column="2"
+                BackgroundColor="Transparent"
+                TextColor="#aaa"
+                Text="Cancel"
+                x:Name="CancelButton"
+                Clicked="Cancel_Clicked"/>
+
+            <Button
+                FontAttributes="Bold"
+                BackgroundColor="Transparent"
+                TextColor="#1976D2"
+                x:Name="OkButton"
+                Grid.Column="3"
+                Text="OK"
+                Clicked="Ok_Clicked"/>
+
+        </Grid>
+    </VerticalStackLayout>
+</Border>
