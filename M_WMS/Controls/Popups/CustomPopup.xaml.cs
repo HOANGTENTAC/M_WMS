@@ -4,14 +4,15 @@ using CommunityToolkit.Maui.Core;
 using CommunityToolkit.Maui.Views;
 using M_WMS.Controls.Models;
 
-public partial class CustomPopup : Popup
+public partial class CustomPopup : Popup<bool>
 {
     public CustomPopup(CustomPopupViewModel viewModel)
     {
         InitializeComponent();
-        Color = Colors.Transparent;
+        //Color = Colors.Transparent;
         // Gán BindingContext
         BindingContext = viewModel;
+
         //BorderContainer.SizeChanged += OnBorderContainerSizeChanged;
         // Bắt sự kiện khi Popup bắt đầu mở để chạy Animation
         Opened += OnPopupOpened;
@@ -20,7 +21,7 @@ public partial class CustomPopup : Popup
         viewModel.CloseAction = async (result) => await CloseWithAnimationAsync(result);
 
     }
-    private async void OnPopupOpened(object? sender, PopupOpenedEventArgs e)
+    private async void OnPopupOpened(object? sender, EventArgs e)
     {
         // Hiệu ứng Zoom & Fade In khi xuất hiện
         this.Content.Scale = 0.7;
@@ -41,6 +42,6 @@ public partial class CustomPopup : Popup
         );
 
         // Đóng Popup và trả về kết quả
-        Close(result);
+        await CloseAsync();
     }
 }

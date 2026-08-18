@@ -16,7 +16,7 @@ public partial class WmsSelectPopup : Popup
 	{
 		InitializeComponent();
 
-        Color = Colors.Transparent;
+        //Color = Colors.Transparent;
         InitializePopup();
 
         //Closed += WmsSelectPopup_Closed;
@@ -87,7 +87,7 @@ public partial class WmsSelectPopup : Popup
     //}
     private void OnCloseTapped(object sender, TappedEventArgs e)
     {
-        Close();
+        CloseAsync();
     }
     private void OnFilterTapped(object sender, TappedEventArgs e)
     {

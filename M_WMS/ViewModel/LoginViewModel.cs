@@ -102,7 +102,7 @@ namespace M_WMS.ViewModel
                             break;
                     }
                     LoginInfo.StockLocation = Preferences.Default.Get("StockLocation", "");
-                    await Task.Delay(50);
+                    //await Task.Delay(50);
 
                     //await Shell.Current.GoToAsync(nameof(HomePage));
                     await Shell.Current.GoToAsync("//MainPage");

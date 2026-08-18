@@ -1,4 +1,4 @@
-﻿using CommunityToolkit.Maui.Views;
+﻿using CommunityToolkit.Maui.Extensions;
 using M_WMS.Controls.Helpers;
 
 namespace M_WMS.Controls.Selects;
@@ -7,8 +7,8 @@ public partial class WmsSelect : ContentView
 {
     private bool IsPopupOpen;
     public WmsSelect()
-	{
-		InitializeComponent();
+    {
+        InitializeComponent();
         InitializeContent();
         InitializeStyle();
         InitializeEvents();

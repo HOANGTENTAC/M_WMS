@@ -1,4 +1,7 @@
-﻿using CommunityToolkit.Maui.Views;
+﻿using CommunityToolkit.Maui;
+using CommunityToolkit.Maui.Core;
+using CommunityToolkit.Maui.Extensions;
+using CommunityToolkit.Maui.Views;
 using M_WMS.Controls.Models;
 using M_WMS.Controls.Popups;
 using M_WMS.Enums;
@@ -33,8 +36,15 @@ namespace M_WMS.Services.Popups
 
             if (currentPage != null)
             {
-                var result = await currentPage.ShowPopupAsync(popup);
-                return result is bool isSuccess && isSuccess;
+                var options = new PopupOptions
+                {
+                    Shape = null
+                };
+
+                //var popupResult = await currentPage.ShowPopupAsync<bool>(popup);
+                IPopupResult<bool> popupResult = await currentPage.ShowPopupAsync<bool>(popup, options);
+                //return result is bool isSuccess && isSuccess;
+                return popupResult?.Result ?? false;
             }
 
             return false;

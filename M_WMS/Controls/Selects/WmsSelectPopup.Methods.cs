@@ -116,12 +116,19 @@ namespace M_WMS.Controls.Selects
 
             PART_CollectionView.HeightRequest = listHeight;
 
-            Size = new Size(
-                PopupWidth,
+            //Size = new Size(
+            //    PopupWidth,
+            //    HeaderHeight +
+            //    searchHeight +
+            //    listHeight +
+            //    BottomPadding);
+            WidthRequest = PopupWidth;
+
+            HeightRequest =
                 HeaderHeight +
                 searchHeight +
                 listHeight +
-                BottomPadding);
+                BottomPadding;
         }
         //private async void ScrollToSelectedItem()
         //{

@@ -50,7 +50,8 @@ namespace M_WMS.Controls.Selects
 
             await Task.Delay(180);
             PART_CollectionView.SelectedItem = null;
-            Close(SelectedItem);
+            //Close(SelectedItem);
+            await CloseAsync();
             //await CloseAsync();
         }
         private void UpdateSelection(object? selectedItem)
