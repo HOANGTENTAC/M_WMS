@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="M_WMS.Controls.Popups.CustomPopupView"
+             xmlns:local="clr-namespace:M_WMS.Controls.Models"
+             x:DataType="local:CustomPopupViewModel">
+    <!-- Grid phủ toàn màn hình tạo lớp nền bán trong suốt -->
+    <Grid HorizontalOptions="Center" 
+          VerticalOptions="Center"
+          IsVisible="{Binding IsVisible}">
+
+        <Grid.GestureRecognizers>
+            <TapGestureRecognizer Command="{Binding OutsideTapCommand}" />
+        </Grid.GestureRecognizers>
+
+        <Border x:Name="PopupContainer"
+                StrokeShape="RoundRectangle 16" 
+                BackgroundColor="White" 
+                Padding="20" 
+                MaximumWidthRequest="380"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Margin="20,0"
+                StrokeThickness="0">
+
+            <Border.Shadow>
+                <Shadow Brush="Black"
+                Offset="0,10"
+                Radius="20"
+                Opacity="0.3" />
+            </Border.Shadow>
+            
+            <Border.GestureRecognizers>
+                <TapGestureRecognizer />
+            </Border.GestureRecognizers>
+            
+            <!--<Grid RowDefinitions="Auto, Auto, *, Auto" RowSpacing="12">-->
+            <VerticalStackLayout Spacing="12">
+                <!-- ROW 0: HEADER -->
+                <HorizontalStackLayout Grid.Row="0" Spacing="10" VerticalOptions="Center">
+                    <Image WidthRequest="26" HeightRequest="26">
+                        <Image.Source>
+                            <FontImageSource FontFamily="FA-Solid" 
+                                     Glyph="{Binding HeaderIconGlyph}" 
+                                     Color="{Binding HeaderIconTintColor}" 
+                                     Size="26" />
+                        </Image.Source>
+                    </Image>
+                    <Label Text="{Binding Title}" FontAttributes="Bold" FontSize="18" VerticalOptions="Center" TextColor="Black"/>
+                </HorizontalStackLayout>
+
+                <!-- ROW 1: ĐƯỜNG KẺ PHÂN CÁCH -->
+                <BoxView Grid.Row="1" 
+                 HeightRequest="1" 
+                 Color="#E5E7EB" 
+                 HorizontalOptions="Fill" />
+
+                <!-- ROW 2: BODY (Nội dung ngắn/dài đều tự cân chỉnh) -->
+                <ScrollView Grid.Row="2" 
+                    MaximumHeightRequest="300" 
+                    VerticalScrollBarVisibility="Default">
+                    <Label Text="{Binding Message}" 
+                   FontSize="14" 
+                   TextColor="Black" 
+                   LineBreakMode="WordWrap" />
+                </ScrollView>
+
+                <!-- ROW 3: FOOTER -->
+                <Grid Grid.Row="3" ColumnDefinitions="*, *" ColumnSpacing="10" Margin="0,10,0,0">
+
+                    <!-- Cancel Button -->
+                    <Button Grid.Column="0" 
+                    Text="{Binding CancelButtonText}" 
+                    IsVisible="{Binding IsCancelButtonVisible}"
+                    ContentLayout="Left, 8"
+                    BackgroundColor="#F3F4F6" 
+                    TextColor="#374151" 
+                    Command="{Binding CancelCommand}">
+                        <Button.ImageSource>
+                            <FontImageSource FontFamily="FA-Solid" 
+                                     Glyph="{Binding CancelIconGlyph}" 
+                                     Color="#374151" 
+                                     Size="16" />
+                        </Button.ImageSource>
+                    </Button>
+
+                    <!-- OK Button -->
+                    <Button Grid.Column="1" 
+                    Text="{Binding OkButtonText}" 
+                    ContentLayout="Left, 8"
+                    BackgroundColor="{Binding OkButtonBackgroundColor}" 
+                    TextColor="White" 
+                    Command="{Binding ConfirmCommand}">
+                        <Button.ImageSource>
+                            <FontImageSource FontFamily="FA-Solid" 
+                                     Glyph="{Binding OkIconGlyph}" 
+                                     Color="White" 
+                                     Size="16" />
+                        </Button.ImageSource>
+                        <Button.Triggers>
+                            <DataTrigger TargetType="Button" 
+                                 Binding="{Binding IsCancelButtonVisible}" 
+                                 Value="False">
+                                <Setter Property="Grid.Column" Value="0" />
+                                <Setter Property="Grid.ColumnSpan" Value="2" />
+                            </DataTrigger>
+                        </Button.Triggers>
+                    </Button>
+
+                </Grid>
+            </VerticalStackLayout>
+        </Border>
+    </Grid>
+</ContentView>

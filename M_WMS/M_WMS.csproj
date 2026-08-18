@@ -2,6 +2,7 @@
 
 	<PropertyGroup>
 		<TargetFrameworks>net10.0-android;net10.0-maccatalyst;net10.0-ios</TargetFrameworks>
+		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net10.0-windows10.0.19041.0</TargetFrameworks>
 		 <!--<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net9.0-windows10.0.19041.0</TargetFrameworks>--> 
 		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
 		<!-- <TargetFrameworks>$(TargetFrameworks);net9.0-tizen</TargetFrameworks> -->
@@ -92,12 +93,12 @@
 		<PackageReference Include="ZXing.Net.Maui.Controls" Version="0.5.2" />
 	</ItemGroup>
 
-	<!-- Target-framework-specific package versions to resolve vulnerabilities and pin Windows-only packages -->
+	<!-- Target-framework-specific package versions to resolve vulnerabilities and pin Windows-only packages --><!--
 	<ItemGroup Condition="'$(TargetFramework)' == 'net10.0-windows10.0.26100.1'">
 		<PackageReference Include="Microsoft.WindowsAppSDK" Version="2.2.0" />
 		<PackageReference Include="Microsoft.Web.WebView2" Version="1.0.3719.77" />
 		<PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.26100.4654" />
-	</ItemGroup>
+	</ItemGroup>-->
 
 	<ItemGroup>
 	  <MauiXaml Update="Controls\Borders\WmsBorder.xaml">
@@ -122,6 +123,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Controls\Popups\CustomPopup.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Controls\Popups\CustomPopupView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Controls\Popups\WmsCalendarPopup.xaml">

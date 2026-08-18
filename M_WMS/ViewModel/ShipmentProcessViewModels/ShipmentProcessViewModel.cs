@@ -1,6 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using M_WMS.Consts;
+using M_WMS.Controls.Models;
 using M_WMS.Enums;
 using M_WMS.Helpers;
 using M_WMS.Model;
@@ -23,7 +24,6 @@ namespace M_WMS.ViewModel.ShipmentProcessViewModels
         private string shoCdOldValue;
         public ICommand OnEntryUnfocusedCommand { get; private set; }
         public ICommand OnEntryFocusedCommand { get; private set; }
-        private readonly IPopupDialogService _popupService;
         [ObservableProperty]
         private List<ArrivalItem> itemList;
 
@@ -76,10 +76,9 @@ namespace M_WMS.ViewModel.ShipmentProcessViewModels
         private List<WmsSelectOption> stockTypeList;
         #endregion
 
-        public ShipmentProcessViewModel(ApiService apiService, IPopupDialogService popupService)
+        public ShipmentProcessViewModel(ApiService apiService)
         {
             _apiService = apiService;
-            _popupService = popupService;
             OnEntryUnfocusedCommand = new Command<ArrivalItem>(async (item) => await OnEntryUnfocused(item));
             OnEntryFocusedCommand = new Command<ArrivalItem>(OnEntryFocused);
         }
@@ -314,7 +313,7 @@ namespace M_WMS.ViewModel.ShipmentProcessViewModels
         {
             if (string.IsNullOrEmpty(InstrNo))
             {
-                await _popupService.ShowPopupAsync($"{AppResources.PleaseConfirm}", AppResources.EmptyMametan, PopupType.Warning, "OK");
+                await PopupService.ShowAsync($"{AppResources.PleaseConfirm}", AppResources.EmptyMametan, PopupType.Warning, "OK");
                 return false;
             }
             //if (string.IsNullOrEmpty(InoutKu2))
@@ -330,27 +329,27 @@ namespace M_WMS.ViewModel.ShipmentProcessViewModels
                 item.ShoId == null ||
                 item.StockQty == null) && item.Qty != 0)
                 {
-                    await _popupService.ShowPopupAsync($"{AppResources.PleaseConfirm}", AppResources.ShoCdIsNotRegistered, PopupType.Warning, "OK");
+                    await PopupService.ShowAsync($"{AppResources.PleaseConfirm}", AppResources.ShoCdIsNotRegistered, PopupType.Warning, "OK");
                     return false;
                 }
                 if (item.Qty == 0)
                 {
-                    await _popupService.ShowPopupAsync($"{AppResources.PleaseConfirm}", AppResources.WMS9999CW0057, PopupType.Warning, "OK");
+                    await PopupService.ShowAsync($"{AppResources.PleaseConfirm}", AppResources.WMS9999CW0057, PopupType.Warning, "OK");
                     return false;
                 }
                 if(item.StockQty < item.Qty)
                 {
-                    await _popupService.ShowPopupAsync($"{AppResources.PleaseConfirm}", AppResources.WMS9999CW0061, PopupType.Warning, "OK");
+                    await PopupService.ShowAsync($"{AppResources.PleaseConfirm}", AppResources.WMS9999CW0061, PopupType.Warning, "OK");
                     return false;
                 }
                 if(string.IsNullOrEmpty(item.StockType))
                 {
-                    await _popupService.ShowPopupAsync($"{AppResources.PleaseConfirm}", AppResources.WMS9999CW0058, PopupType.Warning, "OK");
+                    await PopupService.ShowAsync($"{AppResources.PleaseConfirm}", AppResources.WMS9999CW0058, PopupType.Warning, "OK");
                     return false;
                 }
                 if(string.IsNullOrEmpty(item.InstrNo))
                 {
-                    await _popupService.ShowPopupAsync($"{AppResources.PleaseConfirm}", AppResources.EmptyMametan, PopupType.Warning, "OK");
+                    await PopupService.ShowAsync($"{AppResources.PleaseConfirm}", AppResources.EmptyMametan, PopupType.Warning, "OK");
                     return false;
                 }
             }

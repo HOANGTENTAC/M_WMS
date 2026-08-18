@@ -1,12 +1,15 @@
-﻿using M_WMS.Helpers;
+﻿using M_WMS.Controls.Popups;
+using M_WMS.Helpers;
 
 namespace M_WMS
 {
     public partial class App : Application
     {
+        public static CustomPopupView GlobalPopup { get; private set; } = null!;
         public App()
         {
             InitializeComponent();
+            GlobalPopup = new CustomPopupView();
         }
 
         protected override Window CreateWindow(IActivationState? activationState)
