@@ -1,4 +1,3 @@
-using M_WMS.Services;
 using M_WMS.ViewModel.ShipmentProcessViewModels;
 
 namespace M_WMS.Pages.ShipmentProcess;
@@ -11,8 +10,6 @@ public partial class ShipmentProcessList : ContentPage//, IQueryAttributable
 		InitializeComponent();
         BindingContext = vm;
         _viewModel = vm;
-
-        WmsPopupService.Initialize(PopupHost, PopupContainer);
     }
     protected override async void OnAppearing()
     {
@@ -21,13 +18,7 @@ public partial class ShipmentProcessList : ContentPage//, IQueryAttributable
         {
             await _viewModel.InitializeAsync();
         });
-
     }
-    private async void PopupBackground_Tapped(object sender, TappedEventArgs e)
-    {
-        await WmsPopupService.CloseAsync();
-    }
-
     private void OnEditorFocused(object sender, FocusEventArgs e)
     {
         ClearButton.IsVisible = true;

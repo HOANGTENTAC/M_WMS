@@ -1,9 +1,6 @@
 using M_WMS.Controls.DatePickers;
 using M_WMS.Controls.Enums;
-using M_WMS.Services;
 using Microsoft.Maui.Controls.Shapes;
-using System.Threading.Tasks;
-using Microsoft.Maui.Controls;
 namespace M_WMS.Controls.Popups;
 
 public partial class WmsCalendarPopup : Border
@@ -238,8 +235,8 @@ public partial class WmsCalendarPopup : Border
         if (!_owner.HasTime)
         {
             _owner.Date = date;
-            _owner.RaiseUnfocused();
-            await WmsPopupService.CloseAsync();
+            //_owner.RaiseUnfocused();
+            await WmsPopupService.CloseAsync(this);
             return;
         }
 
@@ -310,13 +307,13 @@ public partial class WmsCalendarPopup : Border
         //    minute,
         //    second);
         _owner.Date = _selectedDate;
-        _owner.RaiseUnfocused();
-        await WmsPopupService.CloseAsync();
+        //_owner.RaiseUnfocused();
+        await WmsPopupService.CloseAsync(this);
     }
     private async void Cancel_Clicked(object sender, EventArgs e)
     {
-        _owner.RaiseUnfocused();
-        await WmsPopupService.CloseAsync();
+        //_owner.RaiseUnfocused();
+        await WmsPopupService.CloseAsync(this);
     }
     private async void Today_Clicked(object sender, EventArgs e)
     {
@@ -334,8 +331,8 @@ public partial class WmsCalendarPopup : Border
         if (!_owner.HasTime)
         {
             _owner.Date = now.Date;
-            _owner.RaiseUnfocused();
-            await WmsPopupService.CloseAsync();
+           // _owner.RaiseUnfocused();
+            await WmsPopupService.CloseAsync(this);
             return;
         }
 
@@ -354,7 +351,7 @@ public partial class WmsCalendarPopup : Border
 
         //_owner.RaiseUnfocused();
 
-        await WmsPopupService.CloseAsync();
+        await WmsPopupService.CloseAsync(this);
     }
     private void UpdateView()
     {
@@ -630,5 +627,20 @@ public partial class WmsCalendarPopup : Border
 
         UpdateHeader();
         UpdateView();
+    }
+    public async Task AnimateInAsync()
+    {
+        await ThisBorder.ScaleTo(
+            1.0,
+            180,
+            Easing.CubicOut);
+    }
+
+    public async Task AnimateOutAsync()
+    {
+        await ThisBorder.ScaleTo(
+            0.85,
+            120,
+            Easing.CubicIn);
     }
 }

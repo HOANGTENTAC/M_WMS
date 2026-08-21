@@ -55,7 +55,7 @@
                             <DataTemplate x:DataType="model:StockInoutTenplate">
                                 <Border Padding="10" Margin="0,5" StrokeShape="RoundRectangle 8">
                                     <VerticalStackLayout Spacing="3">
-                                        <Label Text="{Binding InstrNo}" FontAttributes="Bold" FontSize="16" TextColor="Black"/>
+                                        <Label Text="{Binding Message}" FontAttributes="Bold" FontSize="16" TextColor="Black"/>
                                         <HorizontalStackLayout Spacing="10">
                                             <Label Text="{Binding GoosdCd}" TextColor="Black"/>
                                             <Label Text="{Binding StockType}" TextColor="Black"/>

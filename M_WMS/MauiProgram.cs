@@ -12,11 +12,11 @@ using M_WMS.Controls.Models;
 using M_WMS.Services.Popups;
 using M_WMS.Pages;
 
-
-
 #if ANDROID
 using Android.Graphics.Drawables;
 using AndroidX.AppCompat.Widget;
+#elif WINDOWS
+using Microsoft.UI.Xaml.Controls;
 #endif
 namespace M_WMS
 {
@@ -39,7 +39,7 @@ namespace M_WMS
                 .ConfigureMauiHandlers(handlers =>
                 {
 #if WINDOWS
-                    //handlers.AddHandler(typeof(Entry), typeof(M_WMS.Platforms.Windows.MyEntryHandler));
+                    handlers.AddHandler(typeof(Entry), typeof(M_WMS.Platforms.Windows.MyEntryHandler));
 #endif
 
                     EditorHandler.Mapper.AppendToMapping("CustomEditor", (handler, view) =>
@@ -49,12 +49,12 @@ namespace M_WMS
                         //handler.PlatformView.Background = null;
                         handler.PlatformView.Background = new ColorDrawable(Android.Graphics.Color.Transparent);
 #endif
-//#if WINDOWS
-//                        handler.PlatformView.Padding = new Microsoft.UI.Xaml.Thickness(6, 2, 6, 2);
-//                        handler.PlatformView.BorderThickness = new Microsoft.UI.Xaml.Thickness(0);
-//                        handler.PlatformView.BorderBrush = new Microsoft.UI.Xaml.Media.SolidColorBrush(Microsoft.UI.Colors.Transparent);
-//                        handler.PlatformView.Background = null;
-//#endif
+#if WINDOWS
+                        handler.PlatformView.Padding = new Microsoft.UI.Xaml.Thickness(6, 2, 6, 2);
+                        handler.PlatformView.BorderThickness = new Microsoft.UI.Xaml.Thickness(0);
+                        handler.PlatformView.BorderBrush = new Microsoft.UI.Xaml.Media.SolidColorBrush(Microsoft.UI.Colors.Transparent);
+                        handler.PlatformView.Background = null;
+#endif
                     });
                 });
 
@@ -68,52 +68,52 @@ namespace M_WMS
 #elif IOS || MACCATALYST
                 handler.PlatformView.BorderStyle = UIKit.UITextBorderStyle.None;
                 handler.PlatformView.VerticalAlignment = UIKit.UIControlContentVerticalAlignment.Center;
-//#elif WINDOWS
-//                // Xóa viền trên Windows
-//                handler.PlatformView.BorderThickness = new Microsoft.UI.Xaml.Thickness(0);
+#elif WINDOWS
+                // Xóa viền trên Windows
+                handler.PlatformView.BorderThickness = new Microsoft.UI.Xaml.Thickness(0);
     
-//                // Thu nhỏ Padding chữ bên trong (Trái, Trên, Phải, Dưới)
-//                handler.PlatformView.Padding = new Microsoft.UI.Xaml.Thickness(0);
+                // Thu nhỏ Padding chữ bên trong (Trái, Trên, Phải, Dưới)
+                handler.PlatformView.Padding = new Microsoft.UI.Xaml.Thickness(0);
     
-//                // Tùy chọn: Xóa màu nền xám mặc định khi focus/hover
-//                //handler.PlatformView.Background = new Microsoft.UI.Xaml.Media.SolidColorBrush(Microsoft.UI.Colors.Transparent);
+                // Tùy chọn: Xóa màu nền xám mặc định khi focus/hover
+                //handler.PlatformView.Background = new Microsoft.UI.Xaml.Media.SolidColorBrush(Microsoft.UI.Colors.Transparent);
 #endif
             });
 
-            //EntryHandler.Mapper.AppendToMapping(nameof(Entry), (handler, view) =>
-            //    {
-            //        if (view is Entry)
-            //        {
-            //            handler.PlatformView.Background = null;
-            //        }
-            //    });
-            //    PickerHandler.Mapper.AppendToMapping(nameof(Picker), (handler, view) =>
-            //    {
-            //        if (view is Picker)
-            //        {
-            //            handler.PlatformView.Background = null;
-            //        }
-            //    });
-            //#if WINDOWS
-            //            EntryHandler.Mapper.AppendToMapping("WmsEntry", (handler, view) =>
-            //            {
-            //                if (view is WmsEntry &&
-            //                    handler.PlatformView is TextBox textBox)
-            //                {
-            //                    var transparentBrush =
-            //                        new Microsoft.UI.Xaml.Media.SolidColorBrush(
-            //                            Microsoft.UI.Colors.Transparent);
+            EntryHandler.Mapper.AppendToMapping(nameof(Entry), (handler, view) =>
+                {
+                    if (view is Entry)
+                    {
+                        handler.PlatformView.Background = null;
+                    }
+                });
+            PickerHandler.Mapper.AppendToMapping(nameof(Picker), (handler, view) =>
+            {
+                if (view is Picker)
+                {
+                    handler.PlatformView.Background = null;
+                }
+            });
+#if WINDOWS
+                        EntryHandler.Mapper.AppendToMapping("WmsEntry", (handler, view) =>
+                        {
+                            if (view is WmsEntry &&
+                                handler.PlatformView is TextBox textBox)
+                            {
+                                var transparentBrush =
+                                    new Microsoft.UI.Xaml.Media.SolidColorBrush(
+                                        Microsoft.UI.Colors.Transparent);
 
-            //                    textBox.Resources["TextControlBackgroundFocused"] = transparentBrush;
-            //                    textBox.Resources["TextControlBackground"] = transparentBrush;
+                                textBox.Resources["TextControlBackgroundFocused"] = transparentBrush;
+                                textBox.Resources["TextControlBackground"] = transparentBrush;
 
-            //                    // Placeholder color
-            //                    textBox.Resources["TextControlPlaceholderForeground"] =
-            //                        new Microsoft.UI.Xaml.Media.SolidColorBrush(
-            //                            Microsoft.UI.Colors.Gray);
-            //                }
-            //            });
-            //#endif
+                                // Placeholder color
+                                textBox.Resources["TextControlPlaceholderForeground"] =
+                                    new Microsoft.UI.Xaml.Media.SolidColorBrush(
+                                        Microsoft.UI.Colors.Gray);
+                            }
+                        });
+#endif
             //builder.Services.AddHttpClient("ApiCpos", client =>
             //{
             //    // Nếu chạy trên Android emulator thì dùng 10.0.2.2 thay cho localhost

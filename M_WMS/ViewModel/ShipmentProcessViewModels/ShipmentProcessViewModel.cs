@@ -165,8 +165,8 @@ namespace M_WMS.ViewModel.ShipmentProcessViewModels
                 DateTime currentDate = DateTime.Now;
                 var ListShipmentItems = ShipmentItems.ToList();
 
-                string inoutNo = await _apiService.GetOrderNumberAsync("Shipment_Stock", LoginInfo.KyotenCd);
-                string sequenceNo = await _apiService.GetOrderNumberAsync("SequenceNo", LoginInfo.KyotenCd);
+                string inoutNo = (await _apiService.GetShipmentStockOrderNumber(LoginInfo.KyotenCd)).PadLeft(8, '0');
+                string sequenceNo = await _apiService.GetSequenceNoNumber(LoginInfo.KyotenCd);
 
                 var res = new WSAXX03Model();
                 res.Payload = new OrderPayload();

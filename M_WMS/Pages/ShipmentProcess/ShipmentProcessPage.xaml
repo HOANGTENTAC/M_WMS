@@ -351,7 +351,6 @@
                                                     DisplayMemberPath="Name"
                                                     SelectedValuePath="Value"
                                                     BackgroundBrush="White"
-                                                    PressedBackgroundBrush="#EEEEEE"
                                                     DisplayMargin="10,0,10,0"
                                                     ArrowMargin="10"
                                                     ItemsSource="{Binding Source={x:Reference ThisPage},

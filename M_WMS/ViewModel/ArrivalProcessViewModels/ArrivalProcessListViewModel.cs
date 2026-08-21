@@ -361,8 +361,8 @@ union all
                          {(!string.IsNullOrEmpty(InstrNo) ? $" and HaNo like '{InstrNo}%'" : "")}
                          OPTION (MAXDOP 1) ";
             }
-            SqlServerService sqlServer = new SqlServerService();
-            DataTable dataSql = await sqlServer.GetDataFromRegionAsync(sqlSelect);
+
+            DataTable dataSql = await SqlServerService.GetDataFromRegionAsync(sqlSelect, LoginInfo.KyotenCd);
 
             string listSho = string.Join(",", dataSql.AsEnumerable().Select(x => $"'{x["sho_cd"]}'"));
 

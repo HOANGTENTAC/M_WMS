@@ -1,10 +1,8 @@
-using CommunityToolkit.Maui.Core;
-using CommunityToolkit.Maui.Views;
-using System.Collections;
+using M_WMS.Controls.Popups;
 
 namespace M_WMS.Controls.Selects;
 
-public partial class WmsSelectPopup : Popup
+public partial class WmsSelectPopup : ContentView
 {
     //public double ItemHeight { get; set; } = 40;
     //public IList? ItemsSource
@@ -15,7 +13,6 @@ public partial class WmsSelectPopup : Popup
     public WmsSelectPopup()
 	{
 		InitializeComponent();
-
         //Color = Colors.Transparent;
         InitializePopup();
 
@@ -85,9 +82,15 @@ public partial class WmsSelectPopup : Popup
 
     //    PART_Border.MaximumHeightRequest = screenHeight * 0.8;
     //}
-    private void OnCloseTapped(object sender, TappedEventArgs e)
+
+    private async void OnCloseTapped(object sender, TappedEventArgs e)
     {
-        CloseAsync();
+        //await WmsPopupService.CloseAsync();
+        await WmsPopupService.CloseAsync(this);
+    }
+    private async void OnOutsideTapped(object sender, TappedEventArgs e)
+    {
+        await WmsPopupService.CloseAsync(this);
     }
     private void OnFilterTapped(object sender, TappedEventArgs e)
     {
@@ -99,5 +102,21 @@ public partial class WmsSelectPopup : Popup
         //    await ShowSearchAsync();
 
         //UpdatePopupSize();
+    }
+  
+    public async Task AnimateInAsync()
+    {
+        await PART_Border.ScaleTo(
+            1.0,
+            180,
+            Easing.CubicOut);
+    }
+
+    public async Task AnimateOutAsync()
+    {
+        await PART_Border.ScaleTo(
+            0.85,
+            120,
+            Easing.CubicIn);
     }
 }

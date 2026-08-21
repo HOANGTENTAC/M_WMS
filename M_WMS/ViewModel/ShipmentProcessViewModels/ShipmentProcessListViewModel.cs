@@ -380,7 +380,7 @@ namespace M_WMS.ViewModel.ShipmentProcessViewModels
                                KeepLocation = grp != null && grp["stock_basho"] != "" ? grp["stock_basho"].ToString() : "",
                                ShoId = grp != null && grp["sho_id"] != "" ? int.Parse(grp["sho_id"].ToString()) : null,
                                StockQty = grp != null && grp["stock_suu"] != "" ? int.Parse(grp["stock_suu"].ToString()) : 0,
-                               PoNo = a["PoNo"].ToString() ?? "",
+                               PoNo = a["po_no"].ToString() ?? "",
                                GoodsName = grp != null ? grp["name"].ToString() : "",
                                Unit = grp != null ? grp["tani"].ToString() : "",
                                GrpCd = grp != null ? grp["grp_cd"].ToString() : "",

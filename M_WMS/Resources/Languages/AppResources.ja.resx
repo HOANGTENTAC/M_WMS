@@ -2115,4 +2115,19 @@
   <data name="WMS9999CW0058" xml:space="preserve">
     <value>入出庫区分を選択してください。</value>
   </data>
+  <data name="WMS9999CW0074" xml:space="preserve">
+    <value>在庫区分がまだ登録されていません。CD: {0}</value>
+  </data>
+  <data name="WMS9999CW0056" xml:space="preserve">
+    <value>このCD製品番号は登録されていません。販売スタッフに通知して登録してください。&amp;#13 CD: {0}</value>
+  </data>
+  <data name="WMS9999CW0044" xml:space="preserve">
+    <value>{0}行目の数量を入力してください。</value>
+  </data>
+  <data name="WMS9999CW0078" xml:space="preserve">
+    <value>行番号を入力してください {0}</value>
+  </data>
+  <data name="WMS9999CW0084" xml:space="preserve">
+    <value>実際の数量が計画数量を超えています。続行しますか?</value>
+  </data>
 </root>

@@ -1,6 +1,4 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
-using CommunityToolkit.Mvvm.Input;
-using M_WMS.Enums;
+﻿using M_WMS.Enums;
 using M_WMS.FontAwesomeIs;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;

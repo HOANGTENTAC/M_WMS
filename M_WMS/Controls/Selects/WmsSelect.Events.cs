@@ -1,4 +1,5 @@
 ﻿using M_WMS.Controls.Borders;
+using M_WMS.Controls.Popups;
 using System.Collections.Specialized;
 
 namespace M_WMS.Controls.Selects
@@ -30,14 +31,24 @@ namespace M_WMS.Controls.Selects
 
             await OnOpenAsync();
         }
-        private void Popup_ItemSelected(object? sender, WmsSelectItemSelectedEventArgs e)
+        private async void Popup_ItemSelected(object? sender, WmsSelectItemSelectedEventArgs e)
         {
             //SelectedItem = item;
             SelectedItem = e.SelectedItem;
             SelectedValue = e.SelectedValue;
-            UpdateSelectedIndex();
 
+            UpdateSelectedIndex();
             UpdateDisplay();
+
+            //await WmsPopupService.CloseAsync();
+            if (sender is WmsSelectPopup popup)
+            {
+                IsPopupOpen = false;
+                ApplyArrow();
+                popup.ItemSelected -= Popup_ItemSelected;
+
+                await WmsPopupService.CloseAsync(popup);
+            }
         }
         private void OnItemsChanged(object? sender, NotifyCollectionChangedEventArgs e)
         {

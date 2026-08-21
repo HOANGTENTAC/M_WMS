@@ -1,5 +1,6 @@
 ﻿using M_WMS.Controls.Helpers;
 using M_WMS.Controls.Models;
+using M_WMS.Services;
 
 namespace M_WMS.Controls.Selects
 {
@@ -7,6 +8,7 @@ namespace M_WMS.Controls.Selects
     {
         //public event EventHandler<object?>? ItemSelected;
         public event EventHandler<WmsSelectItemSelectedEventArgs>? ItemSelected;
+        public event EventHandler? CloseRequested;
         private async void OnSelectionChanged(
             object? sender,
             SelectionChangedEventArgs e)
@@ -48,11 +50,11 @@ namespace M_WMS.Controls.Selects
                 SelectedValue = SelectedValue
             });
 
-            await Task.Delay(180);
+            //await Task.Delay(180);
             PART_CollectionView.SelectedItem = null;
             //Close(SelectedItem);
-            await CloseAsync();
             //await CloseAsync();
+            await WmsPopupService.CloseAsync();
         }
         private void UpdateSelection(object? selectedItem)
         {

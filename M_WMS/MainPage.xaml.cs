@@ -1,5 +1,5 @@
-﻿using M_WMS.Controls.Models;
-using M_WMS.Pages;
+﻿using M_WMS.Controls.Popups;
+using M_WMS.Controls.Selects;
 using M_WMS.ViewModel;
 
 namespace M_WMS;
@@ -35,5 +35,4 @@ public partial class MainPage : ContentPage
         // Hiệu ứng hiện dần trong 250ms cực mượt
         await this.FadeTo(1, 250, Easing.CubicIn);
     }
-
 }

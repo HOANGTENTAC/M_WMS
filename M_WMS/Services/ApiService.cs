@@ -83,7 +83,21 @@ namespace M_WMS.Services
             }
             return Task.FromResult(number);
         }
-
+        public async Task<string> GetArrivalStockiOrderNumber(string KyotenCd = "")
+        {
+            var orderKubun = "Arrival_Stock";
+            return await GetOrderNumberAsync(orderKubun, KyotenCd);
+        }
+        public async Task<string> GetShipmentStockOrderNumber(string KyotenCd = "")
+        {
+            var orderKubun = "Shipment_Stock";
+            return await GetOrderNumberAsync(orderKubun, KyotenCd);
+        }
+        public async Task<string> GetSequenceNoNumber(string KyotenCd = "")
+        {
+            var orderKubun = "SequenceNo";
+            return await GetOrderNumberAsync(orderKubun, KyotenCd);
+        }
         public TResponseModel PostSync<TResponseModel>(string url, BaseModel requestModel, double? timeout = null) where TResponseModel : BaseModel
         {
             try

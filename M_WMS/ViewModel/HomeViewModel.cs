@@ -1,6 +1,9 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
+﻿using CommunityToolkit.Maui.Views;
+using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using M_WMS.Consts;
+using M_WMS.Controls.Popups;
+using M_WMS.Controls.Selects;
 using M_WMS.Helpers;
 using M_WMS.Model;
 using M_WMS.Pages;
@@ -61,7 +64,7 @@ namespace M_WMS.ViewModel
         [RelayCommand]
         private void ChangeLanguageTapped()
         {
-            Shell.Current.DisplayAlert("Thông báo", "Bạn đã bấm vào cờ Việt Nam!", "OK");
+            //Shell.Current.DisplayAlert("Thông báo", "Bạn đã bấm vào cờ Việt Nam!", "OK");
         }
         public async Task InitializeAsync()
         {

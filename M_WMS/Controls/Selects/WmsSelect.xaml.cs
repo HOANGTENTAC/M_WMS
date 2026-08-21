@@ -1,5 +1,5 @@
-﻿using CommunityToolkit.Maui.Extensions;
-using M_WMS.Controls.Helpers;
+﻿using M_WMS.Controls.Helpers;
+using M_WMS.Controls.Popups;
 
 namespace M_WMS.Controls.Selects;
 
@@ -18,7 +18,6 @@ public partial class WmsSelect : ContentView
     {
         if (Application.Current?.Windows.FirstOrDefault()?.Page is not Page page)
             return;
-
         //var popup = new WmsSelectPopup
         //{
         //    Title = Title,
@@ -46,14 +45,12 @@ public partial class WmsSelect : ContentView
 
         var border = FindParentBorder();
 
-        border?.SetFocused();
+        //border?.SetFocused();
         IsPopupOpen = true;
         ApplyArrow();
-        await page.ShowPopupAsync(popup);
-        IsPopupOpen = false;
-        ApplyArrow();
-        border?.SetNormal();
-        popup.ItemSelected -= Popup_ItemSelected;
+        //await page.ShowPopupAsync(popup);
+        await WmsPopupService.ShowAsync(popup, border);
+        //popup.ItemSelected -= Popup_ItemSelected;
     }
     private void UpdateSelectedItemByValue()
     {

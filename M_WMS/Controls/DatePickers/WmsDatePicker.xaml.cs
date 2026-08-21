@@ -2,7 +2,7 @@
 
 namespace M_WMS.Controls.DatePickers;
 
-public partial class WmsDatePicker : ContentView, IWmsFocusable
+public partial class WmsDatePicker : ContentView//, IWmsFocusable
 {
     public WmsDatePicker()
     {

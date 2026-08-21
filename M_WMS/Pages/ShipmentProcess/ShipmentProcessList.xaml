@@ -278,7 +278,7 @@
                                                     CommandParameter="{Binding .}"/>
 
                                             </Border.GestureRecognizers>
-                                            
+
                                             <!--<Border.Triggers>
                                                 <DataTrigger
                                                     TargetType="Border"
@@ -442,36 +442,6 @@
                         Text="{lang:Translate Ok}"/>
                 </Grid>
             </Border>
-        </Grid>
-        <Grid
-            x:Name="PopupHost"
-            IsVisible="False"
-            ZIndex="9999">
-
-            <!-- Background -->
-            <BoxView
-                x:Name="PopupBackground"
-                BackgroundColor="#50000000">
-
-                <BoxView.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="PopupBackground_Tapped"/>
-                </BoxView.GestureRecognizers>
-
-            </BoxView>
-
-            <!-- Chỉ dùng để căn giữa -->
-            <Grid
-                HorizontalOptions="Center"
-                VerticalOptions="Center">
-
-                <!-- Chỉ lớn bằng Popup -->
-                <Grid
-                    x:Name="PopupContainer"
-                    HorizontalOptions="Center"
-                    VerticalOptions="Center"/>
-
-            </Grid>
-
         </Grid>
     </Grid>
 </ContentPage>

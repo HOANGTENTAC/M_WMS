@@ -132,37 +132,6 @@ namespace M_WMS.Controls.Borders
             ((WmsBorder)bindable).UpdateBorder();
         }
 
-        //#region Content
-        //public new static readonly BindableProperty ContentProperty =
-        //BindableProperty.Create(
-        //nameof(Content),
-        //typeof(View),
-        //typeof(WmsBorder),
-        //null,
-        //propertyChanged: OnContentChanged);
-
-        //public new View? Content
-        //{
-        //    get => (View?)GetValue(ContentProperty);
-        //    set => SetValue(ContentProperty, value);
-        //}
-
-        //private static void OnContentChanged(
-        //BindableObject bindable,
-        //object? oldValue,
-        //object? newValue)
-        //{
-        //    var control = (WmsBorder)bindable;
-
-        //    if (control.PART_ContentHost == null)
-        //    {
-        //        control._pendingContent = newValue as View;
-        //        return;
-        //    }
-
-        //    control.PART_ContentHost.Content = newValue as View;
-        //}
-        //#endregion
         #region Child
         public static readonly BindableProperty ChildProperty =
         BindableProperty.Create(
@@ -209,40 +178,6 @@ namespace M_WMS.Controls.Borders
         }
 
         #endregion
-        //#region BackgroundBrush
-
-        //public static readonly BindableProperty BackgroundBrushProperty =
-        //    BindableProperty.Create(
-        //        nameof(BackgroundBrush),
-        //        typeof(Brush),
-        //        typeof(WmsBorder),
-        //        Brush.Transparent,
-        //        propertyChanged: OnBorderPropertyChanged);
-
-        //public Brush BackgroundBrush
-        //{
-        //    get => (Brush)GetValue(BackgroundBrushProperty);
-        //    set => SetValue(BackgroundBrushProperty, value);
-        //}
-
-        //#endregion
-        //#region Padding
-
-        //public static readonly BindableProperty BorderPaddingProperty =
-        //    BindableProperty.Create(
-        //        nameof(BorderPadding),
-        //        typeof(Thickness),
-        //        typeof(WmsBorder),
-        //        new Thickness(0),
-        //        propertyChanged: OnBorderPropertyChanged);
-
-        //public Thickness BorderPadding
-        //{
-        //    get => (Thickness)GetValue(BorderPaddingProperty);
-        //    set => SetValue(BorderPaddingProperty, value);
-        //}
-
-        //#endregion
         #region Border
 
         public static readonly BindableProperty BorderThicknessProperty =
@@ -274,7 +209,6 @@ namespace M_WMS.Controls.Borders
         }
 
         #endregion
-
         #region FocusedBorderBottomBrush
         public static readonly BindableProperty FocusedBorderBottomBrushProperty =
         BindableProperty.Create(
@@ -289,7 +223,6 @@ namespace M_WMS.Controls.Borders
             set => SetValue(FocusedBorderBottomBrushProperty, value);
         }
         #endregion
-
         #region NormalBorderBottomBrush
         public static readonly BindableProperty NormalBorderBottomBrushProperty =
         BindableProperty.Create(

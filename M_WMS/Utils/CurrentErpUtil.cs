@@ -73,14 +73,14 @@ namespace M_WMS.Utils
             switch (kyoten)
             {
                 case "All":
-                    list.Add(new WmsSelectOption{Name = "加須工場",Value = "加須工場"});
-                    list.Add(new WmsSelectOption{Name = "越谷第二工場", Value = "越谷第二工場" });
-                    list.Add(new WmsSelectOption{Name = "信濃町", Value = "信濃町" });
-                    list.Add(new WmsSelectOption{Name = "VIETNAM", Value = "VIETNAM" });
-                    list.Add(new WmsSelectOption{Name = "HANOI", Value = "HANOI" });
-                    list.Add(new WmsSelectOption{Name = "THAILAND", Value = "THAILAND" });
-                    list.Add(new WmsSelectOption{Name = "QINGDAO", Value = "QINGDAO" });
-                    list.Add(new WmsSelectOption{Name = "SHANGHAI", Value = "SHANGHAI" });
+                    list.Add(new WmsSelectOption { Name = "加須工場", Value = "加須工場" });
+                    list.Add(new WmsSelectOption { Name = "越谷第二工場", Value = "越谷第二工場" });
+                    list.Add(new WmsSelectOption { Name = "信濃町", Value = "信濃町" });
+                    list.Add(new WmsSelectOption { Name = "VIETNAM", Value = "VIETNAM" });
+                    list.Add(new WmsSelectOption { Name = "HANOI", Value = "HANOI" });
+                    list.Add(new WmsSelectOption { Name = "THAILAND", Value = "THAILAND" });
+                    list.Add(new WmsSelectOption { Name = "QINGDAO", Value = "QINGDAO" });
+                    list.Add(new WmsSelectOption { Name = "SHANGHAI", Value = "SHANGHAI" });
                     break;
                 case "HC":
                     list.Add(new WmsSelectOption { Name = "VIETNAM", Value = "VIETNAM" });
@@ -113,12 +113,23 @@ namespace M_WMS.Utils
             list.Add(new WmsSelectOption { Name = "日本語", Value = "ja" });
             return list;
         }
-        public static async Task<List<Dictionary<string,string>>> LoadReason(string? kyoten, ApiService _apiService)
+        public static async Task<List<Dictionary<string, string>>> LoadReason(string? kyoten, ApiService _apiService)
         {
             string getReasonSql = $@"SELECT reason_cd as id, {(IsEnTable(kyoten) ? "reason_name_en" : "reason_name_jp")} as name
                     FROM mst_inout_reason";
             var resultTest = await _apiService.SelectDbDictionaryErp(getReasonSql);
             return resultTest ?? new List<Dictionary<string, string>>();
+        }
+        public static async Task<List<Dictionary<string, string>>> LoadStorageType(ApiService _apiService, string where = "", string culture = "en-US", bool onlyname = false)
+        {
+            string name = culture == "en-US" ? "zaiko_ku_name_en" : "zaiko_ku_name_jp";
+            string nameshow = onlyname == false ? $"concat(zaiko_ku_cd::VARCHAR,': ',{name})" : $"{name}";
+            string sql = $"SELECT zaiko_ku_cd as id,{nameshow} as name " +
+                $"FROM public.mst_cr_zaiko_ku where void_flg = 0 {(!string.IsNullOrEmpty(where) ? $" and zaiko_ku_cd = '{where}'" : "")} " +
+                $"ORDER BY zaiko_ku_cd";
+
+            var table_stock_1 = await _apiService.SelectDbDictionaryCmms(sql);
+            return table_stock_1 ?? new List<Dictionary<string, string>>();
         }
         public static bool IsEnTable(string? receiverCd)
         {
@@ -165,6 +176,22 @@ namespace M_WMS.Utils
                     return "OUTPUT";
                 default:
                     return "出庫";
+            }
+        }
+        public static string CultureKyoten(string kyoten)
+        {
+            switch (kyoten)
+            {
+                case "SN":
+                case "RY":
+                case "OS":
+                case "KZ":
+                case "K2":
+                case "SH":
+                case "QD":
+                    return "ja-JP";
+                default:
+                    return "en-US";
             }
         }
     }

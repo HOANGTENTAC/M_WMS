@@ -19,5 +19,7 @@ namespace M_WMS.Model
         public string InstrNo { get; set; }
         public string Dept { get; set; }
         public string Reason { get; set; }
+
+        public string Message { get; set; }
     }
 }

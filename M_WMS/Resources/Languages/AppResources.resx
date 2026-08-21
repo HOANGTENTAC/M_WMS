@@ -2115,4 +2115,19 @@ See the example image below for the InstructionNo and PoNo screen.</value>
   <data name="WMS9999CW0058" xml:space="preserve">
     <value>Please select storage type.</value>
   </data>
+  <data name="WMS9999CW0074" xml:space="preserve">
+    <value>Stock type has not been registered. CD: {0}</value>
+  </data>
+  <data name="WMS9999CW0056" xml:space="preserve">
+    <value>This CD product number has not been registered, please notify the sales staff to register. &amp;#13 CD: {0}</value>
+  </data>
+  <data name="WMS9999CW0044" xml:space="preserve">
+    <value>Please enter the quantity for the {0} line.</value>
+  </data>
+  <data name="WMS9999CW0078" xml:space="preserve">
+    <value>Input line number for {0}</value>
+  </data>
+  <data name="WMS9999CW0084" xml:space="preserve">
+    <value>The actual quantity  is more than the planned quantity. Do you want to continue?</value>
+  </data>
 </root>

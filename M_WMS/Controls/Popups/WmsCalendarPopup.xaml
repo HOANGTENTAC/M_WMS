@@ -6,7 +6,8 @@
         BackgroundColor="White"
         Stroke="#DADADA"
         StrokeThickness="0"
-        StrokeShape="16">
+        StrokeShape="16"
+        x:Name="ThisBorder">
     <VerticalStackLayout
         Padding="10"
         Spacing="10">

@@ -1,4 +1,6 @@
-﻿using M_WMS.ViewModel;
+﻿using M_WMS.Controls.Popups;
+using M_WMS.Controls.Selects;
+using M_WMS.ViewModel;
 
 namespace M_WMS.Pages;
 
@@ -29,6 +31,7 @@ public partial class HomeView : ContentView
             //});
         //}
     }
+
     //private void StartSkeletonAnimation()
     //{
     //    _isAnimating = true;

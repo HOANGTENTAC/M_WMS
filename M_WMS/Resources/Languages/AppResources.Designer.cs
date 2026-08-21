@@ -19,7 +19,7 @@ namespace M_WMS.Resources.Languages {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "18.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class AppResources {
@@ -5950,6 +5950,24 @@ namespace M_WMS.Resources.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Please enter the quantity for the {0} line..
+        /// </summary>
+        public static string WMS9999CW0044 {
+            get {
+                return ResourceManager.GetString("WMS9999CW0044", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This CD product number has not been registered, please notify the sales staff to register. &amp;#13 CD: {0}.
+        /// </summary>
+        public static string WMS9999CW0056 {
+            get {
+                return ResourceManager.GetString("WMS9999CW0056", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The quantity must be a positive integer and greater than zero..
         /// </summary>
         public static string WMS9999CW0057 {
@@ -5973,6 +5991,33 @@ namespace M_WMS.Resources.Languages {
         public static string WMS9999CW0061 {
             get {
                 return ResourceManager.GetString("WMS9999CW0061", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Stock type has not been registered. CD: {0}.
+        /// </summary>
+        public static string WMS9999CW0074 {
+            get {
+                return ResourceManager.GetString("WMS9999CW0074", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Input line number for {0}.
+        /// </summary>
+        public static string WMS9999CW0078 {
+            get {
+                return ResourceManager.GetString("WMS9999CW0078", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The actual quantity  is more than the planned quantity. Do you want to continue?.
+        /// </summary>
+        public static string WMS9999CW0084 {
+            get {
+                return ResourceManager.GetString("WMS9999CW0084", resourceCulture);
             }
         }
         

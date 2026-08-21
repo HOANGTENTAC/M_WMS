@@ -1,5 +1,5 @@
-﻿using M_WMS.Controls.Popups;
-using M_WMS.Services;
+﻿using M_WMS.Controls.Borders;
+using M_WMS.Controls.Popups;
 
 namespace M_WMS.Controls.DatePickers
 {
@@ -41,38 +41,55 @@ namespace M_WMS.Controls.DatePickers
         }
         private void RootGrid_Tapped(object? sender, TappedEventArgs e)
         {
-            RaiseFocused();
+            //RaiseFocused();
 
             Clicked?.Invoke(this, EventArgs.Empty);
         }
 
         private async void OnTapped(object? sender, TappedEventArgs e)
         {
-            RaiseFocused();
-
+            //RaiseFocused();
+            var border = FindParentBorder();
             //Clicked?.Invoke(this, EventArgs.Empty);
-            await WmsPopupService.ShowAsync(new WmsCalendarPopup(this));
-        }
+            //await M_WMS.Services.WmsPopupService.ShowAsync(new WmsCalendarPopup(this));
+            var popup = new WmsCalendarPopup(this);
 
-        public void RaiseFocused()
+            await WmsPopupService.ShowAsync(popup, border);
+        }
+        private WmsBorder? FindParentBorder()
         {
-            if (_isFocused)
-                return;
+            Element? parent = Parent;
 
-            _isFocused = true;
+            while (parent != null)
+            {
+                if (parent is WmsBorder border)
+                    return border;
 
-            Focused?.Invoke(this, EventArgs.Empty);
+                parent = parent.Parent;
+            }
+
+            return null;
         }
 
-        public void RaiseUnfocused()
-        {
-            if (!_isFocused)
-                return;
+        //public void RaiseFocused()
+        //{
+        //    if (_isFocused)
+        //        return;
 
-            _isFocused = false;
+        //    _isFocused = true;
 
-            Unfocused?.Invoke(this, EventArgs.Empty);
-        }
+        //    Focused?.Invoke(this, EventArgs.Empty);
+        //}
+
+        //public void RaiseUnfocused()
+        //{
+        //    if (!_isFocused)
+        //        return;
+
+        //    _isFocused = false;
+
+        //    Unfocused?.Invoke(this, EventArgs.Empty);
+        //}
         private void UpdateIcon()
         {
             PART_Icon.Source = Icon;
@@ -87,7 +104,7 @@ namespace M_WMS.Controls.DatePickers
         {
             Date = null;
 
-            RaiseUnfocused();
+            //RaiseUnfocused();
         }
         internal bool HasTime => !string.IsNullOrWhiteSpace(Format) && (Format.Contains("H") || Format.Contains("h"));
 
